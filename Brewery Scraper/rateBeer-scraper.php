@@ -13,7 +13,7 @@ function curl($url) {
 function breweryScrape(){
 
     $breweries = [];
-    for ($i = 2; $i < 3 ; $i++){
+    for ($i = 1; $i < 2 ; $i++){
         $url = 'http://www.ratebeer.com/brewers/abita-brewing-company/'.$i.'/';
         $breweryInfo = curl($url);
         $name = getName($breweryInfo);

@@ -88,9 +88,9 @@ function breweryObject($place){
         console.log(brewery_country);
         var brewery_zip = brewery_google.address_components[5].long_name;
         console.log(brewery_zip);
-        var brewery_latitude = brewery_google.geometry.location.J;
+        var brewery_latitude = $place.geometry.location.lat();
         console.log(brewery_latitude);
-        var brewery_longitude = brewery_google.geometry.location.M;
+        var brewery_longitude = $place.geometry.location.lng();
         console.log(brewery_longitude);
         var brewery_phone_num = brewery_google.formatted_phone_number;
         console.log(brewery_phone_num);
@@ -102,8 +102,6 @@ function breweryObject($place){
         console.log(brewery_hours);
         var brewery_place_id = brewery_google.place_id;
         console.log(brewery_place_id);
-        var brewery_price_level = brewery_google.price_level;
-        console.log(brewery_price_level);
         var brewery_rating = brewery_google.rating;
         console.log(brewery_rating);
         var brewery_types = brewery_google.types;
@@ -138,15 +136,14 @@ function sendBreweryGoogle(brewery_google) {
              brewery_state : brewery_google.address_components[3].long_name,
              brewery_country : brewery_google.address_components[4].long_name,
              brewery_zip : brewery_google.address_components[5].long_name,
-             brewery_latitude : brewery_google.geometry.location.J,
-             brewery_longitude : brewery_google.geometry.location.M,
+             brewery_latitude : brewery_google.geometry.location.lat(),
+             brewery_longitude : brewery_google.geometry.location.lng(),
              brewery_phone_num : brewery_google.formatted_phone_number,
              brewery_google_id : brewery_google.id,
              brewery_international_phone_number : brewery_google.international_phone_number,
              brewery_hours : brewery_google.opening_hours.weekday_text,
              brewery_place_id : brewery_google.place_id,
-             //brewery_price_level : brewery_google.price_level,
-             //brewery_rating : brewery_google.rating,
+             brewery_rating : brewery_google.rating,
              brewery_types : brewery_google.types,
              brewery_google_plus : brewery_google.url,
              brewery_website : brewery_google.website

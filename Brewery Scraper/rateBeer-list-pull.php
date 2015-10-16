@@ -11,12 +11,13 @@ function pullBeerData(){
 
     $breweriesQuery = "SELECT * FROM `ratebeer breweries`";
     $breweryResult = mysqli_query($conn, $breweriesQuery);
+    mysqli_error($conn);
 
     if (mysqli_num_rows($breweryResult) > 0) {
         while ($inner_result = mysqli_fetch_assoc($breweryResult)) {
             $breweries[] = $inner_result;
         }
-        echo json_encode($breweries);
+        print json_encode($breweries);
     }
 }
 

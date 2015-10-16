@@ -1,4 +1,4 @@
-
+var breweryQueue;
 function rateBeerFinder(){
     $.ajax({
         url:'rateBeer-list-pull.php',
@@ -8,13 +8,14 @@ function rateBeerFinder(){
         crossDomain: true,
         success: function(response){
             var breweryArray = response;
-            initNextMap(breweryArray);
-            console.log('this is the brewery array ', response);
+            console.log('this is the php brewery array ', response);
+            breweryQueue = breweryArray;
+            initNextMap();
         },
         error: function(jqXHR, textStatus, errorThrown) {
-            alert('An error occurred...' + jqXHR + ' and the error is '+ errorThrown);
+            alert('An error occurred... Look at the console (F12 or Ctrl+Shift+I, Console tab) for more information!');
 
-            $('#result').html('<p>status code: '+jqXHR.status+'</p><p>errorThrown: ' + errorThrown + '</p><p>jqXHR.responseText:</p><div>'+jqXHR.responseText + '</div>');
+            $('#local-business').html('<p>status code: '+jqXHR.status+'</p><p>errorThrown: ' + errorThrown + '</p><p>jqXHR.responseText:</p><div>'+jqXHR.responseText + '</div>');
             console.log('jqXHR:');
             console.log(jqXHR);
             console.log('textStatus:');
@@ -25,19 +26,19 @@ function rateBeerFinder(){
     });
 }
 
-function initNextMap(breweryArray) {
-    if (breweryArray.length === 0) {
+function initNextMap() {
+    if (breweryQueue.length === 0) {
         console.log('all done!');
         return;
     }
 
-    var brewery = breweryArray.pop();
+    var brewery = breweryQueue.pop();
     var breweryName = brewery.name;
     var breweryCity  = brewery.city;
     var breweryState = brewery.state;
-
-    $.when(initMap(breweryName, breweryCity, breweryState)).then(initNextMap(breweryArray));
+    initMap(breweryName, breweryCity, breweryState);
 }
+
 
 $('#local-business').hide();
 
@@ -143,58 +144,40 @@ function sendBreweryGoogle(brewery_google) {
         method: 'POST',
         dataType: 'JSON',
         data: {
-             brewery_name : brewery_google.name,
-             brewery_street_number : brewery_google.address_components[0].long_name,
-             brewery_street_name : brewery_google.address_components[1].long_name,
-             brewery_city : brewery_google.address_components[2].long_name,
-             brewery_state : brewery_google.address_components[3].long_name,
-             brewery_country : brewery_google.address_components[4].long_name,
-             brewery_zip : brewery_google.address_components[5].long_name,
-             brewery_latitude : brewery_google.geometry.location.lat(),
-             brewery_longitude : brewery_google.geometry.location.lng(),
-             brewery_phone_num : brewery_google.formatted_phone_number,
-             brewery_google_id : brewery_google.id,
-             brewery_international_phone_number : brewery_google.international_phone_number,
-             brewery_hours : brewery_google.opening_hours.weekday_text,
-             brewery_place_id : brewery_google.place_id,
-             brewery_rating : brewery_google.rating,
-             brewery_types : brewery_google.types,
-             brewery_google_plus : brewery_google.url,
-             brewery_website : brewery_google.website
+            brewery_name : brewery_google.name,
+            brewery_street_number : brewery_google.address_components[0].long_name,
+            brewery_street_name : brewery_google.address_components[1].long_name,
+            brewery_city : brewery_google.address_components[2].long_name,
+            brewery_state : brewery_google.address_components[3].long_name,
+            brewery_country : brewery_google.address_components[4].long_name,
+            brewery_zip : brewery_google.address_components[5].long_name,
+            brewery_latitude : brewery_google.geometry.location.lat(),
+            brewery_longitude : brewery_google.geometry.location.lng(),
+            brewery_phone_num : brewery_google.formatted_phone_number,
+            brewery_google_id : brewery_google.id,
+            brewery_international_phone_number : brewery_google.international_phone_number,
+            brewery_hours : brewery_google.opening_hours.weekday_text,
+            brewery_place_id : brewery_google.place_id,
+            brewery_price_level: brewery_google.price_level,
+            brewery_rating : brewery_google.rating,
+            brewery_types : brewery_google.types,
+            brewery_google_plus : brewery_google.url,
+            brewery_website : brewery_google.website
         },
         success: function(response){
             console.log(response);
+            initNextMap();
+        },
+        error: function(jqXHR, textStatus, errorThrown) {
+            alert('An error occurred... Look at the console (F12 or Ctrl+Shift+I, Console tab) for more information!');
+
+            $('#local-business').html('<p>status code: '+jqXHR.status+'</p><p>errorThrown: ' + errorThrown + '</p><p>jqXHR.responseText:</p><div>'+jqXHR.responseText + '</div>');
+            console.log('jqXHR:');
+            console.log(jqXHR);
+            console.log('textStatus:');
+            console.log(textStatus);
+            console.log('errorThrown:');
+            console.log(errorThrown);
         }
     });
 }
-
-//function createMarker($place) {
-//    var $marker = new google.maps.Marker({
-////     icon: '../lib/img/global/marker-blue.png',
-//        map: $map,
-//        position: $place.geometry.location
-//    });
-//
-//    google.maps.event.addListener($marker, 'click', function () {
-//
-//        var $request = {
-//            placeId: $place.place_id
-//        };
-//
-//        $service = new google.maps.places.PlacesService($map);
-//
-//        $service.getDetails($request, function ($place, $status) {
-//
-//            console.log($place);
-//            var $reviews = '';
-//            var $rating;
-//            var $stars;
-//            var $mostPossible = 0;
-//
-//            $('#local-business').hide();
-//            $('#business-name').html($place.name);
-//            $('#business-website').html($place.website);
-//            $('#local-business').show();
-//        });
-//    });
-//}

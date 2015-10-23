@@ -9,7 +9,7 @@ function pullBeerData(){
     $conn = mysqli_connect('localhost', 'root', '', 'ratebeer_data');
     $breweries;
 
-    $breweriesQuery = "SELECT * FROM `ratebeer breweries`";
+    $breweriesQuery = "SELECT * FROM `ratebeer_breweries` WHERE `verified`=0 AND `state`='Oregon' LIMIT 1";
     $breweryResult = mysqli_query($conn, $breweriesQuery);
     mysqli_error($conn);
 
@@ -17,7 +17,10 @@ function pullBeerData(){
         while ($inner_result = mysqli_fetch_assoc($breweryResult)) {
             $breweries[] = $inner_result;
         }
-        print json_encode($breweries);
+        echo json_encode($breweries);
+    }
+    else{
+        echo 'All breweries have been verified';
     }
 }
 

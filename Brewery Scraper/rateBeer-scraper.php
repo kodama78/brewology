@@ -13,7 +13,7 @@ function curl($url) {
 function breweryScrape(){
 
     $breweries = [];
-    for ($i = 10; $i < 20; $i++){
+    for ($i = 18725; $i < 30000; $i++){
         $url = 'http://www.ratebeer.com/brewers/abita-brewing-company/'.$i.'/';
         $breweryInfo = curl($url);
         $name = getName($breweryInfo);
@@ -43,6 +43,8 @@ function saveData($breweryName, $address){
     $conn = mysqli_connect('localhost','root','','ratebeer_data');
 
     $brewery_name = $breweryName;
+    $brewery_name = preg_replace('/&#40;(.*?)#41;/', '', $brewery_name);
+    echo $brewery_name;
     $brewery_street = $address['street'];
     $brewery_city = $address['city'];
     $brewery_state = $address['state'];
@@ -50,30 +52,31 @@ function saveData($breweryName, $address){
     $brewery_zip = $address['zipcode'];
     $brewery_phone = $address['telephone'];
 
-    $check_brewery_exist = "SELECT id FROM `ratebeer breweries` WHERE name = '$brewery_name'";
+    $check_brewery_exist = "SELECT id FROM `ratebeer_breweries` WHERE name = '$brewery_name'";
     $brewery_result = mysqli_query($conn, $check_brewery_exist);
 
-	if(mysqli_num_rows($brewery_result) > 0)
+	if(!$brewery_result || mysqli_num_rows($brewery_result) == 0)
     {
-        $output['message'] = 'Sorry, that brewery has already been added';
-        print json_encode($output);
-    }
-    else {
-        $insert_brewery = "INSERT INTO `ratebeer breweries` (`name`, `city`, `state`, `country`, `zip1`, `phone`)
+        $insert_brewery = "INSERT INTO `ratebeer_breweries` (`name`, `city`, `state`, `country`, `zip1`, `phone`)
 			VALUES ('$brewery_name', '$brewery_city', '$brewery_state', '$brewery_country', '$brewery_zip', '$brewery_phone')";
         $insert_brewery_result = mysqli_query($conn, $insert_brewery);
+        print $insert_brewery_result;
         if (mysqli_affected_rows($conn) > 0) {
-            $output['success'] = true;
             $output['message'] = "brewery added!";
             print json_encode($output);
         } else {
             $output['message'] = "Brewery denied!";
+            mysqli_error($conn);
             print json_encode($output);
         }
     }
+    else {
+        $output['message'] = 'Sorry, that brewery has already been added';
+        print json_encode($output);
+    }
 }
 
-breweryScrape();
+
 
 //Get names from RateBeer
 function getName($str){
@@ -112,6 +115,7 @@ function getBeerList($str){
     return $beerList;
 }
 
+breweryScrape();
 //THIS FUNCTION IS SET UP TO ACCESS BEER ADVOCATE
 function getMenu($str){
     $str = str_replace(' align="left"', '', $str);

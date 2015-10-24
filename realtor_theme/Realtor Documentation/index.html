@@ -1,0 +1,326 @@
+<!DOCTYPE HTML>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Realtor Documentation</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+        <!-- ===== START CSS ===== -->
+        <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,300' rel='stylesheet' type='text/css' />
+        <link href="css/bootstrap.css" rel="stylesheet" />
+        <link type="text/css" href="css/style.css" rel="stylesheet" />
+
+        <!-- ===== START JAVASCRIPT ===== -->
+        <script src="javascript/jquery.js" type="text/javascript"></script>    
+        <script src="javascript/bootstrap.js" type="text/javascript" charset="utf-8"></script>
+        <script src="javascript/options.js" type="text/javascript" charset="utf-8"></script>
+        <!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <!-- ===== END JAVASCRIPT ===== -->
+    </head>
+    <body>
+        <div class="tt_top_line" id="top_section">
+            <div class="container">
+                <ul class="tt_menu_first">
+                    <li><a class="back_top_button" data-target="#section" href="#section"><img src="images/logo_bg.png" /></a>
+                        <ul class="tt_menu">
+                            <li><a class="back_top_button" data-target="#section" href="#section">Introduction</a></li>
+                            <li><a class="back_top_button" data-target="#section1" href="#section1">Theme structure</a></li>
+                            <li><a class="back_top_button" data-target="#section2" href="#section2">CSS and Structure</a></li>
+                            <li><a class="back_top_button" data-target="#section3" href="#section3">Credits and Sources</a></li>
+                        </ul>
+                    </li>
+                    <li class="top"><b>Realtor HTML Theme</b>  Documentation for version 1.0 by <b><a href="http://www.teslathemes.com" target="_blank">Teslathemes</a></b></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="tt_content">
+                <div class="section" id="section">
+                    <h1>Introducing Realtor - HTML Theme</h1>
+                    <ul class="created">
+                        <li><b>Realtor</b> - HTML Theme</li>
+                        <li><b>Created:</b> 09-07-2015</li>
+                        <li><b>By:</b> TeslaThemes</li>
+                        <li class="last"><b>Email:</b> <a href="mailto:hi@teslathemes.com">hi@teslathemes.com</a></li>
+                    </ul>
+                    <div class="terms">
+                        <p>This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.</p>
+
+                        <p>This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.</p>
+
+                        <p>You should have received a copy of the GNU General Public License along with this program. If not, see http://www.gnu.org/licenses/.</p>
+                    </div>
+                    <div class="clear"></div>
+                    <p>Thank you for purchasing our product! We are very glad that you have decided on our HTML theme.</p>
+
+                    <p>The theme is very easy to use and we are here to guide and help you, so please read and follow the instructions and if you have further questions write us a email <a href="mailto:hi@teslathemes.com">hi@teslathemes.com</a>. This documentation is more of a reference work if you do not know what to do and need a better understanding on how the template is built write us a email.</p>
+                </div>
+
+
+                <div class="section" id="section1">
+                    <h1>Theme structure</h1>
+                    <span class="go_top"><a href="#top_section">To the Top</a></span>
+
+                    <p>Realtor has <b>11 HTML</b> Files:</p>
+                    <ol> <!-- .to-right, to-left, .center-me helper class-->
+                        <li>404.html</li>
+                        <li>agent.html</li>
+                        <li>agents.html</li>
+                        <li>blog.html</li>
+                        <li>blogpost.html</li>
+                        <li>index.html</li>
+                        <li>my-profile.html</li>                      
+                        <li>properties-grid.html</li>
+                        <li>properties-list.html</li>
+                        <li>single-full-width.html</li>
+                        <li>single.html</li>
+                    </ol>
+                    <p>A screen of the Home Page:</p>
+                    <img src="images/01_Realtor-Main.png" alt="theme" />
+                    <br/>
+                    <p>All the themes elements like blogposts, properties, agents etc. are all separated DIV-s that can be used on any page you want.</p>
+                </div>
+
+                <div class="section" id="section2">
+                    <h1>CSS Files and Structure</h1>
+                    <span class="go_top"><a href="#top_section">To the Top</a></span>
+                    <p>This theme has been implemented as a responsive layout. The full width of the template is fluid for screen mode, and it still has a boxed version.</p>
+                    <p>The <b>CSS file</b> is located in the css folder. The css file is registered and included in the <b>"head"..."/head"</b>. </p>
+                    <p>CSS file is very good structured and arranged so you can search very easy: </p>
+                    <pre>
+@charset "UTF-8";
+/* ------------------------------------------------------------------
+ * [Table of contents]
+ *
+ * 1. Base Styling
+ * 2. WordPress Styles
+ * 3. Tables
+ * 4. Forms
+ * 5. Buttons
+ *
+ * 6. UI Components
+ *    6.1. Header
+ *    6.2. Footer
+ *    6.3. Sections
+ *      6.3.1. Properties Map
+ *      6.3.2. Listing
+ *      6.3.3. Most Viewed
+ *      6.3.4. Featured Blog Posts
+ *      6.3.5. Agents Section
+ *      6.3.6. Properties Filter Section
+ *      6.3.7. Properties Section
+ *      6.3.8. Single Property Section
+ *      6.3.9. Single Agent Page
+ *      6.3.10. Blog Section
+ *      6.3.11. User Account
+ *      6.3.12. 404 Section
+ *    6.4. Components 
+ *      6.4.1. Custom Select Boxes      
+ *      6.4.2. Map Filter Box
+ *      6.4.3. Hot Offer
+ *      6.4.4. Listing Item
+ *      6.4.5. Most Viewed Item
+ *      6.4.6. Most Viewed Carousel
+ *      6.4.7. Agent
+ *      6.4.8. Blog Post
+ *      6.4.9. List Property
+ *      6.4.10. Pagination
+ *      6.4.11. Main Loader
+ *      6.4.12. Sidebar
+ *      6.4.13. Share Block
+ *      6.4.14. Login Popup
+ *      6.4.15. Featured Video
+ *      6.4.16. Custom Accordion
+ *      6.4.17. Blog Slider
+ *
+ * ------------------------------------------------------------------ */
+/* */
+/* */
+/* */
+/* */
+/* ----------------- 1. Base Styling ----------------- */
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic);
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  font-size: 100%;
+}
+
+body {
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 1.4em;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+html .row-fit {
+  margin: 0;
+}
+html .row-fit [class*="col-"] {
+  padding: 0;
+}
+
+html .row-fit-10 {
+  margin: 0 -5px;
+}
+html .row-fit-10 [class*="col-"] {
+  padding: 0 5px;
+}
+
+.no-select {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.align-center {
+  text-align: center;
+}
+
+input[type="number"],
+input[type="search"],
+input[type="email"],
+input[type="text"],
+input[type="url"],
+input[type="password"],
+input[type="submit"],
+textarea {
+  -webkit-appearance: none;
+  border-radius: 0;
+}
+
+a {
+  text-decoration: none;
+  -webkit-transition: all 0.12s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  -moz-transition: all 0.12s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: all 0.12s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+}
+a:hover, a:focus, a:active {
+  text-decoration: none;
+}
+
+blockquote {
+  position: relative;
+  margin: 0 0 30px;
+  color: #262626;
+  font-size: 20px;
+  font-weight: 300;
+  font-style: italic;
+  line-height: 1.455em;
+  padding: 15px 70px 15px 55px;
+  border-top: 1px solid #f5f5f5;
+  border-right: 1px solid #f5f5f5;
+  border-bottom: 1px solid #f5f5f5;
+  border-left: 1px solid #ff5252;
+}
+blockquote:before {
+  position: absolute;
+  text-align: center;
+  font-family: FontAwesome;
+  top: 50%;
+  left: -15px;
+  font-style: normal;
+  margin-top: -15px;
+  content: "";
+  width: 30px;
+  height: 30px;
+  color: #ff5252;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #ff5252;
+}
+blockquote p {
+  margin: 0;
+}
+@media (max-width: 768px) {
+  blockquote {
+    padding: 10px 30px 10px 25px;
+    font-size: 18px;
+  }
+}
+
+.content-wrapper {
+  position: relative;
+}
+
+#page {
+  -webkit-transition: all 0.55s cubic-bezier(0.5, -0.5, 0.3, 1.3);
+  -moz-transition: all 0.55s cubic-bezier(0.5, -0.5, 0.3, 1.3);
+  transition: all 0.55s cubic-bezier(0.5, -0.5, 0.3, 1.3);
+  opacity: 0;
+}
+
+.dom-ready #page {
+  opacity: 1;
+}
+
+.site-preloader {
+  background: #fff;
+  display: table;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  -webkit-transition: all 0.3s;
+  -webkit-transition-delay: 0.1s;
+}
+                    </pre>
+                </div>
+
+                <div class="section" id="section3">
+                    <h1>Credits and Sources</h1>                   
+                    <span class="go_top"><a href="#top_section">To the Top</a></span>
+                    <p>We've used the following images, icons, fonts or other files as listed.</p>
+                    <ul>
+                        <li><a href="http://www.istockphoto.com/" target="_blank">istockphoto.com</a></li>
+                        <li>Icons by Fontawesome</li>
+                        <li>Icons by IcoMoon</li>
+                    </ul>
+                    <p><b>Fonts used:</b></p>
+                    <ul>
+                        <li>"Source Sans Pro" by <a href="http://www.google.com/fonts" target="_blank">Google Web Fonts</a></li>
+                    </ul>
+                    <p><b>JavaScript/jQery plugin used:</b></p>
+                    <ul>
+                        <li>imagesloaded.js</li>
+                        <li>infobox.js</li>
+                        <li>isotope.js</li>
+                        <li>jquery-ui.js</li>
+                        <li>jquery.js</li>
+                        <li>lightbox.js</li>
+                        <li>marquee.js</li>
+                        <li>modernizr.js</li>
+                        <li>owl-carousel.js</li>
+                        <li>packery-mode.js</li>
+                        <li>smooth-scroll.js</li>
+                        <li>theia.js</li>
+                    </ul>
+
+                </div>
+                <div class="thx">
+                    <p>
+                        <b>Thank you</b> so much for choosing <b>"Realtor"</b> we hope you will enjoy using it!
+                    </p>
+                </div>
+
+            </div>
+            <div class="clear"></div>            
+        </div>
+    </body>
+</html>

@@ -1,0 +1,789 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>Realtor</title>
+    <meta name="description" content="Here goes description" />
+    <meta name="author" content="author name" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/bxslider.css" />
+    <link rel="stylesheet" href="css/nouislider.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+</head>
+<body data-smooth-scroll="on">
+
+	<!-- Page Wrapper -->
+	<div id="page">
+		<!-- Header -->
+		<header>
+			<!-- Navigation -->
+			<nav>
+				<ul>
+					<li class="home current-menu-item"><a href="my-profile.html">Home</a></li>
+					<li class="listing menu-item-has-children">
+						<a href="#">Listing</a>
+						<ul class="sub-menu">
+							<li><a href="properties-grid.html">Grid</a></li>
+							<li><a href="properties-list.html">List</a></li>
+						</ul>
+					</li>
+					<li class="property"><a href="single-full-width.html">Property</a></li>
+					<li class="agents"><a href="agents.html">Agents</a></li>
+					<li class="blog"><a href="blog.html">Blog</a></li>
+					<li class="error"><a href="404.html">404 Page</a></li>
+				</ul>
+			</nav>
+
+			<!-- Social Block & Login -->
+			<div class="right-block">
+				<ul class="social-block">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+				</ul>
+
+				<p><a class="login" href="#">Login</a> / <a href="#" class="register">Register</a></p>
+			</div>
+
+			<!-- Menu Toggle -->
+			<span class="menu-toggle cmn-toggle-switch cmn-toggle-switch__htx">
+				<span>toggle menu</span>
+			</span>
+
+			<!-- Identity image -->
+			<a href="index.html" class="brand">
+				<img src="img/logo.png" alt="logo" />
+			</a>
+		</header>
+
+		<!-- Main Content -->
+		<div class="content-wrapper">
+			<!-- Login Form -->
+			<div class="login-form-popup">
+				<div class="login-form" id="login-popup">
+					<div class="brand-wrapper">
+						<img src="img/brand.png" alt="login brand" />
+					</div>
+
+					<form id="login-form">
+						<input class="js-input" type="text" placeholder="Login" />
+						<input class="js-input" type="password" placeholder="Password" />
+
+						<input type="submit" value="Login" class="submit-button" />
+
+						<div class="options">
+							<label>
+								<input type="checkbox" />
+								<span>Remember me</span>
+							</label>
+							<a class="remember-password" href="#">Forgotten the password</a>
+						</div>
+					</form>
+
+					<form id="register-form">
+						<input class="js-input" type="text" placeholder="First Name" />
+						<input class="js-input" type="text" placeholder="Last Name" />
+						<input class="js-input" type="text" placeholder="Login" />
+						<input class="js-input" type="password" placeholder="Password" />
+						<input class="js-input" type="password" placeholder="Confirm password" />
+
+						<input type="submit" value="Register" class="submit-button" />
+					</form>
+
+					<div class="sign-in-options">
+						<span>Sign in</span>
+						<a class="facebook" href="my-profile.html">Facebook</a>
+						<a class="google" href="my-profile.html">Google</a>
+					</div>
+
+					<p class="register-link"><i>Don't have an account?</i> <a href="#" class="register-btn">Register here</a></p>
+				</div>
+			</div>
+			
+			<!-- Filter Section -->
+			<section class="properties-filters">
+				<div class="container">
+					<h2 class="filters-header global-header"><a href="#"><i class="icon"></i>Filter</a></h2>
+
+					<div class="filters-body main-body">
+						<!-- Basic Filters -->
+						<div class="basic-filters">
+							<div class="row">
+								<div class="col-md-10 col-lg-9 col-md-offset-2 col-lg-offset-3">
+									<div class="filter-block left">
+										<!-- Filter Block Items -->
+										<div class="filter-block-item city">
+											<div class="select-box type-2">
+												<input class="js-input no-select" type="text" readonly value="" placeholder="All cities" />
+												<ul>
+													<li>All cities</li>
+													<li>NY</li>
+													<li>LA</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="filter-block-item price">
+											<div class="price-box">
+												<p class="caption"><i>Price</i> &#40;$<span class="min"></span> - $<span class="max"></span>&#41;</p>
+
+												<div class="price-slider" data-min="0" data-max="20000" data-start="2500" data-stop="11000" data-step="500"></div>
+
+												<div class="price-limits clearfix">
+													<span class="lower">$0</span>
+													<span class="upper">$20 000</span>
+												</div>
+											</div>
+										</div>
+
+										<div class="filter-block-item nr-filters">
+											<div class="nr-filter">
+												<p class="caption">Baths</p>
+												<div class="block">
+													<span class="action substract">-</span>
+													<input type="text" class="nr-only" value="1" />
+													<span class="action add">+</span>
+												</div>
+											</div>
+
+											<div class="nr-filter">
+												<p class="caption">Beds</p>
+												<div class="block">
+													<span class="action substract">-</span>
+													<input type="text" class="nr-only" value="1" />
+													<span class="action add">+</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-10 col-lg-9">
+									<div class="filter-block right">
+										<!-- Filter Block Items -->
+										<div class="filter-block-item type">
+											<div class="select-filter">
+												<label>
+													<input type="radio" name="type-select" />
+													<span>For rent</span>
+												</label>
+											</div>
+
+											<div class="select-filter">
+												<label>
+													<input type="radio" name="type-select" />
+													<span>For Sale</span>
+												</label>
+											</div>
+										</div>
+
+										<div class="filter-block-item categories">
+											<div class="select-box type-2">
+												<input class="js-input no-select" type="text" readonly value="" placeholder="All categories" />
+												<ul>
+													<li>All categories</li>
+													<li>Apartments</li>
+													<li>Houses</li>
+													<li>Lands</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="filter-block-item area">
+											<div class="price-box">
+												<p class="caption"><i>Area</i> &#40;<span class="min"></span> - <span class="max"></span> sq ft&#41;</p>
+
+												<div class="price-slider" data-min="0" data-max="500" data-start="50" data-stop="200" data-step="10"></div>
+
+												<div class="price-limits clearfix">
+													<span class="lower">1</span>
+													<span class="upper">500</span>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- Advanced Filters Filters -->
+						<div class="advanced-filters">
+							<h2 class="filters-header"><a href="#">Advanced search <i class="icon"></i></a></h2>
+
+							<div class="row">
+								<div class="col-lg-16 col-lg-offset-4 col-md-18 col-md-offset-4">
+									<div class="filters-body">
+										<div class="check-option">
+											<label>
+												<input type="checkbox" name="parking" />
+												<span>Parking</span>
+											</label>
+										</div>
+
+										<div class="check-option">
+											<label>
+												<input type="checkbox" name="air-conditioning" />
+												<span>Air conditioning</span>
+											</label>
+										</div>
+
+										<div class="check-option">
+											<label>
+												<input type="checkbox" name="swimming-pool" />
+												<span>Swimming pool</span>
+											</label>
+										</div>
+
+										<div class="check-option">
+											<label>
+												<input type="checkbox" name="close-to-school" />
+												<span>Close to school</span>
+											</label>
+										</div>
+
+										<div class="check-option">
+											<label>
+												<input type="checkbox" name="balcony" />
+												<span>Balcony</span>
+											</label>
+										</div>
+
+										<div class="check-option">
+											<label>
+												<input type="checkbox" name="solar-heat" />
+												<span>Solar heat</span>
+											</label>
+										</div>
+
+										<div class="check-option">
+											<label>
+												<input type="checkbox" name="wine-cellar" />
+												<span>Wine cellar</span>
+											</label>
+										</div>
+
+										<div class="check-option">
+											<label>
+												<input type="checkbox" name="night-bar" />
+												<span>Night Bar</span>
+											</label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="action">
+							<a href="#" class="button theme-button-2">Find property</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Properties Section -->
+			<section class="properties-section">
+				<div class="container">
+					<div class="section-filter clearfix">
+						<!-- Grid type -->
+						<div class="grid-type">
+							<span class="option option-grid">Grid</span>
+							<div class="type-slider option-grid left">
+								<span></span>
+							</div>
+							<span class="option option-list">List</span>
+						</div>
+
+						<!-- Sorting Options -->
+						<div class="sorting-options">
+							<div class="select-box type-2">
+								<input class="js-input no-select" type="text" readonly value="" placeholder="Sort by" />
+								<ul>
+									<li>Price</li>
+									<li>Area</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+					<div class="row row-fit-10 loader-container">
+						<div class="main-loader properties-loader">
+							<div class="spinner">
+								<div class="spinner-container container1">
+									<div class="circle1"></div>
+									<div class="circle2"></div>
+									<div class="circle3"></div>
+									<div class="circle4"></div>
+								</div>
+								<div class="spinner-container container2">
+									<div class="circle1"></div>
+									<div class="circle2"></div>
+									<div class="circle3"></div>
+									<div class="circle4"></div>
+								</div>
+								<div class="spinner-container container3">
+									<div class="circle1"></div>
+									<div class="circle2"></div>
+									<div class="circle3"></div>
+									<div class="circle4"></div>
+								</div>
+							</div>
+						</div>
+
+						<div class="ajax-target">
+							<div class="col-md-8 col-sm-12">
+								<div class="most-viewed-item">
+									<div class="item-cover">
+										<div class="cover">
+											<div class="text">
+												<a href="single.html">Info</a>
+												<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis. In auctor eu quam sit amet</p>
+											</div>
+										</div>
+										<img src="img/most-viewed-1.jpg" alt="item cover" />
+									</div>
+
+									<div class="item-body">
+										<ul class="services">
+											<li><p class="bathrooms">Bathrooms: <span>1</span></p></li>
+											<li><p class="bedrooms">Bedrooms: <span>2</span></p></li>
+											<li><p class="area">Area: <span>100</span></p></li>
+										</ul>
+
+										<div class="location">
+											<h3>
+												<a href="single.html">Grand hotel room</a>
+											</h3>
+											<p>LA 325</p>
+
+											<span class="price">$450 000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-8 col-sm-12">
+								<div class="most-viewed-item">
+									<div class="item-cover">
+										<div class="cover">
+											<div class="text">
+												<a href="single.html">Info</a>
+												<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis. In auctor eu quam sit amet</p>
+											</div>
+										</div>
+										<img src="img/most-viewed-2.jpg" alt="item cover" />
+									</div>
+
+									<div class="item-body">
+										<ul class="services">
+											<li><p class="bathrooms">Bathrooms: <span>1</span></p></li>
+											<li><p class="bedrooms">Bedrooms: <span>2</span></p></li>
+											<li><p class="area">Area: <span>100</span></p></li>
+										</ul>
+
+										<div class="location">
+											<h3>
+												<a href="single.html">Grand hotel room</a>
+											</h3>
+											<p>LA 325</p>
+
+											<span class="price">$450 000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-8 col-sm-12">
+								<div class="most-viewed-item">
+									<div class="item-cover">
+										<div class="cover">
+											<div class="text">
+												<a href="single.html">Info</a>
+												<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis. In auctor eu quam sit amet</p>
+											</div>
+										</div>
+										<img src="img/most-viewed-3.jpg" alt="item cover" />
+									</div>
+
+									<div class="item-body">
+										<ul class="services">
+											<li><p class="bathrooms">Bathrooms: <span>1</span></p></li>
+											<li><p class="bedrooms">Bedrooms: <span>2</span></p></li>
+											<li><p class="area">Area: <span>100</span></p></li>
+										</ul>
+
+										<div class="location">
+											<h3>
+												<a href="single.html">Grand hotel room</a>
+											</h3>
+											<p>LA 325</p>
+
+											<span class="price">$450 000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-8 col-sm-12">
+								<div class="most-viewed-item">
+									<div class="item-cover">
+										<div class="cover">
+											<div class="text">
+												<a href="single.html">Info</a>
+												<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis. In auctor eu quam sit amet</p>
+											</div>
+										</div>
+										<img src="img/most-viewed-4.jpg" alt="item cover" />
+									</div>
+
+									<div class="item-body">
+										<ul class="services">
+											<li><p class="bathrooms">Bathrooms: <span>1</span></p></li>
+											<li><p class="bedrooms">Bedrooms: <span>2</span></p></li>
+											<li><p class="area">Area: <span>100</span></p></li>
+										</ul>
+
+										<div class="location">
+											<h3>
+												<a href="single.html">Grand hotel room</a>
+											</h3>
+											<p>LA 325</p>
+
+											<span class="price">$450 000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-8 col-sm-12">
+								<div class="most-viewed-item">
+									<div class="item-cover">
+										<div class="cover">
+											<div class="text">
+												<a href="single.html">Info</a>
+												<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis. In auctor eu quam sit amet</p>
+											</div>
+										</div>
+										<img src="img/most-viewed-5.jpg" alt="item cover" />
+									</div>
+
+									<div class="item-body">
+										<ul class="services">
+											<li><p class="bathrooms">Bathrooms: <span>1</span></p></li>
+											<li><p class="bedrooms">Bedrooms: <span>2</span></p></li>
+											<li><p class="area">Area: <span>100</span></p></li>
+										</ul>
+
+										<div class="location">
+											<h3>
+												<a href="single.html">Grand hotel room</a>
+											</h3>
+											<p>LA 325</p>
+
+											<span class="price">$450 000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-8 col-sm-12">
+								<div class="most-viewed-item">
+									<div class="item-cover">
+										<div class="cover">
+											<div class="text">
+												<a href="single.html">Info</a>
+												<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis. In auctor eu quam sit amet</p>
+											</div>
+										</div>
+										<img src="img/most-viewed-6.jpg" alt="item cover" />
+									</div>
+
+									<div class="item-body">
+										<ul class="services">
+											<li><p class="bathrooms">Bathrooms: <span>1</span></p></li>
+											<li><p class="bedrooms">Bedrooms: <span>2</span></p></li>
+											<li><p class="area">Area: <span>100</span></p></li>
+										</ul>
+
+										<div class="location">
+											<h3>
+												<a href="single.html">Grand hotel room</a>
+											</h3>
+											<p>LA 325</p>
+
+											<span class="price">$450 000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-8 col-sm-12">
+								<div class="most-viewed-item">
+									<div class="item-cover">
+										<div class="cover">
+											<div class="text">
+												<a href="single.html">Info</a>
+												<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis. In auctor eu quam sit amet</p>
+											</div>
+										</div>
+										<img src="img/most-viewed-1.jpg" alt="item cover" />
+									</div>
+
+									<div class="item-body">
+										<ul class="services">
+											<li><p class="bathrooms">Bathrooms: <span>1</span></p></li>
+											<li><p class="bedrooms">Bedrooms: <span>2</span></p></li>
+											<li><p class="area">Area: <span>100</span></p></li>
+										</ul>
+
+										<div class="location">
+											<h3>
+												<a href="single.html">Grand hotel room</a>
+											</h3>
+											<p>LA 325</p>
+
+											<span class="price">$450 000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-8 col-sm-12">
+								<div class="most-viewed-item">
+									<div class="item-cover">
+										<div class="cover">
+											<div class="text">
+												<a href="single.html">Info</a>
+												<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis. In auctor eu quam sit amet</p>
+											</div>
+										</div>
+										<img src="img/most-viewed-2.jpg" alt="item cover" />
+									</div>
+
+									<div class="item-body">
+										<ul class="services">
+											<li><p class="bathrooms">Bathrooms: <span>1</span></p></li>
+											<li><p class="bedrooms">Bedrooms: <span>2</span></p></li>
+											<li><p class="area">Area: <span>100</span></p></li>
+										</ul>
+
+										<div class="location">
+											<h3>
+												<a href="single.html">Grand hotel room</a>
+											</h3>
+											<p>LA 325</p>
+
+											<span class="price">$450 000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-8 col-sm-12">
+								<div class="most-viewed-item">
+									<div class="item-cover">
+										<div class="cover">
+											<div class="text">
+												<a href="single.html">Info</a>
+												<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis. In auctor eu quam sit amet</p>
+											</div>
+										</div>
+										<img src="img/most-viewed-3.jpg" alt="item cover" />
+									</div>
+
+									<div class="item-body">
+										<ul class="services">
+											<li><p class="bathrooms">Bathrooms: <span>1</span></p></li>
+											<li><p class="bedrooms">Bedrooms: <span>2</span></p></li>
+											<li><p class="area">Area: <span>100</span></p></li>
+										</ul>
+
+										<div class="location">
+											<h3>
+												<a href="single.html">Grand hotel room</a>
+											</h3>
+											<p>LA 325</p>
+
+											<span class="price">$450 000</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- Pagination -->
+					<ul class="page-numbers">
+						<li>
+							<a href="#" class="page-numbers">1</a>
+						</li>
+						<li>
+							<a href="#" class="page-numbers">2</a>
+						</li>
+						<li>
+							<span class="page-numbers current">3</span>
+						</li>
+						<li>
+							<a href="#" class="page-numbers next">Next</a>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="footer-widgets">
+					<div class="row">
+						<div class="col-md-9">
+							<div class="footer-widget widget_info">
+								<div class="widget-body">
+									<img src="img/logo.png" alt="realtor logo" />
+
+									<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies, turpis ipsum ultrices massa, vitae pulvinar nibh erat</p>
+
+									<ul class="social-block">
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-9">
+							<div class="footer-widget widget_most_viewed">
+								<h4 class="widget-title">Most viewed</h4>
+
+								<div class="widget-body">
+									<div class="most-viewed-property">
+										<div class="image">
+											<a href="single.html">
+												<img src="img/most-viewed-prop-1.jpg" alt="most viewed" />
+											</a>
+										</div>
+										<h2><a href="single.html">Grand hotel</a></h2>
+										<p class="price">$450</p>
+										<ul class="rating">
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+
+									<div class="most-viewed-property">
+										<div class="image">
+											<a href="single.html">
+												<img src="img/most-viewed-prop-2.jpg" alt="most viewed" />
+											</a>
+										</div>
+										<h2><a href="single.html">Golden vip room</a></h2>
+										<p class="price">$450</p>
+										<ul class="rating">
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+
+									<div class="most-viewed-property">
+										<div class="image">
+											<a href="single.html">
+												<img src="img/most-viewed-prop-1.jpg" alt="most viewed" />
+											</a>
+										</div>
+										<h2><a href="single.html">Grand hotel</a></h2>
+										<p class="price">$450</p>
+										<ul class="rating">
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+
+									<div class="most-viewed-property">
+										<div class="image">
+											<a href="single.html">
+												<img src="img/most-viewed-prop-2.jpg" alt="most viewed" />
+											</a>
+										</div>
+										<h2><a href="single.html">Golden vip room</a></h2>
+										<p class="price">$450</p>
+										<ul class="rating">
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="footer-widget widget_contact">
+								<h4 class="widget-title">Contact info</h4>
+
+								<div class="widget-body">
+									<ul class="contact-info">
+										<li class="phone">
+											<p>012 125 856 587</p>
+										</li>
+										<li class="mail">
+											<p><a href="#">Info@realtor.com</a></p>
+										</li>
+										<li class="location">
+											<p>Realtor office<br />22 Pink Road<br />Holliday city, La 2211</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="copyrigts">
+					<p>Copyrights 2015. Designed by <a href="https://www.teslathemes.com" target="blank">TeslaThemes</a></p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/infobox.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/bxslider.js"></script>
+	<script src="js/marquee.js"></script>
+	<script src="js/nouislider.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/imagesloaded.js"></script>
+	<script src="js/smooth-scroll.js"></script>
+	<script src="js/owl-carousel.js"></script>
+	<script src="js/isotope.js"></script>
+	<script src="js/theia.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script src="js/options.js"></script>
+</body>
+</html>

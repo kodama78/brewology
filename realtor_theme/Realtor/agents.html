@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>Realtor</title>
+    <meta name="description" content="Here goes description" />
+    <meta name="author" content="author name" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/bxslider.css" />
+    <link rel="stylesheet" href="css/nouislider.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+</head>
+<body data-smooth-scroll="on">
+
+	<!-- Page Wrapper -->
+	<div id="page">
+		<!-- Header -->
+		<header>
+			<!-- Navigation -->
+			<nav>
+				<ul>
+					<li class="home current-menu-item"><a href="my-profile.html">Home</a></li>
+					<li class="listing menu-item-has-children">
+						<a href="#">Listing</a>
+						<ul class="sub-menu">
+							<li><a href="properties-grid.html">Grid</a></li>
+							<li><a href="properties-list.html">List</a></li>
+						</ul>
+					</li>
+					<li class="property"><a href="single-full-width.html">Property</a></li>
+					<li class="agents"><a href="agents.html">Agents</a></li>
+					<li class="blog"><a href="blog.html">Blog</a></li>
+					<li class="error"><a href="404.html">404 Page</a></li>
+				</ul>
+			</nav>
+
+			<!-- Social Block & Login -->
+			<div class="right-block">
+				<ul class="social-block">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+				</ul>
+
+				<p><a class="login" href="#">Login</a> / <a href="#" class="register">Register</a></p>
+			</div>
+
+			<!-- Menu Toggle -->
+			<span class="menu-toggle cmn-toggle-switch cmn-toggle-switch__htx">
+				<span>toggle menu</span>
+			</span>
+
+			<!-- Identity image -->
+			<a href="index.html" class="brand">
+				<img src="img/logo.png" alt="logo" />
+			</a>
+		</header>
+
+		<!-- Main Content -->
+		<div class="content-wrapper">
+			<!-- Login Form -->
+			<div class="login-form-popup">
+				<div class="login-form" id="login-popup">
+					<div class="brand-wrapper">
+						<img src="img/brand.png" alt="login brand" />
+					</div>
+
+					<form id="login-form">
+						<input class="js-input" type="text" placeholder="Login" />
+						<input class="js-input" type="password" placeholder="Password" />
+
+						<input type="submit" value="Login" class="submit-button" />
+
+						<div class="options">
+							<label>
+								<input type="checkbox" />
+								<span>Remember me</span>
+							</label>
+							<a class="remember-password" href="#">Forgotten the password</a>
+						</div>
+					</form>
+
+					<form id="register-form">
+						<input class="js-input" type="text" placeholder="First Name" />
+						<input class="js-input" type="text" placeholder="Last Name" />
+						<input class="js-input" type="text" placeholder="Login" />
+						<input class="js-input" type="password" placeholder="Password" />
+						<input class="js-input" type="password" placeholder="Confirm password" />
+
+						<input type="submit" value="Register" class="submit-button" />
+					</form>
+
+					<div class="sign-in-options">
+						<span>Sign in</span>
+						<a class="facebook" href="my-profile.html">Facebook</a>
+						<a class="google" href="my-profile.html">Google</a>
+					</div>
+
+					<p class="register-link"><i>Don't have an account?</i> <a href="#" class="register-btn">Register here</a></p>
+				</div>
+			</div>
+			
+			<!-- Agents Section -->
+			<section class="agents-section has-padding">
+				<div class="container">
+					<div class="section-header">
+						<h1>Our agents</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec viverra erat. Aenean elit tellus mattis quis maximus et malesuada congue velit</p>
+					</div>
+
+					<div class="row row-fit-10">
+						<div class="col-md-12">
+							<div class="agent fully-styled">
+								<div class="image">
+									<a href="agent.html">
+										<img src="img/agent-2.jpg" alt="agent photo" />
+									</a>
+								</div>
+
+								<h3><a href="agent.html">Elias Doe</a></h3>
+								<p class="position">agent</p>
+
+								<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>
+
+								<ul class="social-block">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="agent fully-styled">
+								<div class="image">
+									<a href="agent.html">
+										<img src="img/agent-1.jpg" alt="agent photo" />
+									</a>
+								</div>
+
+								<h3><a href="agent.html">John Doe</a></h3>
+								<p class="position">agent</p>
+
+								<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>
+
+								<ul class="social-block">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="agent fully-styled">
+								<div class="image">
+									<a href="agent.html">
+										<img src="img/agent-3.jpg" alt="agent photo" />
+									</a>
+								</div>
+
+								<h3><a href="agent.html">Carl Doe</a></h3>
+								<p class="position">agent</p>
+
+								<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>
+
+								<ul class="social-block">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="agent fully-styled">
+								<div class="image">
+									<a href="agent.html">
+										<img src="img/agent-4.jpg" alt="agent photo" />
+									</a>
+								</div>
+
+								<h3><a href="agent.html">Frank Doe</a></h3>
+								<p class="position">agent</p>
+
+								<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>
+
+								<ul class="social-block">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="agent fully-styled">
+								<div class="image">
+									<a href="agent.html">
+										<img src="img/agent-5.jpg" alt="agent photo" />
+									</a>
+								</div>
+
+								<h3><a href="agent.html">Caleb Doe</a></h3>
+								<p class="position">agent</p>
+
+								<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>
+
+								<ul class="social-block">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="agent fully-styled">
+								<div class="image">
+									<a href="agent.html">
+										<img src="img/agent-6.jpg" alt="agent photo" />
+									</a>
+								</div>
+
+								<h3><a href="agent.html">John Doe</a></h3>
+								<p class="position">agent</p>
+
+								<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>
+
+								<ul class="social-block">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+								</ul>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="agent fully-styled">
+								<div class="image">
+									<a href="agent.html">
+										<img src="img/agent-7.jpg" alt="agent photo" />
+									</a>
+								</div>
+
+								<h3><a href="agent.html">Carl Doe</a></h3>
+								<p class="position">agent</p>
+
+								<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>
+
+								<ul class="social-block">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+								</ul>
+							</div>
+						</div>
+						
+						<div class="col-md-12">
+							<div class="agent fully-styled">
+								<div class="image">
+									<a href="agent.html">
+										<img src="img/agent-8.jpg" alt="agent photo" />
+									</a>
+								</div>
+
+								<h3><a href="agent.html">Elias Doe</a></h3>
+								<p class="position">agent</p>
+
+								<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>
+
+								<ul class="social-block">
+									<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+									<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+									<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Most viewed Section -->
+			<section class="most-viewed-section">
+				<div class="container">
+					<div class="section-header">
+						<h1>Most viewed</h1>
+						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec viverra erat. Aenean elit tellus mattis quis maximus et malesuada congue velit</p>
+					</div>
+
+					<ul class="most-viewed-carousel most-viewed-items">
+						<li class="item">
+							<div class="most-viewed-item">
+								<div class="item-cover">
+									<div class="cover">
+										<div class="text">
+											<a href="single.html">Info</a>
+											<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis. In auctor eu quam sit amet</p>
+										</div>
+									</div>
+									<img src="img/most-viewed-1.jpg" alt="item cover" />
+								</div>
+
+								<div class="item-body">
+									<ul class="services">
+										<li><p class="bathrooms">Bathrooms: <span>1</span></p></li>
+										<li><p class="bedrooms">Bedrooms: <span>2</span></p></li>
+										<li><p class="area">Area: <span>100</span></p></li>
+									</ul>
+
+									<div class="location">
+										<h3>
+											<a href="single.html">Grand hotel room</a>
+										</h3>
+										<p>LA 325</p>
+
+										<span class="price">$450 000</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="item">
+							<div class="most-viewed-item">
+								<div class="item-cover">
+									<div class="cover">
+										<div class="text">
+											<a href="single.html">Info</a>
+											<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis. In auctor eu quam sit amet</p>
+										</div>
+									</div>
+									<img src="img/most-viewed-4.jpg" alt="item cover" />
+								</div>
+
+								<div class="item-body">
+									<ul class="services">
+										<li><p class="bathrooms">Bathrooms: <span>1</span></p></li>
+										<li><p class="bedrooms">Bedrooms: <span>2</span></p></li>
+										<li><p class="area">Area: <span>100</span></p></li>
+									</ul>
+
+									<div class="location">
+										<h3>
+											<a href="single.html">Grand hotel room</a>
+										</h3>
+										<p>LA 325</p>
+
+										<span class="price">$450 000</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="item">
+							<div class="most-viewed-item">
+								<div class="item-cover">
+									<div class="cover">
+										<div class="text">
+											<a href="single.html">Info</a>
+											<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis. In auctor eu quam sit amet</p>
+										</div>
+									</div>
+									<img src="img/most-viewed-5.jpg" alt="item cover" />
+								</div>
+
+								<div class="item-body">
+									<ul class="services">
+										<li><p class="bathrooms">Bathrooms: <span>1</span></p></li>
+										<li><p class="bedrooms">Bedrooms: <span>2</span></p></li>
+										<li><p class="area">Area: <span>100</span></p></li>
+									</ul>
+
+									<div class="location">
+										<h3>
+											<a href="single.html">Grand hotel room</a>
+										</h3>
+										<p>LA 325</p>
+
+										<span class="price">$450 000</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="item">
+							<div class="most-viewed-item">
+								<div class="item-cover">
+									<div class="cover">
+										<div class="text">
+											<a href="single.html">Info</a>
+											<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis. In auctor eu quam sit amet</p>
+										</div>
+									</div>
+									<img src="img/most-viewed-3.jpg" alt="item cover" />
+								</div>
+
+								<div class="item-body">
+									<ul class="services">
+										<li><p class="bathrooms">Bathrooms: <span>1</span></p></li>
+										<li><p class="bedrooms">Bedrooms: <span>2</span></p></li>
+										<li><p class="area">Area: <span>100</span></p></li>
+									</ul>
+
+									<div class="location">
+										<h3>
+											<a href="single.html">Grand hotel room</a>
+										</h3>
+										<p>LA 325</p>
+
+										<span class="price">$450 000</span>
+									</div>
+								</div>
+							</div>
+						</li>
+
+						<li class="item">
+							<div class="most-viewed-item">
+								<div class="item-cover">
+									<div class="cover">
+										<div class="text">
+											<a href="single.html">Info</a>
+											<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis. In auctor eu quam sit amet</p>
+										</div>
+									</div>
+									<img src="img/most-viewed-1.jpg" alt="item cover" />
+								</div>
+
+								<div class="item-body">
+									<ul class="services">
+										<li><p class="bathrooms">Bathrooms: <span>1</span></p></li>
+										<li><p class="bedrooms">Bedrooms: <span>2</span></p></li>
+										<li><p class="area">Area: <span>100</span></p></li>
+									</ul>
+
+									<div class="location">
+										<h3>
+											<a href="single.html">Grand hotel room</a>
+										</h3>
+										<p>LA 325</p>
+
+										<span class="price">$450 000</span>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="footer-widgets">
+					<div class="row">
+						<div class="col-md-9">
+							<div class="footer-widget widget_info">
+								<div class="widget-body">
+									<img src="img/logo.png" alt="realtor logo" />
+
+									<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies, turpis ipsum ultrices massa, vitae pulvinar nibh erat</p>
+
+									<ul class="social-block">
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-9">
+							<div class="footer-widget widget_most_viewed">
+								<h4 class="widget-title">Most viewed</h4>
+
+								<div class="widget-body">
+									<div class="most-viewed-property">
+										<div class="image">
+											<a href="single.html">
+												<img src="img/most-viewed-prop-1.jpg" alt="most viewed" />
+											</a>
+										</div>
+										<h2><a href="single.html">Grand hotel</a></h2>
+										<p class="price">$450</p>
+										<ul class="rating">
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+
+									<div class="most-viewed-property">
+										<div class="image">
+											<a href="single.html">
+												<img src="img/most-viewed-prop-2.jpg" alt="most viewed" />
+											</a>
+										</div>
+										<h2><a href="single.html">Golden vip room</a></h2>
+										<p class="price">$450</p>
+										<ul class="rating">
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+
+									<div class="most-viewed-property">
+										<div class="image">
+											<a href="single.html">
+												<img src="img/most-viewed-prop-1.jpg" alt="most viewed" />
+											</a>
+										</div>
+										<h2><a href="single.html">Grand hotel</a></h2>
+										<p class="price">$450</p>
+										<ul class="rating">
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+
+									<div class="most-viewed-property">
+										<div class="image">
+											<a href="single.html">
+												<img src="img/most-viewed-prop-2.jpg" alt="most viewed" />
+											</a>
+										</div>
+										<h2><a href="single.html">Golden vip room</a></h2>
+										<p class="price">$450</p>
+										<ul class="rating">
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="footer-widget widget_contact">
+								<h4 class="widget-title">Contact info</h4>
+
+								<div class="widget-body">
+									<ul class="contact-info">
+										<li class="phone">
+											<p>012 125 856 587</p>
+										</li>
+										<li class="mail">
+											<p><a href="#">Info@realtor.com</a></p>
+										</li>
+										<li class="location">
+											<p>Realtor office<br />22 Pink Road<br />Holliday city, La 2211</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="copyrigts">
+					<p>Copyrights 2015. Designed by <a href="https://www.teslathemes.com" target="blank">TeslaThemes</a></p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/infobox.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/bxslider.js"></script>
+	<script src="js/marquee.js"></script>
+	<script src="js/nouislider.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/imagesloaded.js"></script>
+	<script src="js/smooth-scroll.js"></script>
+	<script src="js/owl-carousel.js"></script>
+	<script src="js/isotope.js"></script>
+	<script src="js/theia.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script src="js/options.js"></script>
+</body>
+</html>

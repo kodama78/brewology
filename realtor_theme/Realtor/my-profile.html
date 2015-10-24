@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8" />
+    <title>Realtor</title>
+    <meta name="description" content="Here goes description" />
+    <meta name="author" content="author name" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
+
+    <!-- Mobile Specific Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="css/owl-carousel.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <link rel="stylesheet" href="css/lightbox.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/bxslider.css" />
+    <link rel="stylesheet" href="css/nouislider.css" />
+    <link rel="stylesheet" href="css/icomoon.css" />
+    <link rel="stylesheet" href="css/screen.css" />
+</head>
+<body data-smooth-scroll="on">
+
+	<!-- Page Wrapper -->
+	<div id="page">
+		<!-- Header -->
+		<header>
+			<!-- Navigation -->
+			<nav>
+				<ul>
+					<li class="home current-menu-item"><a href="my-profile.html">Home</a></li>
+					<li class="listing menu-item-has-children">
+						<a href="#">Listing</a>
+						<ul class="sub-menu">
+							<li><a href="properties-grid.html">Grid</a></li>
+							<li><a href="properties-list.html">List</a></li>
+						</ul>
+					</li>
+					<li class="property"><a href="single-full-width.html">Property</a></li>
+					<li class="agents"><a href="agents.html">Agents</a></li>
+					<li class="blog"><a href="blog.html">Blog</a></li>
+					<li class="error"><a href="404.html">404 Page</a></li>
+				</ul>
+			</nav>
+
+			<!-- Social Block & Login -->
+			<div class="right-block">
+				<div class="account-options">
+					<div class="main-info">
+						<img src="img/profile-avatar.jpg" alt="profile avatar" />
+
+						<span class="username">John Doe</span>
+					</div>
+
+					<ul class="list">
+						<li><a class="profile" href="#profile">My profile</a></li>
+						<li><a class="submit-new" href="#submit">Submit new property</a></li>
+						<li><a class="properties" href="#properties">My properties</a></li>
+						<li><a class="exit" href="index.html">Exit</a></li>
+					</ul>
+				</div>
+				
+				<ul class="social-block">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+				</ul>
+			</div>
+
+			<!-- Menu Toggle -->
+			<span class="menu-toggle cmn-toggle-switch cmn-toggle-switch__htx">
+				<span>toggle menu</span>
+			</span>
+
+			<!-- Identity image -->
+			<a href="index.html" class="brand">
+				<img src="img/logo.png" alt="logo" />
+			</a>
+		</header>
+
+		<!-- Main Content -->
+		<div class="content-wrapper">
+			<!-- User Account Section -->
+			<section class="user-account-section">
+				<div class="container">
+					<div class="user-account-tabs">
+						<!-- Menu Controlls -->
+						<ul class="heading">
+							<li><a class="profile" href="#profile"><span>My Profile</span></a></li>
+							<li><a class="submit" href="#submit"><span>Submit new property</span></a></li>
+							<li><a class="properties" href="#properties"><span>My Properties</span></a></li>
+						</ul>
+
+						<!-- Body -->
+						<div class="tabs-body">
+							<div class="main-loader">
+								<div class="spinner">
+									<div class="spinner-container container1">
+										<div class="circle1"></div>
+										<div class="circle2"></div>
+										<div class="circle3"></div>
+										<div class="circle4"></div>
+									</div>
+									<div class="spinner-container container2">
+										<div class="circle1"></div>
+										<div class="circle2"></div>
+										<div class="circle3"></div>
+										<div class="circle4"></div>
+									</div>
+									<div class="spinner-container container3">
+										<div class="circle1"></div>
+										<div class="circle2"></div>
+										<div class="circle3"></div>
+										<div class="circle4"></div>
+									</div>
+								</div>
+							</div>
+
+							<div id="profile">
+								<form class="update-form">
+									<div class="row">
+										<div class="col-md-11">
+											<input type="text" class="js-input" placeholder="Enter your First Name" />
+											<input type="text" class="js-input" placeholder="Enter your Last Name" />
+											<input type="text" class="js-input" placeholder="Enter your Username" />
+											<input type="text" class="js-input" placeholder="Enter your Email" />
+
+											<div class="row row-fit-10">
+												<div class="col-sm-12">
+													<input type="text" class="js-input" placeholder="Password" />
+												</div>
+												<div class="col-sm-12">
+													<input type="text" class="js-input" placeholder="Repeat the password" />
+												</div>
+											</div>
+										</div>
+										<div class="col-md-10 col-md-offset-1">
+											<div class="photo-upload">
+												<a href="#" class="upload-btn">
+													<i class="icon icon-folder4"></i>
+												</a>
+												<img src="img/profile-avatar.jpg" alt="user photo" />
+
+												<br />
+												<a class="upload-link" href="#">Add your photo</a>
+											</div>
+										</div>
+									</div>
+
+									<p>Profile Information</p>
+									<div class="row row-fit-10">
+										<div class="col-sm-11">
+											<div class="row row-fit-10">
+												<div class="col-sm-12">
+													<div class="social-input phone">
+														<input type="text" class="js-input" placeholder="Phone" />
+													</div>
+													<div class="social-input facebook">
+														<input type="text" class="js-input social facebook" placeholder="Facebook" />
+													</div>
+												</div>
+												<div class="col-sm-12">
+													<div class="social-input skype">
+														<input type="text" class="js-input" placeholder="Skype" />
+													</div>
+													<div class="social-input twitter">
+														<input type="text" class="js-input" placeholder="Twitter" />
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-sm-13">
+											<textarea class="js-input" placeholder="Other information"></textarea>
+										</div>
+									</div>
+
+									<input class="update-btn" type="submit" value="Update your profile" />
+								</form>
+							</div>
+
+							<div id="submit">
+								<form class="submit-form">
+									<div class="row">
+										<div class="col-md-11">
+											<input type="text" class="js-input" placeholder="Tittle" />
+											<textarea class="js-input" placeholder="Description"></textarea>
+
+											<div class="coutry-select select-box type-2">
+												<input class="js-input no-select" type="text" readonly value="" placeholder="All countries" />
+												<ul>
+													<li>All countries</li>
+													<li>Albania</li>
+													<li>Andora</li>
+													<li>Bulgaria</li>
+													<li>Greece</li>
+													<li>Russia</li>
+													<li>USA</li>
+													<li>Moldova</li>
+												</ul>
+											</div>
+
+											<div class="city-select select-box type-2">
+												<input class="js-input no-select" type="text" readonly value="" placeholder="All cities" />
+												<ul>
+													<li>All cities</li>
+													<li>Tirana</li>
+													<li>Elbasan</li>
+													<li>Prats</li>
+													<li>Ransoal</li>
+													<li>Sofia</li>
+													<li>Varna</li>
+													<li>Athens</li>
+													<li>Volos</li>
+													<li>Moscow</li>
+													<li>NY</li>
+													<li>LA</li>
+													<li>Chisinau</li>
+												</ul>
+											</div>
+
+											<input type="text" class="js-input" placeholder="Address (street/ house/ ap.)" />
+
+											<div class="row row-fit-10">
+												<div class="col-sm-12">
+													<input type="text" class="js-input nr-only" placeholder="Price $" />
+												</div>
+												<div class="col-sm-12">
+													<input type="text" class="js-input nr-only" placeholder="Area (sq ft)" />
+												</div>
+											</div>
+										</div>
+										
+										<div class="col-md-13 col-lg-offset-1 col-lg-12">
+											<div class="photo-upload">
+												<a href="#" class="upload-btn">
+													<i class="icon icon-folder4"></i>
+												</a>
+												<img src="img/profile-avatar.jpg" alt="user photo" />
+
+												<br />
+												<a class="upload-link" href="#">Add your photo</a>
+											</div>
+
+											<div class="location-on-map">
+												<div class="map-canvas" id="location-map"></div>
+											</div>
+										</div>
+									</div>
+
+									<div class="row comodities">
+										<div class="col-md-11">
+											<div class="row">
+												<div class="filters">
+													<div class="col-sm-12">
+														<div class="select-filter">
+															<label>
+																<input type="radio" name="type-select" />
+																<span>For rent</span>
+															</label>
+														</div>
+
+														<div class="select-filter">
+															<label>
+																<input type="radio" name="type-select" />
+																<span>For Sale</span>
+															</label>
+														</div>	
+													</div>
+
+													<div class="col-sm-12">
+														<div class="nr-filter">
+															<p class="caption">Baths</p>
+															<div class="block">
+																<span class="action substract">-</span>
+																<input type="text" class="nr-only" value="1" />
+																<span class="action add">+</span>
+															</div>
+														</div>
+
+														<div class="nr-filter">
+															<p class="caption">Beds</p>
+															<div class="block">
+																<span class="action substract">-</span>
+																<input type="text" class="nr-only" value="1" />
+																<span class="action add">+</span>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="col-md-13">
+											<div class="check-option">
+												<label>
+													<input type="checkbox" name="parking" />
+													<span>Parking</span>
+												</label>
+											</div>
+
+											<div class="check-option">
+												<label>
+													<input type="checkbox" name="air-conditioning" />
+													<span>Air conditioning</span>
+												</label>
+											</div>
+
+											<div class="check-option">
+												<label>
+													<input type="checkbox" name="swimming-pool" />
+													<span>Swimming pool</span>
+												</label>
+											</div>
+
+											<div class="check-option">
+												<label>
+													<input type="checkbox" name="close-to-school" />
+													<span>Close to school</span>
+												</label>
+											</div>
+
+											<div class="check-option">
+												<label>
+													<input type="checkbox" name="balcony" />
+													<span>Balcony</span>
+												</label>
+											</div>
+
+											<div class="check-option">
+												<label>
+													<input type="checkbox" name="solar-heat" />
+													<span>Solar heat</span>
+												</label>
+											</div>
+
+											<div class="check-option">
+												<label>
+													<input type="checkbox" name="wine-cellar" />
+													<span>Wine cellar</span>
+												</label>
+											</div>
+
+											<div class="check-option">
+												<label>
+													<input type="checkbox" name="night-bar" />
+													<span>Night Bar</span>
+												</label>
+											</div>
+										</div>
+									</div>
+
+									<input class="button theme-button-2" type="submit" value="Submit your property" />
+								</form>
+							</div>
+
+							<div id="properties">
+								<div class="row row-fit-10">
+									<div class="col-lg-6 col-md-8 col-sm-12">
+										<div class="listing-item">
+											<div class="item-cover type-1">
+												<div class="cover">
+													<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis.</p>
+
+													<a href="single.html">
+														<i class="icon"></i>
+													</a>
+												</div>
+												<img src="img/my-properties-1.jpg" alt="item cover" />
+											</div>
+
+											<div class="item-body">
+												<div class="block services">
+													<p class="caption">Services</p>
+													<ul>
+														<li class="bathrooms">Bathrooms: <span>1</span></li>
+														<li class="bedrooms">Bedrooms: <span>2</span></li>
+														<li class="area">Area: <span>100</span></li>
+													</ul>
+												</div>
+
+												<div class="block location-info">
+													<div class="location">
+														<h3>
+															<a href="single-full-width.html">Grand hotel room</a>
+														</h3>
+														<p>LA 325</p>
+													</div>
+
+													<div class="price">
+														<p>$450 000 <span>For sale</span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-6 col-md-8 col-sm-12">
+										<div class="listing-item">
+											<div class="item-cover type-1">
+												<div class="cover">
+													<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis.</p>
+
+													<a href="single.html">
+														<i class="icon"></i>
+													</a>
+												</div>
+												<img src="img/my-properties-2.jpg" alt="item cover" />
+											</div>
+
+											<div class="item-body">
+												<div class="block services">
+													<p class="caption">Services</p>
+													<ul>
+														<li class="bathrooms">Bathrooms: <span>1</span></li>
+														<li class="bedrooms">Bedrooms: <span>2</span></li>
+														<li class="area">Area: <span>100</span></li>
+													</ul>
+												</div>
+
+												<div class="block location-info">
+													<div class="location">
+														<h3>
+															<a href="single-full-width.html">Grand hotel room</a>
+														</h3>
+														<p>LA 325</p>
+													</div>
+
+													<div class="price">
+														<p>$450 000 <span>For sale</span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-6 col-md-8 col-sm-12">
+										<div class="listing-item">
+											<div class="item-cover type-1">
+												<div class="cover">
+													<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis.</p>
+
+													<a href="single.html">
+														<i class="icon"></i>
+													</a>
+												</div>
+												<img src="img/my-properties-3.jpg" alt="item cover" />
+											</div>
+
+											<div class="item-body">
+												<div class="block services">
+													<p class="caption">Services</p>
+													<ul>
+														<li class="bathrooms">Bathrooms: <span>1</span></li>
+														<li class="bedrooms">Bedrooms: <span>2</span></li>
+														<li class="area">Area: <span>100</span></li>
+													</ul>
+												</div>
+
+												<div class="block location-info">
+													<div class="location">
+														<h3>
+															<a href="single-full-width.html">Grand hotel room</a>
+														</h3>
+														<p>LA 325</p>
+													</div>
+
+													<div class="price">
+														<p>$450 000 <span>For sale</span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-6 col-md-8 col-sm-12">
+										<div class="listing-item">
+											<div class="item-cover type-1">
+												<div class="cover">
+													<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis.</p>
+
+													<a href="single.html">
+														<i class="icon"></i>
+													</a>
+												</div>
+												<img src="img/my-properties-4.jpg" alt="item cover" />
+											</div>
+
+											<div class="item-body">
+												<div class="block services">
+													<p class="caption">Services</p>
+													<ul>
+														<li class="bathrooms">Bathrooms: <span>1</span></li>
+														<li class="bedrooms">Bedrooms: <span>2</span></li>
+														<li class="area">Area: <span>100</span></li>
+													</ul>
+												</div>
+
+												<div class="block location-info">
+													<div class="location">
+														<h3>
+															<a href="single-full-width.html">Grand hotel room</a>
+														</h3>
+														<p>LA 325</p>
+													</div>
+
+													<div class="price">
+														<p>$450 000 <span>For sale</span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-6 col-md-8 col-sm-12">
+										<div class="listing-item">
+											<div class="item-cover type-1">
+												<div class="cover">
+													<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis.</p>
+
+													<a href="single.html">
+														<i class="icon"></i>
+													</a>
+												</div>
+												<img src="img/my-properties-5.jpg" alt="item cover" />
+											</div>
+
+											<div class="item-body">
+												<div class="block services">
+													<p class="caption">Services</p>
+													<ul>
+														<li class="bathrooms">Bathrooms: <span>1</span></li>
+														<li class="bedrooms">Bedrooms: <span>2</span></li>
+														<li class="area">Area: <span>100</span></li>
+													</ul>
+												</div>
+
+												<div class="block location-info">
+													<div class="location">
+														<h3>
+															<a href="single-full-width.html">Grand hotel room</a>
+														</h3>
+														<p>LA 325</p>
+													</div>
+
+													<div class="price">
+														<p>$450 000 <span>For sale</span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-6 col-md-8 col-sm-12">
+										<div class="listing-item">
+											<div class="item-cover type-1">
+												<div class="cover">
+													<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis.</p>
+
+													<a href="single.html">
+														<i class="icon"></i>
+													</a>
+												</div>
+												<img src="img/my-properties-6.jpg" alt="item cover" />
+											</div>
+
+											<div class="item-body">
+												<div class="block services">
+													<p class="caption">Services</p>
+													<ul>
+														<li class="bathrooms">Bathrooms: <span>1</span></li>
+														<li class="bedrooms">Bedrooms: <span>2</span></li>
+														<li class="area">Area: <span>100</span></li>
+													</ul>
+												</div>
+
+												<div class="block location-info">
+													<div class="location">
+														<h3>
+															<a href="single-full-width.html">Grand hotel room</a>
+														</h3>
+														<p>LA 325</p>
+													</div>
+
+													<div class="price">
+														<p>$450 000 <span>For sale</span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-6 col-md-8 col-sm-12">
+										<div class="listing-item">
+											<div class="item-cover type-1">
+												<div class="cover">
+													<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis.</p>
+
+													<a href="single.html">
+														<i class="icon"></i>
+													</a>
+												</div>
+												<img src="img/my-properties-7.jpg" alt="item cover" />
+											</div>
+
+											<div class="item-body">
+												<div class="block services">
+													<p class="caption">Services</p>
+													<ul>
+														<li class="bathrooms">Bathrooms: <span>1</span></li>
+														<li class="bedrooms">Bedrooms: <span>2</span></li>
+														<li class="area">Area: <span>100</span></li>
+													</ul>
+												</div>
+
+												<div class="block location-info">
+													<div class="location">
+														<h3>
+															<a href="single-full-width.html">Grand hotel room</a>
+														</h3>
+														<p>LA 325</p>
+													</div>
+
+													<div class="price">
+														<p>$450 000 <span>For sale</span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-lg-6 col-md-8 col-sm-12">
+										<div class="listing-item">
+											<div class="item-cover type-1">
+												<div class="cover">
+													<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis.</p>
+
+													<a href="single.html">
+														<i class="icon"></i>
+													</a>
+												</div>
+												<img src="img/my-properties-8.jpg" alt="item cover" />
+											</div>
+
+											<div class="item-body">
+												<div class="block services">
+													<p class="caption">Services</p>
+													<ul>
+														<li class="bathrooms">Bathrooms: <span>1</span></li>
+														<li class="bedrooms">Bedrooms: <span>2</span></li>
+														<li class="area">Area: <span>100</span></li>
+													</ul>
+												</div>
+
+												<div class="block location-info">
+													<div class="location">
+														<h3>
+															<a href="single-full-width.html">Grand hotel room</a>
+														</h3>
+														<p>LA 325</p>
+													</div>
+
+													<div class="price">
+														<p>$450 000 <span>For sale</span></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+
+		<!-- Footer -->
+		<footer>
+			<div class="container">
+				<div class="footer-widgets">
+					<div class="row">
+						<div class="col-md-9">
+							<div class="footer-widget widget_info">
+								<div class="widget-body">
+									<img src="img/logo.png" alt="realtor logo" />
+
+									<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies, turpis ipsum ultrices massa, vitae pulvinar nibh erat</p>
+
+									<ul class="social-block">
+										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+										<li><a href="#"><i class="fa fa-youtube"></i></a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-9">
+							<div class="footer-widget widget_most_viewed">
+								<h4 class="widget-title">Most viewed</h4>
+
+								<div class="widget-body">
+									<div class="most-viewed-property">
+										<div class="image">
+											<a href="single.html">
+												<img src="img/most-viewed-prop-1.jpg" alt="most viewed" />
+											</a>
+										</div>
+										<h2><a href="single.html">Grand hotel</a></h2>
+										<p class="price">$450</p>
+										<ul class="rating">
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+
+									<div class="most-viewed-property">
+										<div class="image">
+											<a href="single.html">
+												<img src="img/most-viewed-prop-2.jpg" alt="most viewed" />
+											</a>
+										</div>
+										<h2><a href="single.html">Golden vip room</a></h2>
+										<p class="price">$450</p>
+										<ul class="rating">
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+
+									<div class="most-viewed-property">
+										<div class="image">
+											<a href="single.html">
+												<img src="img/most-viewed-prop-1.jpg" alt="most viewed" />
+											</a>
+										</div>
+										<h2><a href="single.html">Grand hotel</a></h2>
+										<p class="price">$450</p>
+										<ul class="rating">
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+											<li><i class="fa fa-star-o"></i></li>
+										</ul>
+									</div>
+
+									<div class="most-viewed-property">
+										<div class="image">
+											<a href="single.html">
+												<img src="img/most-viewed-prop-2.jpg" alt="most viewed" />
+											</a>
+										</div>
+										<h2><a href="single.html">Golden vip room</a></h2>
+										<p class="price">$450</p>
+										<ul class="rating">
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+											<li><i class="fa fa-star"></i></li>
+										</ul>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="footer-widget widget_contact">
+								<h4 class="widget-title">Contact info</h4>
+
+								<div class="widget-body">
+									<ul class="contact-info">
+										<li class="phone">
+											<p>012 125 856 587</p>
+										</li>
+										<li class="mail">
+											<p><a href="#">Info@realtor.com</a></p>
+										</li>
+										<li class="location">
+											<p>Realtor office<br />22 Pink Road<br />Holliday city, La 2211</p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="copyrigts">
+					<p>Copyrights 2015. Designed by <a href="https://www.teslathemes.com" target="blank">TeslaThemes</a></p>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Scripts -->
+	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script src="js/infobox.js"></script>
+	<script src="js/jquery.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/bxslider.js"></script>
+	<script src="js/marquee.js"></script>
+	<script src="js/nouislider.js"></script>
+	<script src="js/modernizr.js"></script>
+	<script src="js/imagesloaded.js"></script>
+	<script src="js/smooth-scroll.js"></script>
+	<script src="js/owl-carousel.js"></script>
+	<script src="js/isotope.js"></script>
+	<script src="js/theia.js"></script>
+	<script src="js/lightbox.js"></script>
+	<script src="js/options.js"></script>
+</body>
+</html>

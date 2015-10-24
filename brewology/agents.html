@@ -11,15 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/owl-carousel.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/lightbox.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/bxslider.css" />
-    <link rel="stylesheet" href="css/nouislider.css" />
-    <link rel="stylesheet" href="css/icomoon.css" />
-    <link rel="stylesheet" href="css/screen.css" />
+	<link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/theme_css/owl-carousel.css" />
+	<link rel="stylesheet" href="css/theme_css/bootstrap.css" />
+	<link rel="stylesheet" href="css/theme_css/lightbox.css" />
+	<link rel="stylesheet" href="css/theme_css/animate.css" />
+	<link rel="stylesheet" href="css/theme_css/bxslider.css" />
+	<link rel="stylesheet" href="css/theme_css/nouislider.css" />
+	<link rel="stylesheet" href="css/theme_css/icomoon.css" />
+	<link rel="stylesheet" href="css/theme_css/screen.css" />
 </head>
 <body data-smooth-scroll="on">
 
@@ -30,29 +30,29 @@
 			<!-- Navigation -->
 			<nav>
 				<ul>
-					<li class="home current-menu-item"><a href="my-profile.html">Home</a></li>
+					<li class="home current-menu-item"><a href="my-profile.php">Home</a></li>
 					<li class="listing menu-item-has-children">
-						<a href="#">Listing</a>
+						<a href="#">Favorite Breweries</a>
 						<ul class="sub-menu">
-							<li><a href="properties-grid.html">Grid</a></li>
-							<li><a href="properties-list.html">List</a></li>
+							<li><a href="properties-grid.php">Grid</a></li>
+							<li><a href="properties-list.php">List</a></li>
 						</ul>
 					</li>
-					<li class="property"><a href="single-full-width.html">Property</a></li>
-					<li class="agents"><a href="agents.html">Agents</a></li>
-					<li class="blog"><a href="blog.html">Blog</a></li>
-					<li class="error"><a href="404.html">404 Page</a></li>
+					<!--<li class="property"><a href="single-full-width.php">Single Brewery</a></li>-->
+					<!--<li class="agents"><a href="agents.php">Agents</a></li>-->
+					<!--<li class="blog"><a href="blog.php">Blog</a></li>-->
+					<!--<li class="error"><a href="404.php">404 Page</a></li>-->
 				</ul>
 			</nav>
 
 			<!-- Social Block & Login -->
 			<div class="right-block">
-				<ul class="social-block">
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-				</ul>
+				<!--<ul class="social-block">-->
+				<!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+				<!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+				<!--<li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
+				<!--<li><a href="#"><i class="fa fa-pinterest"></i></a></li>-->
+				<!--</ul>-->
 
 				<p><a class="login" href="#">Login</a> / <a href="#" class="register">Register</a></p>
 			</div>
@@ -63,7 +63,7 @@
 			</span>
 
 			<!-- Identity image -->
-			<a href="index.html" class="brand">
+			<a href="index.php" class="brand">
 				<img src="img/logo.png" alt="logo" />
 			</a>
 		</header>

@@ -11,15 +11,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <!-- Style CSS -->
-    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" />
-    <link rel="stylesheet" href="css/owl-carousel.css" />
-    <link rel="stylesheet" href="css/bootstrap.css" />
-    <link rel="stylesheet" href="css/lightbox.css" />
-    <link rel="stylesheet" href="css/animate.css" />
-    <link rel="stylesheet" href="css/bxslider.css" />
-    <link rel="stylesheet" href="css/nouislider.css" />
-    <link rel="stylesheet" href="css/icomoon.css" />
-    <link rel="stylesheet" href="css/screen.css" />
+	<link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.min.css" />
+	<link rel="stylesheet" href="css/theme_css/owl-carousel.css" />
+	<link rel="stylesheet" href="css/theme_css/bootstrap.css" />
+	<link rel="stylesheet" href="css/theme_css/lightbox.css" />
+	<link rel="stylesheet" href="css/theme_css/animate.css" />
+	<link rel="stylesheet" href="css/theme_css/bxslider.css" />
+	<link rel="stylesheet" href="css/theme_css/nouislider.css" />
+	<link rel="stylesheet" href="css/theme_css/icomoon.css" />
+	<link rel="stylesheet" href="css/theme_css/screen.css" />
 </head>
 <body data-smooth-scroll="on">
 
@@ -30,29 +30,29 @@
 			<!-- Navigation -->
 			<nav>
 				<ul>
-					<li class="home current-menu-item"><a href="my-profile.html">Home</a></li>
+					<li class="home current-menu-item"><a href="my-profile.php">Home</a></li>
 					<li class="listing menu-item-has-children">
-						<a href="#">Listing</a>
+						<a href="#">Favorite Breweries</a>
 						<ul class="sub-menu">
-							<li><a href="properties-grid.html">Grid</a></li>
-							<li><a href="properties-list.html">List</a></li>
+							<li><a href="properties-grid.php">Grid</a></li>
+							<li><a href="properties-list.php">List</a></li>
 						</ul>
 					</li>
-					<li class="property"><a href="single-full-width.html">Property</a></li>
-					<li class="agents"><a href="agents.html">Agents</a></li>
-					<li class="blog"><a href="blog.html">Blog</a></li>
-					<li class="error"><a href="404.html">404 Page</a></li>
+					<!--<li class="property"><a href="single-full-width.php">Single Brewery</a></li>-->
+					<!--<li class="agents"><a href="agents.php">Agents</a></li>-->
+					<!--<li class="blog"><a href="blog.php">Blog</a></li>-->
+					<!--<li class="error"><a href="404.php">404 Page</a></li>-->
 				</ul>
 			</nav>
 
 			<!-- Social Block & Login -->
 			<div class="right-block">
-				<ul class="social-block">
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-				</ul>
+				<!--<ul class="social-block">-->
+				<!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+				<!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+				<!--<li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
+				<!--<li><a href="#"><i class="fa fa-pinterest"></i></a></li>-->
+				<!--</ul>-->
 
 				<p><a class="login" href="#">Login</a> / <a href="#" class="register">Register</a></p>
 			</div>
@@ -63,7 +63,7 @@
 			</span>
 
 			<!-- Identity image -->
-			<a href="index.html" class="brand">
+			<a href="index.php" class="brand">
 				<img src="img/logo.png" alt="logo" />
 			</a>
 		</header>
@@ -117,133 +117,434 @@
 				<div class="row">
 					<div class="col-lg-16 col-md-17 blog-content-wrapper">
 						<div class="blog-content">
-							<div class="single-blogpost post-with-image">
-								<!-- Post Meta -->
-								<div class="post-meta">
-									<h2 class="post-title">Blogpost title</h2>
+							<div class="row row-fit-10">
+								<div class="col-md-12">
+									<div class="blog-post sticky post-with-image">
+										<div class="post-body">
+											<div class="blog-post-meta">
+												<div class="post-cover">
+													<a href="blogpost.html">
+														<img src="img/featured-post-1.jpg" alt="featured blogpost cover" />
+													</a>
+												</div>
 
-									<ul class="meta">
-										<li class="date">11.3</li>
-										<li class="comments">&#40;2&#41;</li>
-									</ul>
-								</div>
+												<div class="post-author">
+													<div class="image">
+														<img src="img/blog-author-1.jpg" alt="blog author" />
+													</div>
 
-								<!-- Post Cover -->
-								<div class="post-cover">
-									<img src="img/single-post-cover.jpg" alt="post cover" />
-								</div>
+													<p>Robert Doe</p>
+												</div>
+											</div>
+											<h2 class="post-title"><a href="blogpost.html">Blogpost 1</a></h2>
 
-								<!-- Post Body -->
-								<div class="post-body">
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et finibus sem. Aenean iaculis nisi a ipsum commodo sodales. Mauris vel placerat massa. Donec id dolor odio. Pellentesque viverra neque vel augue elementum aliquam. Aliquam erat volutpat. Aenean ipsum nisl, mattis vulputate velit vitae, finibus luctus libero. Vestibulum faucibus auctor consectetur. Vivamus sed hendrerit metus, nec auctor arcu. Morbi vestibulum lacus vitae massa pulvinar, at finibus tortor volutpat.Fusce vitae est lacus. Morbi id laoreet metus. Proin laoreet, velit sit amet condimentum gravida, orci nulla faucibus risus, at ultricies tellus eros a dui. Sed hendrerit orci eget libero vestibulum, et gravida augue malesuada. Nullam fermentum nec leo sed elementum. Aenean aliquet congue consectetur. Interdum et malesuada fames ac ante ipsum primis in</p>
+											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh.</p>
 
-									<blockquote>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et finibus sem. Aenean iaculis nisi a ipsum commodo sodales. Mauris vel placerat massa. Donec id dolor odio.</blockquote>
+											<div class="post-meta">
+												<ul class="meta">
+													<li class="date">11.3</li>
+													<li class="comments">&#40;2&#41;</li>
+												</ul>
 
-									<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris et finibus sem. Aenean iaculis nisi a ipsum commodo sodales. Mauris vel placerat massa. Donec id dolor odio. Pellentesque viverra neque vel augue elementum aliquam. Aliquam erat volutpat. Aenean ipsum nisl, mattis vulputate velit vitae, finibus luctus libero. Vestibulum faucibus auctor consectetur. Vivamus sed hendrerit metus, nec auctor arcu. Morbi vestibulum lacus vitae massa pulvinar, at finibus tortor volutpat.Fusce vitae est lacus. Morbi id laoreet metus. Proin laoreet, velit sit amet condimentum gravida, orci nulla faucibus risus, at ultricies tellus eros a dui. Sed hendrerit orci eget libero vestibulu</p>
-
-									<!-- Tags -->
-									<div class="tags">
-										<p>Tags: <a href="#">Realtor</a>, <a href="#">Home</a>, <a href="#">beautifull</a>, <a href="#">popular</a></p>
-									</div>
-
-									<!-- Social Block -->
-									<div class="share-block">
-										<ul>
-											<li>
-												<a href="#"><i class="fa fa-pinterest"></i></a>
-											</li>
-											<li>
-												<a href="#"><i class="fa fa-instagram"></i></a>
-											</li>
-											<li>
-												<a href="#"><i class="fa fa-facebook"></i></a>
-											</li>
-											<li>
-												<a href="#"><i class="fa fa-twitter"></i></a>
-											</li>
-										</ul>
-									</div>
-
-									<!-- Author -->
-									<div class="post-author">
-										<h4>About author</h4>
-										<div class="author">
-											<img src="img/blog-author-3.jpg" alt="author avatar" />
-											<p>Roberta Doe</p>
+												<a class="post-link" href="blogpost.html">Read More</a>
+											</div>
 										</div>
+									</div>
+								</div>
 
-										<p>Quisque tristique sapien enim, sit amet aliquam mi mollis et. Proin at turpis vel libero cursus ullamcorper sit amet luctus quam. Vestibulum dictum nisl orci. Duis pretium, ipsum vitae suscipit interdum, justo dui dapibus diam, id dapibus lorem ipsum eu sem. Pellentesque in porttitor lectus.</p>
+								<div class="col-md-12">
+									<div class="blog-post post-with-image">
+										<div class="post-body">
+											<div class="blog-post-meta">
+												<div class="post-cover">
+													<a href="blogpost.html">
+														<img src="img/featured-post-2.jpg" alt="featured blogpost cover" />
+													</a>
+												</div>
+
+												<div class="post-author">
+													<div class="image">
+														<img src="img/blog-author-2.jpg" alt="blog author" />
+													</div>
+
+													<p>Andrew Doe</p>
+												</div>
+											</div>
+
+											<h2 class="post-title"><a href="blogpost.html">Blogpost 2</a></h2>
+
+											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh.</p>
+
+											<div class="post-meta">
+												<ul class="meta">
+													<li class="date">11.3</li>
+													<li class="comments">&#40;2&#41;</li>
+												</ul>
+
+												<a class="post-link" href="blogpost.html">Read More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="blog-post post-with-video">
+										<div class="post-body">
+											<div class="blog-post-meta">
+												<div class="post-cover">
+													<a href="blogpost.html">
+														<img src="img/featured-post-3.jpg" alt="featured blogpost cover" />
+													</a>
+												</div>
+
+												<div class="post-author">
+													<div class="image">
+														<img src="img/blog-author-3.jpg" alt="blog author" />
+													</div>
+
+													<p>Roberta Doe</p>
+												</div>
+											</div>
+
+											<h2 class="post-title"><a href="blogpost.html">Blogpost 3</a></h2>
+
+											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh.</p>
+
+											<div class="post-meta">
+												<ul class="meta">
+													<li class="date">11.3</li>
+													<li class="comments">&#40;2&#41;</li>
+												</ul>
+
+												<a class="post-link" href="blogpost.html">Read More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="blog-post post-with-video">
+										<div class="post-body">
+											<div class="blog-post-meta">
+												<div class="post-cover">
+													<a href="blogpost.html">
+														<img src="img/featured-post-4.jpg" alt="featured blogpost cover" />
+													</a>
+												</div>
+
+												<div class="post-author">
+													<div class="image">
+														<img src="img/blog-author-4.jpg" alt="blog author" />
+													</div>
+
+													<p>Anastasia Doe</p>
+												</div>
+											</div>
+
+											<h2 class="post-title"><a href="blogpost.html">Blogpost 4</a></h2>
+
+											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh.</p>
+
+											<div class="post-meta">
+												<ul class="meta">
+													<li class="date">11.3</li>
+													<li class="comments">&#40;2&#41;</li>
+												</ul>
+
+												<a class="post-link" href="blogpost.html">Read More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="blog-post sticky post-with-image">
+										<div class="post-body">
+											<div class="blog-post-meta">
+												<div class="post-cover">
+													<a href="blogpost.html">
+														<img src="img/featured-post-5.jpg" alt="featured blogpost cover" />
+													</a>
+												</div>
+
+												<div class="post-author">
+													<div class="image">
+														<img src="img/blog-author-1.jpg" alt="blog author" />
+													</div>
+
+													<p>Robert Doe</p>
+												</div>
+											</div>
+											<h2 class="post-title"><a href="blogpost.html">Blogpost 5</a></h2>
+
+											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh.</p>
+
+											<div class="post-meta">
+												<ul class="meta">
+													<li class="date">11.3</li>
+													<li class="comments">&#40;2&#41;</li>
+												</ul>
+
+												<a class="post-link" href="blogpost.html">Read More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="blog-post post-with-testimonial">
+										<div class="post-body">
+											<div class="blog-post-meta">
+												<div class="post-cover">
+													<a href="blogpost.html">
+														<img src="img/featured-post-6.jpg" alt="featured blogpost cover" />
+													</a>
+												</div>
+
+												<div class="post-author">
+													<div class="image">
+														<img src="img/blog-author-2.jpg" alt="blog author" />
+													</div>
+
+													<p>Andrew Doe</p>
+												</div>
+											</div>
+
+											<h2 class="post-title"><a href="blogpost.html">Blogpost testimonial</a></h2>
+
+											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh.</p>
+
+											<div class="post-meta">
+												<ul class="meta">
+													<li class="date">11.3</li>
+													<li class="comments">&#40;2&#41;</li>
+												</ul>
+
+												<a class="post-link" href="blogpost.html">Read More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="blog-post no-image-post">
+										<div class="post-body">
+											<div class="blog-post-meta">
+												<div class="post-author">
+													<div class="image">
+														<img src="img/blog-author-3.jpg" alt="blog author" />
+													</div>
+
+													<p>Roberta Doe</p>
+												</div>
+											</div>
+
+											<h2 class="post-title"><a href="blogpost.html">No image post</a></h2>
+
+											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh.</p>
+
+											<div class="post-meta">
+												<ul class="meta">
+													<li class="date">11.3</li>
+													<li class="comments">&#40;2&#41;</li>
+												</ul>
+
+												<a class="post-link" href="blogpost.html">Read More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="blog-post post-with-video">
+										<div class="post-body">
+											<div class="blog-post-meta">
+												<div class="post-cover">
+													<a href="blogpost.html">
+														<img src="img/featured-post-8.jpg" alt="featured blogpost cover" />
+													</a>
+												</div>
+
+												<div class="post-author">
+													<div class="image">
+														<img src="img/blog-author-4.jpg" alt="blog author" />
+													</div>
+
+													<p>Anastasia Doe</p>
+												</div>
+											</div>
+
+											<h2 class="post-title"><a href="blogpost.html">Blogpost 8</a></h2>
+
+											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh.</p>
+
+											<div class="post-meta">
+												<ul class="meta">
+													<li class="date">11.3</li>
+													<li class="comments">&#40;2&#41;</li>
+												</ul>
+
+												<a class="post-link" href="blogpost.html">Read More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="blog-post sticky post-with-image">
+										<div class="post-body">
+											<div class="blog-post-meta">
+												<div class="post-cover">
+													<a href="blogpost.html">
+														<img src="img/featured-post-9.jpg" alt="featured blogpost cover" />
+													</a>
+												</div>
+
+												<div class="post-author">
+													<div class="image">
+														<img src="img/blog-author-1.jpg" alt="blog author" />
+													</div>
+
+													<p>Robert Doe</p>
+												</div>
+											</div>
+											<h2 class="post-title"><a href="blogpost.html">Blogpost 9</a></h2>
+
+											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh.</p>
+
+											<div class="post-meta">
+												<ul class="meta">
+													<li class="date">11.3</li>
+													<li class="comments">&#40;2&#41;</li>
+												</ul>
+
+												<a class="post-link" href="blogpost.html">Read More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="blog-post post-with-image">
+										<div class="post-body">
+											<div class="blog-post-meta">
+												<div class="post-cover">
+													<a href="blogpost.html">
+														<img src="img/featured-post-10.jpg" alt="featured blogpost cover" />
+													</a>
+												</div>
+
+												<div class="post-author">
+													<div class="image">
+														<img src="img/blog-author-2.jpg" alt="blog author" />
+													</div>
+
+													<p>Andrew Doe</p>
+												</div>
+											</div>
+
+											<h2 class="post-title"><a href="blogpost.html">Blogpost 10</a></h2>
+
+											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh.</p>
+
+											<div class="post-meta">
+												<ul class="meta">
+													<li class="date">11.3</li>
+													<li class="comments">&#40;2&#41;</li>
+												</ul>
+
+												<a class="post-link" href="blogpost.html">Read More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="blog-post post-with-video">
+										<div class="post-body">
+											<div class="blog-post-meta">
+												<div class="post-cover">
+													<a href="blogpost.html">
+														<img src="img/featured-post-11.jpg" alt="featured blogpost cover" />
+													</a>
+												</div>
+
+												<div class="post-author">
+													<div class="image">
+														<img src="img/blog-author-3.jpg" alt="blog author" />
+													</div>
+
+													<p>Roberta Doe</p>
+												</div>
+											</div>
+
+											<h2 class="post-title"><a href="blogpost.html">Blogpost 11</a></h2>
+
+											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh.</p>
+
+											<div class="post-meta">
+												<ul class="meta">
+													<li class="date">11.3</li>
+													<li class="comments">&#40;2&#41;</li>
+												</ul>
+
+												<a class="post-link" href="blogpost.html">Read More</a>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="col-md-12">
+									<div class="blog-post post-with-video">
+										<div class="post-body">
+											<div class="blog-post-meta">
+												<div class="post-cover">
+													<a href="blogpost.html">
+														<img src="img/featured-post-12.jpg" alt="featured blogpost cover" />
+													</a>
+												</div>
+
+												<div class="post-author">
+													<div class="image">
+														<img src="img/blog-author-4.jpg" alt="blog author" />
+													</div>
+
+													<p>Anastasia Doe</p>
+												</div>
+											</div>
+
+											<h2 class="post-title"><a href="blogpost.html">Blogpost 12</a></h2>
+
+											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh.</p>
+
+											<div class="post-meta">
+												<ul class="meta">
+													<li class="date">11.3</li>
+													<li class="comments">&#40;2&#41;</li>
+												</ul>
+
+												<a class="post-link" href="blogpost.html">Read More</a>
+											</div>
+										</div>
 									</div>
 								</div>
 							</div>
 
-							<!-- Comments Area -->
-							<div class="comments-area">
-								<div class="section-header small">
-									<h2>Review</h2>
-									<p>our visitors decided to share the impressions of visit of this hotel</p>
-								</div>
-
-								<!-- Comments List -->
-								<div class="commments-wrapper">
-									<ul class="comments-list">
-										<li class="comment">
-											<div class="user">
-												<img src="img/blog-author-2.jpg" alt="user avatar" />
-											</div>
-
-											<div class="comment-body">
-												<div class="message">
-													<p>Duis vel eros mi. Nunc eu sem dolor. Nulla<br />venenatis, augue at rhoncus tincidunt</p>
-												</div>
-
-												<div class="comment-info">
-													<p class="author">Robert Doe</p>
-													<p class="date">2 days ago</p>
-													<a href="#" class="reply-link">Reply</a>
-												</div>
-											</div>
-										</li>
-
-										<li class="comment">
-											<div class="user">
-												<img src="img/blog-author-1.jpg" alt="user avatar" />
-											</div>
-
-											<div class="comment-body">
-												<div class="message">
-													<p>Duis vel eros mi. Nunc eu sem dolor. Nulla<br />venenatis, augue at rhoncus tincidunt</p>
-												</div>
-
-												<div class="comment-info">
-													<p class="author">Robert Doe</p>
-													<p class="date">2 days ago</p>
-													<a href="#" class="reply-link">Reply</a>
-												</div>
-											</div>
-										</li>
-									</ul>
-								</div>
-
-								<!-- Response Form -->
-								<form class="comment-form">
-									<div class="form-body clearfix">
-										<div class="message">
-											<textarea class="js-input form-input" placeholder="Leave a comment"></textarea>
-										</div>
-										<div class="row row-fit">
-											<div class="col-sm-12">
-												<input type="text" class="js-input form-input" placeholder="Enter your name" />
-											</div>
-											<div class="col-sm-12">
-												<input type="text" class="js-input form-input" placeholder="Enter your email address" />
-											</div>
-										</div>
-
-										<input type="submit" value="post" class="submit-button" />
-									</div>
-								</form>
-							</div>
+							<!-- Pagination -->
+							<ul class="page-numbers inverted">
+								<li>
+									<a href="#" class="page-numbers">1</a>
+								</li>
+								<li>
+									<a href="#" class="page-numbers">2</a>
+								</li>
+								<li>
+									<span class="page-numbers current">3</span>
+								</li>
+								<li>
+									<a href="#" class="page-numbers next">Next</a>
+								</li>
+							</ul>
 						</div>
 					</div>
 
@@ -634,7 +935,6 @@
 	<script src="js/imagesloaded.js"></script>
 	<script src="js/smooth-scroll.js"></script>
 	<script src="js/owl-carousel.js"></script>
-	<script src="js/theia.js"></script>
 	<script src="js/isotope.js"></script>
 	<script src="js/theia.js"></script>
 	<script src="js/lightbox.js"></script>

@@ -32,12 +32,12 @@ $website = $_POST['brewery_website'];
 
 $conn = mysqli_connect('localhost', 'root', '', 'compiled_breweries');
 
-$check_brewery_exist = "SELECT id FROM `oregon_breweries` WHERE name = '$name'";
+$check_brewery_exist = "SELECT id FROM `arizona_breweries` WHERE name = '$name'";
 
 $brewery_result = mysqli_query($conn, $check_brewery_exist);
 if(!$brewery_result || mysqli_num_rows($brewery_result) == 0)
 {
-    $insert_brewery = "INSERT INTO `oregon_breweries` (`name`, `street number`, `street name`, `city`, `state`, `country`, `zip1`,`latitude`,`longitude`, `phone`, `google id`,`int phone num`,`hours`, `place id`, `price level`, `rating`, `types`, `google_plus`, `website`, `verified`)
+    $insert_brewery = "INSERT INTO `arizona_breweries` (`name`, `street number`, `street name`, `city`, `state`, `country`, `zip1`,`latitude`,`longitude`, `phone`, `google id`,`int phone num`,`hours`, `place id`, `price level`, `rating`, `types`, `google_plus`, `website`, `verified`)
     VALUES ('$name', '$street_number', '$street_name', '$city', '$state', '$country', '$zip', '$latitude', '$longitude', '$phone_num', '$google_id', '$international_phone_number', '$hours', '$place_id', '$price_level', '$brewery_rating', '$types', '$google_plus', '$website', '1')
      ON DUPLICATE KEY UPDATE `name`='$name', `street number`='$street_number', `street name`='$street_name', `city`='$city', `state`='$state', `country`='$country', `zip1`='$zip', `latitude`='$latitude', `longitude`='$longitude', `phone`='$phone_num', `google id`='$google_id', `int phone num`='$international_phone_number', `hours`='$hours', `place id`='$place_id', `price level`='$price_level', `rating`='$brewery_rating', `types`='$types', `google_plus`='$google_plus', `website`='$website'";
 

@@ -9,7 +9,7 @@ function pullBeerData(){
     $conn = mysqli_connect('localhost', 'root', '', 'ratebeer_data');
     $breweries;
 
-    $breweriesQuery = "SELECT * FROM `ratebeer_breweries` WHERE `verified`=0 AND `state`='Oregon' LIMIT 1";
+    $breweriesQuery = "SELECT * FROM `ratebeer_breweries` WHERE `verified`=0 AND `state`='Arizona' LIMIT 1";
     $breweryResult = mysqli_query($conn, $breweriesQuery);
     mysqli_error($conn);
 

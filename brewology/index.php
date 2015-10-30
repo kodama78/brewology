@@ -160,73 +160,73 @@
 							<div class="inputSearchBox">
 								<input  class="customSearchInput" type="text" placeholder="Enter city, state or zip">
 							</div>
-							<div class="select-box">
-								<input class="filter-box-input js-input no-select" type="text" readonly value="" placeholder="For sale" />
-								<ul>
-									<li>For Sale</li>
-									<li>Reting</li>
-								</ul>
-							</div>
+<!--							<div class="select-box">-->
+<!--								<input class="filter-box-input js-input no-select" type="text" readonly value="" placeholder="For sale" />-->
+<!--								<ul>-->
+<!--									<li>For Sale</li>-->
+<!--									<li>Reting</li>-->
+<!--								</ul>-->
+<!--							</div>-->
 
-							<div class="select-box">
-								<input class="filter-box-input js-input no-select" type="text" readonly value="" placeholder="All types" />
-								<ul>
-									<li>All types</li>
-									<li>Apartments</li>
-									<li>Houses</li>
-								</ul>
-							</div>
+<!--							<div class="select-box">-->
+<!--								<input class="filter-box-input js-input no-select" type="text" readonly value="" placeholder="All types" />-->
+<!--								<ul>-->
+<!--									<li>All types</li>-->
+<!--									<li>Apartments</li>-->
+<!--									<li>Houses</li>-->
+<!--								</ul>-->
+<!--							</div>-->
 
-							<div class="select-box">
-								<input class="filter-box-input js-input no-select" type="text" readonly value="" placeholder="All types" />
-								<ul>
-									<li>All types</li>
-									<li>Apartments</li>
-									<li>Houses</li>
-								</ul>
-							</div>
+<!--							<div class="select-box">-->
+<!--								<input class="filter-box-input js-input no-select" type="text" readonly value="" placeholder="All types" />-->
+<!--								<ul>-->
+<!--									<li>All types</li>-->
+<!--									<li>Apartments</li>-->
+<!--									<li>Houses</li>-->
+<!--								</ul>-->
+<!--							</div>-->
 
-							<div class="select-box">
-								<input class="filter-box-input js-input no-select" type="text" readonly value="" placeholder="All cities" />
-								<ul>
-									<li>All cities</li>
-									<li>Berlin</li>
-									<li>LA</li>
-									<li>London</li>
-									<li>New York</li>
-								</ul>
-							</div>
+<!--							<div class="select-box">-->
+<!--								<input class="filter-box-input js-input no-select" type="text" readonly value="" placeholder="All cities" />-->
+<!--								<ul>-->
+<!--									<li>All cities</li>-->
+<!--									<li>Berlin</li>-->
+<!--									<li>LA</li>-->
+<!--									<li>London</li>-->
+<!--									<li>New York</li>-->
+<!--								</ul>-->
+<!--							</div>-->
 
-							<div class="row row-fit-10">
-								<div class="col-xs-12">
-									<input class="filter-box-input js-input nr-only" type="text" placeholder="Min bedrooms" />
-								</div>
+<!--							<div class="row row-fit-10">-->
+<!--								<div class="col-xs-12">-->
+<!--									<input class="filter-box-input js-input nr-only" type="text" placeholder="Min bedrooms" />-->
+<!--								</div>-->
+<!---->
+<!--								<div class="col-xs-12">-->
+<!--									<input class="filter-box-input js-input nr-only" type="text" placeholder="Min bathrooms" />-->
+<!--								</div>-->
+<!--							</div>-->
 
-								<div class="col-xs-12">
-									<input class="filter-box-input js-input nr-only" type="text" placeholder="Min bathrooms" />
-								</div>
-							</div>
+<!--							<div class="row row-fit-10">-->
+<!--								<div class="col-xs-12">-->
+<!--									<input class="filter-box-input js-input nr-only" type="text" placeholder="Min area (Sq ft)" />-->
+<!--								</div>-->
+<!---->
+<!--								<div class="col-xs-12">-->
+<!--									<input class="filter-box-input js-input nr-only" type="text" placeholder="Max area (Sq ft)" />-->
+<!--								</div>-->
+<!--							</div>-->
 
-							<div class="row row-fit-10">
-								<div class="col-xs-12">
-									<input class="filter-box-input js-input nr-only" type="text" placeholder="Min area (Sq ft)" />
-								</div>
-
-								<div class="col-xs-12">
-									<input class="filter-box-input js-input nr-only" type="text" placeholder="Max area (Sq ft)" />
-								</div>
-							</div>
-
-							<div class="price-box">
-								<p class="caption"><i>Price</i> &#40;$<span class="min"></span> - $<span class="max"></span>&#41;</p>
-
-								<div class="price-slider" data-min="0" data-max="20000" data-start="2500" data-stop="11000" data-step="500"></div>
-
-								<div class="price-limits clearfix">
-									<span class="lower">$0</span>
-									<span class="upper">$20 000</span>
-								</div>
-							</div>
+<!--							<div class="price-box">-->
+<!--								<p class="caption"><i>Price</i> &#40;$<span class="min"></span> - $<span class="max"></span>&#41;</p>-->
+<!---->
+<!--								<div class="price-slider" data-min="0" data-max="20000" data-start="2500" data-stop="11000" data-step="500"></div>-->
+<!---->
+<!--								<div class="price-limits clearfix">-->
+<!--									<span class="lower">$0</span>-->
+<!--									<span class="upper">$20 000</span>-->
+<!--								</div>-->
+<!--							</div>-->
 
 							<a href="#" class="button theme-button-1 update-properties">Find Property</a>
 						</div>
@@ -1171,7 +1171,10 @@
 	</div>
 
 	<!-- Scripts -->
-	<script src="http://maps.googleapis.com/maps/api/js"></script>
+	<script async defer
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjjk2k7ZXkCwtYFjCejUugD3EoshwmxHI&callback=initMap">
+	</script>
+<!--	<script src="js/brewologyMap.js"></script>-->
 	<script src="js/infobox.js"></script>
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery-ui.js"></script>

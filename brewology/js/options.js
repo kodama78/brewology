@@ -9,8 +9,8 @@ var teslaThemes = {
 		this.priceSlider();
 		this.inputHasValue();
 		this.numbersOnly();
-		this.selectBox();
-		this.googleMaps();
+		//this.selectBox();
+		//this.googleMaps();
 		this.owlInit();
 		this.marqueeInit();
 		this.nrFilters();
@@ -192,8 +192,8 @@ var teslaThemes = {
 			});
 
 			var propertyPopup = {
-				"container" : jQuery('.property-popup'), 
-				"close" : jQuery('.property-popup .close-popup'), 
+				"container" : jQuery('.property-popup'),
+				"close" : jQuery('.property-popup .close-popup'),
 				"loader": jQuery('.property-popup .popup-loader'),
 				"coverLink" : jQuery('.property-popup .popup-cover a'),
 				"coverImage" : jQuery('.property-popup .popup-cover img'),
@@ -251,9 +251,9 @@ var teslaThemes = {
 						},
 
 					map = new google.maps.Map(document.getElementById('map-canvas'), mapOtions);
-			
+
 					// Adding Map Markers
-				
+
 					var markers = [];
 
 					jQuery.each(locations, function (i, val) {
@@ -308,7 +308,7 @@ var teslaThemes = {
 						jQuery('.update-properties').on('click', function (e) {
 							e.preventDefault();
 							var mapLoader = jQuery('.properties-map .map-loader');
-							
+
 							// Close Popups
 							propertyPopup.container.removeClass('active');
 

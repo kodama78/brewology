@@ -5,10 +5,11 @@
 //THIS WILL PULL THE INPUT AND SEND IT TO BACK END
 function brewerySearch(){
     var location = $('#locationSearch').val();
+    console.log(location);
     $.ajax({
-        url:'breweryQuery.php',
+        url:'js/brewSearch/breweryQuery.php',
         method: 'POST',
-        dataType: 'JSON',
+        dataType: 'text',
         data:{
             location: location
         },

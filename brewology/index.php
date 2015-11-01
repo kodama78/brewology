@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="css/theme_css/nouislider.css" />
     <link rel="stylesheet" href="css/theme_css/icomoon.css" />
     <link rel="stylesheet" href="css/theme_css/screen.css" />
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
 </head>
 <body data-smooth-scroll="on" id="front-page">
 	<!-- Site Preloader -->
@@ -28,7 +30,7 @@
 		<div class="preloader-content">
 			<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
 				<g>
-					<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#EB2625" points="52.346,69.705 24.321,69.531 67.362,98.879 
+					<polygon fill-rule="evenodd" clip-rule="evenodd" fill="#EB2625" points="52.346,69.705 24.321,69.531 67.362,98.879
 						91.266,98.879 	"/>
 					<rect x="9.856" y="44.682" fill-rule="evenodd" clip-rule="evenodd" fill="#F0494B" width="14.465" height="54.362"/>
 					<path fill-rule="evenodd" clip-rule="evenodd" fill="#A31B1F" d="M47.868,1.947c21.055,0,38.123,17.068,38.123,38.123
@@ -148,17 +150,17 @@
 								<p>What brewery are you looking for?</p>
 							</div>
 
-							<div class="select-box">
-								<input class="filter-box-input js-input no-select" type="text" readonly value="" placeholder="Make a Selection" />
-								<ul>
-									<li>All</li>
-									<li>Breweries</li>
-									<li>Bars</li>
-
-								</ul>
-							</div>
+<!--							<div class="select-box">-->
+<!--								<input id ="beerSelect" class="filter-box-input js-input no-select" type="text" readonly value="" placeholder="Make a Selection" />-->
+<!--								<ul>-->
+<!--									<li>All</li>-->
+<!--									<li>Breweries</li>-->
+<!--									<li>Bars</li>-->
+<!---->
+<!--								</ul>-->
+<!--							</div>-->
 							<div class="inputSearchBox">
-								<input  class="customSearchInput" type="text" placeholder="Enter city, state or zip">
+								<input id="locationSearch" class="customSearchInput" type="text" placeholder="Enter city, state or zip">
 							</div>
 <!--							<div class="select-box">-->
 <!--								<input class="filter-box-input js-input no-select" type="text" readonly value="" placeholder="For sale" />-->
@@ -228,7 +230,7 @@
 <!--								</div>-->
 <!--							</div>-->
 
-							<a href="#" class="button theme-button-1 update-properties">Find Property</a>
+							<a href="#" id="sendBrewery" class="button theme-button-1 update-properties" onclick="brewerySearch()">Find Brewery</a>
 						</div>
 					</div>
 
@@ -1172,10 +1174,12 @@
 
 	<!-- Scripts -->
 	<script async defer
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjjk2k7ZXkCwtYFjCejUugD3EoshwmxHI&callback=initMap">
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjjk2k7ZXkCwtYFjCejUugD3EoshwmxHI&callback=initialize">
 	</script>
-<!--	<script src="js/brewologyMap.js"></script>-->
-	<script src="js/infobox.js"></script>
+
+	<script src="js/brewologyMap.js"></script>
+	<script src="js/brewSearch/brewerySearch.js"></script>
+<!--	<script src="js/infobox.js"></script>-->
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery-ui.js"></script>
 	<script src="js/bxslider.js"></script>

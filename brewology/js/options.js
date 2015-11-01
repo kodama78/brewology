@@ -203,10 +203,10 @@ var teslaThemes = {
 				"price" : jQuery('.property-popup .popup-body .price'),
 			};
 
-			var infobox = new InfoBox({
-					content: document.getElementById('property-popup'),
-					closeBoxURL: ""
-				});
+			//var infobox = new InfoBox({
+			//		content: document.getElementById('property-popup'),
+			//		closeBoxURL: ""
+			//	});
 
 			// Single or Multiple
 			jQuery('body').on('loadGoogleMap', function () {

@@ -2,7 +2,7 @@
  * Created by shawnotomo on 10/27/15.
  */
 //THIS CREATES AND INITALIZES THE MAP FROM THE GOOGLE API
-function initMap() {
+function initialize() {
     var center = new google.maps.LatLng(41.508742,20.120850);
     var mapProp = {
         center:center,
@@ -29,3 +29,5 @@ function initMap() {
     });
 }
 google.maps.event.addDomListener(window, 'load', initialize);
+
+

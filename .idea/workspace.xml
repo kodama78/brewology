@@ -99,10 +99,10 @@
       <file leaf-file-name="breweryQuery.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/brewology/js/brewSearch/breweryQuery.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.39933443">
-              <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+            <state vertical-scroll-proportion="0.69883525">
+              <caret line="28" column="0" selection-start-line="28" selection-start-column="2" selection-end-line="37" selection-end-column="22" />
               <folding>
-                <marker date="1446396090000" expanded="true" signature="216:277" placeholder="SELECT * FRO..." />
+                <marker date="1446425403000" expanded="true" signature="214:296" placeholder="SELECT * FRO..." />
               </folding>
             </state>
           </provider>
@@ -773,10 +773,10 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/brewology/js/brewSearch/breweryQuery.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.39933443">
-          <caret line="16" column="57" selection-start-line="16" selection-start-column="57" selection-end-line="16" selection-end-column="57" />
+        <state vertical-scroll-proportion="0.69883525">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="2" selection-end-line="37" selection-end-column="22" />
           <folding>
-            <marker date="1446396090000" expanded="true" signature="216:277" placeholder="SELECT * FRO..." />
+            <marker date="1446425403000" expanded="true" signature="214:296" placeholder="SELECT * FRO..." />
           </folding>
         </state>
       </provider>

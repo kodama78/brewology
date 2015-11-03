@@ -5,6 +5,7 @@ Brewology's aim is to become the defacto site for all things craft beer. At this
 ### Version 0.5
 
 Version 0.5 will have the following features:
+
 1. google map api search: User will be able to search for breweries by name, zipcode or city and state
 2. database return: The user input will query the proprietary database and return a list of the closest breweries to them
 3. brewery display on dashboard: The breweries will be displayed in a section below in a panel format as well as on the map itself with a marker

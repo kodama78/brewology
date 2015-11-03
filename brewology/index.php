@@ -170,14 +170,15 @@
 <!--								</ul>-->
 <!--							</div>-->
 
-<!--							<div class="select-box">-->
-<!--								<input class="filter-box-input js-input no-select" type="text" readonly value="" placeholder="All types" />-->
-<!--								<ul>-->
-<!--									<li>All types</li>-->
-<!--									<li>Apartments</li>-->
-<!--									<li>Houses</li>-->
-<!--								</ul>-->
-<!--							</div>-->
+							<div class="select-box">
+								<input id="radius" class="filter-box-input js-input no-select" type="text" readonly value="" placeholder="Distance (in miles)" />
+								<ul>
+									<li>10</li>
+									<li>25</li>
+									<li>50</li>
+									<li>100</li>
+								</ul>
+							</div>
 
 <!--							<div class="select-box">-->
 <!--								<input class="filter-box-input js-input no-select" type="text" readonly value="" placeholder="All types" />-->

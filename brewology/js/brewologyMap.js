@@ -3,7 +3,7 @@
  */
 //THIS CREATES AND INITALIZES THE MAP FROM THE GOOGLE API
 function initialize() {
-    var center = new google.maps.LatLng(41.508742,20.120850);
+    var center = new google.maps.LatLng(32.718102,-117.169411);
     var mapProp = {
         center:center,
         zoom:5,
@@ -19,6 +19,8 @@ function initialize() {
     });
 
     marker.setMap(map);
+
+    //This creates an info box for the marker
 
     var infowindow = new google.maps.InfoWindow({
        content: "Hello World!"

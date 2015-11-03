@@ -9,7 +9,7 @@ var teslaThemes = {
 		this.priceSlider();
 		this.inputHasValue();
 		this.numbersOnly();
-		//this.selectBox();
+		this.selectBox();
 		//this.googleMaps();
 		this.owlInit();
 		this.marqueeInit();

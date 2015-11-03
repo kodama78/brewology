@@ -39,9 +39,6 @@ function geocodeAddress(geocoder, resultsMap) {
 };
 
 
-
-
-
 //THIS FUNCTION SEARCHES THE DATABASE FOR BREWERIES BASED ON DISTANCE
  function searchDatabase(lat, lng, radius){
          $.ajax({

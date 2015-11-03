@@ -22,21 +22,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/brewology/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.843137">
+            <state vertical-scroll-proportion="0.78571427">
               <caret line="173" column="49" selection-start-line="173" selection-start-column="49" selection-end-line="173" selection-end-column="49" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="patrick_map.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Brewery Scraper/patrick_map.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.0">
-              <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
               <folding />
             </state>
           </provider>
@@ -72,11 +62,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="brewerySearch.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="brewerySearch.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/brewology/js/brewSearch/brewerySearch.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.47658864">
-              <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
+            <state vertical-scroll-proportion="-14.925926">
+              <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc;n#brewerySearch#0" expanded="false" />
               </folding>
@@ -150,8 +140,8 @@
         <option value="$PROJECT_DIR$/brewology/js/brewologyMap.js" />
         <option value="$PROJECT_DIR$/brewology/js/options.js" />
         <option value="$PROJECT_DIR$/brewology/index.php" />
-        <option value="$PROJECT_DIR$/brewology/js/brewSearch/brewerySearch.js" />
         <option value="$PROJECT_DIR$/brewology/js/brewSearch/breweryQuery.php" />
+        <option value="$PROJECT_DIR$/brewology/js/brewSearch/brewerySearch.js" />
       </list>
     </option>
   </component>
@@ -672,14 +662,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Brewery Scraper/patrick_map.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.0">
-          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Brewery Scraper/google-matt-code.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -733,14 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/brewology/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.843137">
-          <caret line="173" column="49" selection-start-line="173" selection-start-column="49" selection-end-line="173" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/brewology/js/brewSearch/breweryQuery.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-18.125">
@@ -762,11 +736,27 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/brewology/js/brewSearch/brewerySearch.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.47658864">
-          <caret line="21" column="70" selection-start-line="21" selection-start-column="70" selection-end-line="21" selection-end-column="70" />
+        <state vertical-scroll-proportion="-14.925926">
+          <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc;n#brewerySearch#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Brewery Scraper/patrick_map.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.19966722">
+          <caret line="8" column="31" selection-start-line="8" selection-start-column="31" selection-end-line="8" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/brewology/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.78571427">
+          <caret line="173" column="49" selection-start-line="173" selection-start-column="49" selection-end-line="173" selection-end-column="49" />
+          <folding />
         </state>
       </provider>
     </entry>

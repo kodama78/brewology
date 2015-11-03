@@ -7,18 +7,31 @@
  */
 $conn = mysqli_connect('localhost', 'root', '', 'compiled_breweries');
 
-$location = $_POST['location'];
+$lat = $_POST['lat'];
+echo $lat;
+$lng = $_POST['lng'];
+echo$lng;
 
-$find_brewery = "SELECT `latitude`,`longitude` FROM `california_breweries` WHERE zip1 = '$location'";
+$find_brewery = "
+SELECT
+`id`,
+`name`,
+ACOS( SIN( RADIANS( `latitude` ) ) * SIN( RADIANS($lat ) ) + COS( RADIANS( `latitude` ) )
+* COS( RADIANS( $lat )) * COS( RADIANS( `longitude` ) - RADIANS( $lng )) ) * 3959 AS `distance`
+FROM `california_breweries`
+WHERE
+ACOS( SIN( RADIANS( `latitude` ) ) * SIN( RADIANS( $lat ) ) + COS( RADIANS( `latitude` ) )
+    * COS( RADIANS( $lat )) * COS( RADIANS( `longitude` ) - RADIANS( $lng )) ) * 3959 < 10
+ORDER BY `distance`";
 $result = mysqli_query($conn, $find_brewery);
 mysqli_error($conn);
 
 
 if (mysqli_num_rows($result) > 0) {
     while ($inner_result = mysqli_fetch_assoc($result)) {
-        $brewery = $inner_result;
+        $breweries[] = $inner_result;
     }
-    print_r($breweries);
+    echo json_encode($breweries);
 }
 else{
     echo 'No breweries in that area code';

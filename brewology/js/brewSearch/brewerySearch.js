@@ -4,20 +4,58 @@
 
 //THIS WILL PULL THE INPUT AND SEND IT TO BACK END
 function brewerySearch(){
-    var location = $('#locationSearch').val();
-    console.log(location);
-    $.ajax({
-        url:'js/brewSearch/breweryQuery.php',
-        method: 'POST',
-        dataType: 'text',
-        data:{
-            location: location
-        },
-        success: function(response){
-            console.log('Success, here is the ', response);
-        },
-        error: function(response){
-            console.log('There is an error', response);
+    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+        zoom: 13,
+        center: {lat: -34.397, lng: 150.644}
+    });
+    var geocoder = new google.maps.Geocoder();
+    geocodeAddress(geocoder, map);
+};
+
+function geocodeAddress(geocoder, resultsMap) {
+    var lat = '';
+    var lng = '';
+
+    var address = $('#locationSearch').val();
+    geocoder.geocode({'address': address}, function(results, status) {
+        if (status === google.maps.GeocoderStatus.OK) {
+            resultsMap.setCenter(results[0].geometry.location);
+
+            var marker = new google.maps.Marker({
+                map: resultsMap,
+                position: results[0].geometry.location
+            });
+            lat = results[0].geometry.location.lat();
+            lng = results[0].geometry.location.lng();
+
+            searchDatabase(lat, lng);
+
+        } else {
+            alert('Geocode was not successful for the following reason: ' + status);
         }
-    })
-}
+    });
+};
+
+
+
+
+
+
+ function searchDatabase(lat, lng){
+         $.ajax({
+             url:'js/brewSearch/breweryQuery.php',
+             method: 'POST',
+             dataType: 'text',
+             data:{
+             lat: lat,
+             lng: lng
+         },
+         success: function(response){
+             console.log('Success, here is the ', response);
+         },
+         error: function(response){
+             console.log('There is an error', response);
+         }
+     })
+ }
+

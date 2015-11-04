@@ -8,9 +8,11 @@
 $conn = mysqli_connect('localhost', 'root', '', 'compiled_breweries');
 
 $lat = $_POST['lat'];
-echo $lat;
+
 $lng = $_POST['lng'];
-echo$lng;
+
+$radius = $_POST['radius'];
+
 
 $find_brewery = "
 SELECT
@@ -21,7 +23,7 @@ ACOS( SIN( RADIANS( `latitude` ) ) * SIN( RADIANS($lat ) ) + COS( RADIANS( `lati
 FROM `california_breweries`
 WHERE
 ACOS( SIN( RADIANS( `latitude` ) ) * SIN( RADIANS( $lat ) ) + COS( RADIANS( `latitude` ) )
-    * COS( RADIANS( $lat )) * COS( RADIANS( `longitude` ) - RADIANS( $lng )) ) * 3959 < 10
+    * COS( RADIANS( $lat )) * COS( RADIANS( `longitude` ) - RADIANS( $lng )) ) * 3959 < $radius
 ORDER BY `distance`";
 $result = mysqli_query($conn, $find_brewery);
 mysqli_error($conn);

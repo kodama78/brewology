@@ -17,7 +17,9 @@ function geocodeAddress(geocoder, resultsMap) {
     var lng = '';
 
     var address = $('#locationSearch').val();
-    geocoder.geocode({'address': address}, function(results, status) {
+    var radius = $('#radius').val();
+
+    geocoder.geocode({'address': address}, function (results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
             resultsMap.setCenter(results[0].geometry.location);
 
@@ -28,27 +30,30 @@ function geocodeAddress(geocoder, resultsMap) {
             lat = results[0].geometry.location.lat();
             lng = results[0].geometry.location.lng();
 
-            searchDatabase(lat, lng);
+            searchDatabase(lat, lng, radius);
 
         } else {
             alert('Geocode was not successful for the following reason: ' + status);
         }
     });
-};
+}
 
 
 
 
 
 
- function searchDatabase(lat, lng){
+
+//THIS FUNCTION SEARCHES THE DATABASE FOR BREWERIES BASED ON DISTANCE
+ function searchDatabase(lat, lng, radius){
          $.ajax({
              url:'js/brewSearch/breweryQuery.php',
              method: 'POST',
              dataType: 'text',
              data:{
              lat: lat,
-             lng: lng
+             lng: lng,
+             radius: radius
          },
          success: function(response){
              console.log('Success, here is the ', response);

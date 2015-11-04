@@ -231,7 +231,7 @@
 <!--								</div>-->
 <!--							</div>-->
 
-							<a href="#" id="sendBrewery" class="button theme-button-1 update-properties" onclick="brewerySearch()">Find Brewery</a>
+							<a href="#" id="sendBrewery" class="button theme-button-1 update-properties" onclick="searchDatabase()">Find Brewery</a>
 						</div>
 					</div>
 
@@ -1175,11 +1175,11 @@
 
 	<!-- Scripts -->
 	<script async defer
-			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjjk2k7ZXkCwtYFjCejUugD3EoshwmxHI&callback=initialize">
+			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjjk2k7ZXkCwtYFjCejUugD3EoshwmxHI&libraries=places&callback=initialize">
 	</script>
 
 	<script src="js/brewologyMap.js"></script>
-	<script src="js/brewSearch/brewerySearch.js"></script>
+<!--	<script src="js/brewSearch/brewerySearch.js"></script>-->
 <!--	<script src="js/infobox.js"></script>-->
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery-ui.js"></script>

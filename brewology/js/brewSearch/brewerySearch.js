@@ -19,7 +19,7 @@ function geocodeAddress(geocoder, resultsMap) {
     var address = $('#locationSearch').val();
     var radius = $('#radius').val();
 
-    geocoder.geocode({'address': address}, function(results, status) {
+    geocoder.geocode({'address': address}, function (results, status) {
         if (status === google.maps.GeocoderStatus.OK) {
             resultsMap.setCenter(results[0].geometry.location);
 
@@ -36,7 +36,12 @@ function geocodeAddress(geocoder, resultsMap) {
             alert('Geocode was not successful for the following reason: ' + status);
         }
     });
-};
+}
+
+
+
+
+
 
 
 //THIS FUNCTION SEARCHES THE DATABASE FOR BREWERIES BASED ON DISTANCE

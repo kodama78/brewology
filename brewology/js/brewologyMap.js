@@ -33,7 +33,7 @@
 //google.maps.event.addDomListener(window, 'load', initialize);
 var lat = -33.8688;
 var lng = 151.2195;
-
+var breweriesArray = [];
 
 
 function initialize() {
@@ -144,7 +144,7 @@ function searchDatabase(){
             radius: radius
         },
         success: function(response){
-            var breweriesArray = response;
+            breweriesArray = response;
             makeMarkers(latitude, longitude, radius, breweriesArray);
 
         },

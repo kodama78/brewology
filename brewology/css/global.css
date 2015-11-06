@@ -15,6 +15,9 @@
   -moz-transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
   transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
 }
+.brewerySearchHeading {
+  padding-bottom: 5px;
+}
 #page header div {
   display: inline-block;
 }

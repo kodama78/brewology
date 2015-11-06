@@ -16,8 +16,7 @@ $radius = $_POST['radius'];
 
 $find_brewery = "
 SELECT
-`id`,
-`name`,
+`id`, `name`, `latitude`, `longitude`,
 ACOS( SIN( RADIANS( `latitude` ) ) * SIN( RADIANS($lat ) ) + COS( RADIANS( `latitude` ) )
 * COS( RADIANS( $lat )) * COS( RADIANS( `longitude` ) - RADIANS( $lng )) ) * 3959 AS `distance`
 FROM `california_breweries`

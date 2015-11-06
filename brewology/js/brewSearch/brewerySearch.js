@@ -2,6 +2,9 @@
  * Created by shawnotomo on 10/31/15.
  */
 
+//THIS CODE IS DEPRECATED. IT HAS BEEN MERGED WITH THE BREWERYMAP.JS FILE TO CREATE A SMOOTHER EXPERIENCE.
+
+
 //THIS WILL PULL THE INPUT AND SEND IT TO BACK END
 function brewerySearch(){
     var map = new google.maps.Map(document.getElementById('map-canvas'), {

@@ -147,7 +147,7 @@
 						<div class="map-filter-box">
 							<div class="box-caption">
 								<h4>Search</h4>
-								<p>What brewery are you looking for?</p>
+								<p>Looking for a certain brewery? Type in search and hit enter!</p>
 							</div>
 
 <!--							<div class="select-box">-->
@@ -169,7 +169,10 @@
 <!--									<li>Reting</li>-->
 <!--								</ul>-->
 <!--							</div>-->
-
+							<br>
+							<div class="box-caption brewerySearchHeading">
+								<p>Searching for breweries in the area? Set the distance and click "Search For Breweries"</p>
+							</div>
 							<div class="select-box">
 								<input id="radius" class="filter-box-input js-input no-select" type="text" readonly value="" placeholder="Distance (in miles)" />
 								<ul>
@@ -231,75 +234,75 @@
 <!--								</div>-->
 <!--							</div>-->
 
-							<a href="#" id="sendBrewery" class="button theme-button-1 update-properties" onclick="searchDatabase()">Find Brewery</a>
+							<a href="#" id="sendBrewery" class="button theme-button-1 update-properties" onclick="searchDatabase()">Search For Breweries</a>
 						</div>
 					</div>
 
 					<div class="col-md-15 col-lg-17">
 						<!-- Map Popup -->
-						<div id="property-popup" class="property-popup">
-							<i class="close-popup icon-cross2"></i>
-							<div class="popup-loader">
-								<div class="spinner">
-									<div class="spinner-container container1">
-										<div class="circle1"></div>
-										<div class="circle2"></div>
-										<div class="circle3"></div>
-										<div class="circle4"></div>
-									</div>
-									<div class="spinner-container container2">
-										<div class="circle1"></div>
-										<div class="circle2"></div>
-										<div class="circle3"></div>
-										<div class="circle4"></div>
-									</div>
-									<div class="spinner-container container3">
-										<div class="circle1"></div>
-										<div class="circle2"></div>
-										<div class="circle3"></div>
-										<div class="circle4"></div>
-									</div>
-								</div>
-							</div>
-							<div class="popup-cover">
-								<a href="#">
-									<img src="img/map-card.jpg" alt="popup cover" />
-								</a>
-							</div>
-							<div class="popup-body">
-								<h2><a href="#">Penthouse bar</a></h2>
-								<p>Manhattan 125 off 55</p>
-
-								<span class="price">$500</span>
-								<a class="propery-page" href="#">
-									<i class="fa fa-angle-right"></i>
-								</a>
-							</div>
-						</div>
+<!--						<div id="property-popup" class="property-popup">-->
+<!--							<i class="close-popup icon-cross2"></i>-->
+<!--							<div class="popup-loader">-->
+<!--								<div class="spinner">-->
+<!--									<div class="spinner-container container1">-->
+<!--										<div class="circle1"></div>-->
+<!--										<div class="circle2"></div>-->
+<!--										<div class="circle3"></div>-->
+<!--										<div class="circle4"></div>-->
+<!--									</div>-->
+<!--									<div class="spinner-container container2">-->
+<!--										<div class="circle1"></div>-->
+<!--										<div class="circle2"></div>-->
+<!--										<div class="circle3"></div>-->
+<!--										<div class="circle4"></div>-->
+<!--									</div>-->
+<!--									<div class="spinner-container container3">-->
+<!--										<div class="circle1"></div>-->
+<!--										<div class="circle2"></div>-->
+<!--										<div class="circle3"></div>-->
+<!--										<div class="circle4"></div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--							<div class="popup-cover">-->
+<!--								<a href="#">-->
+<!--									<img src="img/map-card.jpg" alt="popup cover" />-->
+<!--								</a>-->
+<!--							</div>-->
+<!--							<div class="popup-body">-->
+<!--								<h2><a href="#">Penthouse bar</a></h2>-->
+<!--								<p>Manhattan 125 off 55</p>-->
+<!---->
+<!--								<span class="price">$500</span>-->
+<!--								<a class="propery-page" href="#">-->
+<!--									<i class="fa fa-angle-right"></i>-->
+<!--								</a>-->
+<!--							</div>-->
+<!--						</div>-->
 
 						<!-- Loader -->
-						<div class="map-loader">
-							<div class="spinner">
-								<div class="spinner-container container1">
-									<div class="circle1"></div>
-									<div class="circle2"></div>
-									<div class="circle3"></div>
-									<div class="circle4"></div>
-								</div>
-								<div class="spinner-container container2">
-									<div class="circle1"></div>
-									<div class="circle2"></div>
-									<div class="circle3"></div>
-									<div class="circle4"></div>
-								</div>
-								<div class="spinner-container container3">
-									<div class="circle1"></div>
-									<div class="circle2"></div>
-									<div class="circle3"></div>
-									<div class="circle4"></div>
-								</div>
-							</div>
-						</div>
+<!--						<div class="map-loader">-->
+<!--							<div class="spinner">-->
+<!--								<div class="spinner-container container1">-->
+<!--									<div class="circle1"></div>-->
+<!--									<div class="circle2"></div>-->
+<!--									<div class="circle3"></div>-->
+<!--									<div class="circle4"></div>-->
+<!--								</div>-->
+<!--								<div class="spinner-container container2">-->
+<!--									<div class="circle1"></div>-->
+<!--									<div class="circle2"></div>-->
+<!--									<div class="circle3"></div>-->
+<!--									<div class="circle4"></div>-->
+<!--								</div>-->
+<!--								<div class="spinner-container container3">-->
+<!--									<div class="circle1"></div>-->
+<!--									<div class="circle2"></div>-->
+<!--									<div class="circle3"></div>-->
+<!--									<div class="circle4"></div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
 
 						<!-- Map Canvas -->
 						<div class="map" id="map-canvas"></div>
@@ -311,199 +314,199 @@
 			<section class="hot-offer">
 				<div class="container">
 					<div class="row">
-						<div class="col-sm-6">
-							<div class="caption">
-								<h2><i class="icon icon-home4"></i> <span>Hot Offer</span></h2>
-							</div>
-						</div>
-
-						<div class="col-sm-18">
-							<div class="hot-offer-slider">
-								<p>
-									<a href="single-full-width.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra venenatis nisl, et venenatis nulla tincidunt non. Nulla sed dui est. Viverra venenatis nisl, et venenatis nulla tincidunt non.</a>
-								</p>
-							</div>
-						</div>
+<!--						<div class="col-sm-6">-->
+<!--							<div class="caption">-->
+<!--								<h2><i class="icon icon-home4"></i> <span>Hot Offer</span></h2>-->
+<!--							</div>-->
+<!--						</div>-->
+<!---->
+<!--						<div class="col-sm-18">-->
+<!--							<div class="hot-offer-slider">-->
+<!--								<p>-->
+<!--									<a href="single-full-width.html">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis viverra venenatis nisl, et venenatis nulla tincidunt non. Nulla sed dui est. Viverra venenatis nisl, et venenatis nulla tincidunt non.</a>-->
+<!--								</p>-->
+<!--							</div>-->
+<!--						</div>-->
 					</div>
 				</div>
 			</section>
 
 			<!-- Listing Section -->
-			<section class="listing-section">
-				<div class="container">
-					<div class="section-header">
-						<h1>Recent Listed</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec viverra erat. Aenean elit tellus mattis quis maximus et malesuada congue velit</p>
-					</div>
-				</div>
-
-				<div class="listing-items">
-					<div class="row">
-						<div class="col-xs-12 col-md-8 col-lg-6">
-							<div class="listing-item">
-								<div class="item-cover type-1">
-									<div class="cover">
-										<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis.</p>
-
-										<a href="single.html">
-											<i class="icon"></i>
-										</a>
-									</div>
-									<img src="img/listing-1.jpg" alt="item cover" />
-								</div>
-
-								<div class="item-body">
-									<div class="block services">
-										<p class="caption">Services</p>
-										<ul>
-											<li class="bathrooms">Bathrooms: <span>1</span></li>
-											<li class="bedrooms">Bedrooms: <span>2</span></li>
-											<li class="area">Area: <span>100</span></li>
-										</ul>
-									</div>
-
-									<div class="block location-info">
-										<div class="location">
-											<h3>
-												<a href="single-full-width.html">Grand hotel room</a>
-											</h3>
-											<p>LA 325</p>
-										</div>
-
-										<div class="price">
-											<p>$450 000 <span>For sale</span></p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-xs-12 col-md-8 col-lg-6">
-							<div class="listing-item">
-								<div class="item-cover type-2">
-									<div class="cover">
-										<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis.</p>
-
-										<a href="single.html">
-											<i class="icon"></i>
-										</a>
-									</div>
-									<img src="img/listing-2.jpg" alt="item cover" />
-								</div>
-
-								<div class="item-body">
-									<div class="block services">
-										<p class="caption">Services</p>
-										<ul>
-											<li class="bathrooms">Bathrooms: <span>1</span></li>
-											<li class="bedrooms">Bedrooms: <span>2</span></li>
-											<li class="area">Area: <span>100</span></li>
-										</ul>
-									</div>
-
-									<div class="block location-info">
-										<div class="location">
-											<h3>
-												<a href="single-full-width.html">Grand hotel room</a>
-											</h3>
-											<p>LA 325</p>
-										</div>
-
-										<div class="price">
-											<p>$450 000 <span>For sale</span></p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-xs-12 col-md-8 col-lg-6">
-							<div class="listing-item">
-								<div class="item-cover type-2">
-									<div class="cover">
-										<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis.</p>
-
-										<a href="single.html">
-											<i class="icon"></i>
-										</a>
-									</div>
-									<img src="img/listing-3.jpg" alt="item cover" />
-								</div>
-
-								<div class="item-body">
-									<div class="block services">
-										<p class="caption">Services</p>
-										<ul>
-											<li class="bathrooms">Bathrooms: <span>1</span></li>
-											<li class="bedrooms">Bedrooms: <span>2</span></li>
-											<li class="area">Area: <span>100</span></li>
-										</ul>
-									</div>
-
-									<div class="block location-info">
-										<div class="location">
-											<h3>
-												<a href="single-full-width.html">Grand hotel room</a>
-											</h3>
-											<p>LA 325</p>
-										</div>
-
-										<div class="price">
-											<p>$450 000 <span>For sale</span></p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-xs-12 col-md-8 col-lg-6">
-							<div class="listing-item">
-								<div class="item-cover type-2">
-									<div class="cover">
-										<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis.</p>
-
-										<a href="single.html">
-											<i class="icon"></i>
-										</a>
-									</div>
-									<img src="img/listing-4.jpg" alt="item cover" />
-								</div>
-
-								<div class="item-body">
-									<div class="block services">
-										<p class="caption">Services</p>
-										<ul>
-											<li class="bathrooms">Bathrooms: <span>1</span></li>
-											<li class="bedrooms">Bedrooms: <span>2</span></li>
-											<li class="area">Area: <span>100</span></li>
-										</ul>
-									</div>
-
-									<div class="block location-info">
-										<div class="location">
-											<h3>
-												<a href="single-full-width.html">Grand hotel room</a>
-											</h3>
-											<p>LA 325</p>
-										</div>
-
-										<div class="price">
-											<p>$450 000 <span>For sale</span></p>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+<!--			<section class="listing-section">-->
+<!--				<div class="container">-->
+<!--					<div class="section-header">-->
+<!--						<h1>Recent Listed</h1>-->
+<!--						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec viverra erat. Aenean elit tellus mattis quis maximus et malesuada congue velit</p>-->
+<!--					</div>-->
+<!--				</div>-->
+<!---->
+<!--				<div class="listing-items">-->
+<!--					<div class="row">-->
+<!--						<div class="col-xs-12 col-md-8 col-lg-6">-->
+<!--							<div class="listing-item">-->
+<!--								<div class="item-cover type-1">-->
+<!--									<div class="cover">-->
+<!--										<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis.</p>-->
+<!---->
+<!--										<a href="single.html">-->
+<!--											<i class="icon"></i>-->
+<!--										</a>-->
+<!--									</div>-->
+<!--									<img src="img/listing-1.jpg" alt="item cover" />-->
+<!--								</div>-->
+<!---->
+<!--								<div class="item-body">-->
+<!--									<div class="block services">-->
+<!--										<p class="caption">Services</p>-->
+<!--										<ul>-->
+<!--											<li class="bathrooms">Bathrooms: <span>1</span></li>-->
+<!--											<li class="bedrooms">Bedrooms: <span>2</span></li>-->
+<!--											<li class="area">Area: <span>100</span></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!---->
+<!--									<div class="block location-info">-->
+<!--										<div class="location">-->
+<!--											<h3>-->
+<!--												<a href="single-full-width.html">Grand hotel room</a>-->
+<!--											</h3>-->
+<!--											<p>LA 325</p>-->
+<!--										</div>-->
+<!---->
+<!--										<div class="price">-->
+<!--											<p>$450 000 <span>For sale</span></p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!---->
+<!--						<div class="col-xs-12 col-md-8 col-lg-6">-->
+<!--							<div class="listing-item">-->
+<!--								<div class="item-cover type-2">-->
+<!--									<div class="cover">-->
+<!--										<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis.</p>-->
+<!---->
+<!--										<a href="single.html">-->
+<!--											<i class="icon"></i>-->
+<!--										</a>-->
+<!--									</div>-->
+<!--									<img src="img/listing-2.jpg" alt="item cover" />-->
+<!--								</div>-->
+<!---->
+<!--								<div class="item-body">-->
+<!--									<div class="block services">-->
+<!--										<p class="caption">Services</p>-->
+<!--										<ul>-->
+<!--											<li class="bathrooms">Bathrooms: <span>1</span></li>-->
+<!--											<li class="bedrooms">Bedrooms: <span>2</span></li>-->
+<!--											<li class="area">Area: <span>100</span></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!---->
+<!--									<div class="block location-info">-->
+<!--										<div class="location">-->
+<!--											<h3>-->
+<!--												<a href="single-full-width.html">Grand hotel room</a>-->
+<!--											</h3>-->
+<!--											<p>LA 325</p>-->
+<!--										</div>-->
+<!---->
+<!--										<div class="price">-->
+<!--											<p>$450 000 <span>For sale</span></p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!---->
+<!--						<div class="col-xs-12 col-md-8 col-lg-6">-->
+<!--							<div class="listing-item">-->
+<!--								<div class="item-cover type-2">-->
+<!--									<div class="cover">-->
+<!--										<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis.</p>-->
+<!---->
+<!--										<a href="single.html">-->
+<!--											<i class="icon"></i>-->
+<!--										</a>-->
+<!--									</div>-->
+<!--									<img src="img/listing-3.jpg" alt="item cover" />-->
+<!--								</div>-->
+<!---->
+<!--								<div class="item-body">-->
+<!--									<div class="block services">-->
+<!--										<p class="caption">Services</p>-->
+<!--										<ul>-->
+<!--											<li class="bathrooms">Bathrooms: <span>1</span></li>-->
+<!--											<li class="bedrooms">Bedrooms: <span>2</span></li>-->
+<!--											<li class="area">Area: <span>100</span></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!---->
+<!--									<div class="block location-info">-->
+<!--										<div class="location">-->
+<!--											<h3>-->
+<!--												<a href="single-full-width.html">Grand hotel room</a>-->
+<!--											</h3>-->
+<!--											<p>LA 325</p>-->
+<!--										</div>-->
+<!---->
+<!--										<div class="price">-->
+<!--											<p>$450 000 <span>For sale</span></p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!---->
+<!--						<div class="col-xs-12 col-md-8 col-lg-6">-->
+<!--							<div class="listing-item">-->
+<!--								<div class="item-cover type-2">-->
+<!--									<div class="cover">-->
+<!--										<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis.</p>-->
+<!---->
+<!--										<a href="single.html">-->
+<!--											<i class="icon"></i>-->
+<!--										</a>-->
+<!--									</div>-->
+<!--									<img src="img/listing-4.jpg" alt="item cover" />-->
+<!--								</div>-->
+<!---->
+<!--								<div class="item-body">-->
+<!--									<div class="block services">-->
+<!--										<p class="caption">Services</p>-->
+<!--										<ul>-->
+<!--											<li class="bathrooms">Bathrooms: <span>1</span></li>-->
+<!--											<li class="bedrooms">Bedrooms: <span>2</span></li>-->
+<!--											<li class="area">Area: <span>100</span></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!---->
+<!--									<div class="block location-info">-->
+<!--										<div class="location">-->
+<!--											<h3>-->
+<!--												<a href="single-full-width.html">Grand hotel room</a>-->
+<!--											</h3>-->
+<!--											<p>LA 325</p>-->
+<!--										</div>-->
+<!---->
+<!--										<div class="price">-->
+<!--											<p>$450 000 <span>For sale</span></p>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</section>-->
 
 			<!-- Most viewed Section -->
 			<section class="most-viewed-section">
 				<div class="container">
 					<div class="section-header">
-						<h1>Most viewed</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec viverra erat. Aenean elit tellus mattis quis maximus et malesuada congue velit</p>
+						<h1>Breweries</h1>
+						<p>Here are the breweries close to where you searched</p>
 					</div>
 
 					<ul class="most-viewed-carousel most-viewed-items">
@@ -561,7 +564,7 @@
 										</h3>
 										<p>LA 325</p>
 
-										<span class="price">$450 000</span>
+										<span class="price">$350 000</span>
 									</div>
 								</div>
 							</div>
@@ -592,7 +595,7 @@
 										</h3>
 										<p>LA 325</p>
 
-										<span class="price">$450 000</span>
+										<span class="price">$250 000</span>
 									</div>
 								</div>
 							</div>
@@ -621,7 +624,7 @@
 										</h3>
 										<p>LA 325</p>
 
-										<span class="price">$450 000</span>
+										<span class="price">$150 000</span>
 									</div>
 								</div>
 							</div>
@@ -652,7 +655,7 @@
 										</h3>
 										<p>LA 325</p>
 
-										<span class="price">$450 000</span>
+										<span class="price">$50 000</span>
 									</div>
 								</div>
 							</div>
@@ -681,14 +684,14 @@
 										</h3>
 										<p>LA 325</p>
 
-										<span class="price">$450 000</span>
+										<span class="price">$45 000</span>
 									</div>
 								</div>
 							</div>
 						</li>
 
 						<li class="item">
-							<div class="most-viewed-item">
+								<div class="most-viewed-item">
 								<div class="item-cover">
 									<div class="cover">
 										<div class="text">
@@ -712,7 +715,7 @@
 										</h3>
 										<p>LA 325</p>
 
-										<span class="price">$450 000</span>
+										<span class="price">$5 000</span>
 									</div>
 								</div>
 							</div>
@@ -741,7 +744,63 @@
 										</h3>
 										<p>LA 325</p>
 
-										<span class="price">$450 000</span>
+										<span class="price">$100 000</span>
+									</div>
+								</div>
+							</div>
+							<div class="most-viewed-item">
+								<div class="item-cover">
+									<div class="cover">
+										<div class="text">
+											<a href="single.html">Info</a>
+											<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis. In auctor eu quam sit amet</p>
+										</div>
+									</div>
+									<img src="img/most-viewed-4.jpg" alt="item cover" />
+								</div>
+
+								<div class="item-body">
+									<ul class="services">
+										<li><p class="bathrooms">Bathrooms: <span>1</span></p></li>
+										<li><p class="bedrooms">Bedrooms: <span>2</span></p></li>
+										<li><p class="area">Area: <span>100</span></p></li>
+									</ul>
+
+									<div class="location">
+										<h3>
+											<a href="single.html">Grand hotel room</a>
+										</h3>
+										<p>LA 325</p>
+
+										<span class="price">$200 000</span>
+									</div>
+								</div>
+							</div>
+							<div class="most-viewed-item">
+								<div class="item-cover">
+									<div class="cover">
+										<div class="text">
+											<a href="single.html">Info</a>
+											<p>Nulla posuere, egestas neque quis, suscipit eros. Vestibulum ut eros neque. Nam viverra maximus neque id convallis. In auctor eu quam sit amet</p>
+										</div>
+									</div>
+									<img src="img/most-viewed-4.jpg" alt="item cover" />
+								</div>
+
+								<div class="item-body">
+									<ul class="services">
+										<li><p class="bathrooms">Bathrooms: <span>1</span></p></li>
+										<li><p class="bedrooms">Bedrooms: <span>2</span></p></li>
+										<li><p class="area">Area: <span>100</span></p></li>
+									</ul>
+
+									<div class="location">
+										<h3>
+											<a href="single.html">Grand hotel room</a>
+										</h3>
+										<p>LA 325</p>
+
+										<span class="price">$223 000</span>
 									</div>
 								</div>
 							</div>
@@ -1179,7 +1238,7 @@
 	</script>
 
 	<script src="js/brewologyMap.js"></script>
-<!--	<script src="js/brewSearch/brewerySearch.js"></script>-->
+
 <!--	<script src="js/infobox.js"></script>-->
 	<script src="js/jquery.js"></script>
 	<script src="js/jquery-ui.js"></script>

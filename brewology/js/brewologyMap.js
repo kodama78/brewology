@@ -31,10 +31,14 @@
 //    });
 //}
 //google.maps.event.addDomListener(window, 'load', initialize);
+var lat = -33.8688;
+var lng = 151.2195;
+
+
 
 function initialize() {
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
-        center: {lat: -33.8688, lng: 151.2195},
+        center: {lat: lat, lng: lng},
         zoom: 13,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
@@ -97,11 +101,7 @@ function initialize() {
 
 }
 
-var lat = '';
-var lng = '';
-
 function geocodeAddress(geocoder, resultsMap) {
-
 
     var address = $('#locationSearch').val();
     var radius = $('#radius').val();
@@ -137,18 +137,76 @@ function searchDatabase(){
     $.ajax({
         url:'js/brewSearch/breweryQuery.php',
         method: 'POST',
-        dataType: 'text',
+        dataType: 'JSON',
         data:{
             lat: latitude,
             lng: longitude,
             radius: radius
         },
         success: function(response){
-            console.log('Success, here is the ', response);
-            alert('YO PATRICK, I HIT THE DATABSE YO!')
+            var breweriesArray = response;
+            makeMarkers(latitude, longitude, radius, breweriesArray);
+
         },
         error: function(response){
             console.log('There is an error', response);
         }
     });
+}
+
+function makeMarkers(latitude, longitude, radius, breweryArray){
+
+    var zoom = 11;
+    switch(radius) {
+        case '10':
+            zoom = 11;
+            break;
+        case '25':
+            zoom = 10;
+            break;
+        case '50':
+            zoom = 9;
+            break;
+        case '100':
+            zoom = 8;
+            break;
+        default:
+        zoom = 11;
+    }
+    console.log('zoom is ', zoom);
+    var map = new google.maps.Map(document.getElementById('map-canvas'), {
+        center: {lat: latitude, lng: longitude},
+        zoom: zoom,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    });
+    for (var i = 0; i < breweryArray.length; i++){
+        var breweryLat = Number(breweryArray[i].latitude);
+        var breweryLong = Number(breweryArray[i].longitude);
+        var breweryName = breweryArray[i].name;
+
+
+
+        //This creates a marker and infobox for the marker
+        (function(){
+            var marker = new google.maps.Marker({
+                position: {lat: breweryLat, lng: breweryLong},
+                map: map,
+                title: breweryName
+            });
+
+            marker.setMap(map);
+
+            var infowindow = new google.maps.InfoWindow({
+                content: breweryName
+            });
+
+            google.maps.event.addListener(marker, 'mouseover', function(){
+                infowindow.open(map, marker);
+            });
+            google.maps.event.addListener(marker, 'mouseout', function(){
+                infowindow.close(map, marker);
+            });
+        })();
+
+    }
 }

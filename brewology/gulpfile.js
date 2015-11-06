@@ -16,10 +16,17 @@ gulp.task('less', function () {
 //       .pipe(plumber())
 //       .pipe(gulp.dest('css/'))
 //});
+gulp.task('php', function(){
+   gulp.src('*.php')
+       .pipe(plumber())
+       .pipe(livereload());
+});
+
 gulp.task('watch', function () {
     livereload.listen();
     gulp.watch('less/*.less', ['less']);
+    gulp.watch('*.php', ['php']);
     //gulp.watch('css/theme_css/*.css', ['css']);
 });
 
-gulp.task('default', ['less', 'watch']);
+gulp.task('default', ['less', 'watch', 'php']);

@@ -506,11 +506,11 @@
 
 			<!-- Most viewed Section -->
 			<section class="most-viewed-section">
-				<div class="container">
-					<div class="section-header">
-						<h1>Breweries</h1>
-						<p>Here are the breweries close to where you searched</p>
-					</div>
+				<div class="container" id="searchedBreweries">
+<!--					<div class="section-header">-->
+<!--						<h1>Breweries</h1>-->
+<!--						<p>Here are the breweries close to where you searched</p>-->
+<!--					</div>-->
 					<div id="breweryPanels"></div>
 <!--					<ul class="most-viewed-carousel most-viewed-items">-->
 <!--						<li class="item">-->

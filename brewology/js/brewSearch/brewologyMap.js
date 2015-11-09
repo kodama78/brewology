@@ -128,6 +128,7 @@ function geocodeAddress(geocoder, resultsMap) {
 };
 
 //THIS FUNCTION SEARCHES THE DATABASE FOR BREWERIES BASED ON DISTANCE
+//ThIS FUNCTION HAS BEEN INCORPORATED INTO THE REACT COMPONENT THAT NOW MAKES THE AJAX CALL
 function searchDatabase(){
     var latitude = lat;
 

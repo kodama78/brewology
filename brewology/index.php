@@ -813,144 +813,144 @@
 			</section>
 
 			<!-- Agents Section -->
-			<section class="agents-section">
-				<div class="container">
-					<div class="section-header">
-						<h1>Our agents</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec viverra erat. Aenean elit tellus mattis quis maximus et malesuada congue velit</p>
-					</div>
-
-					<div class="row">
-						<div class="col-md-10">
-							<div class="agents-container">
-								<ul class="agents-carousel">
-									<li class="item">
-										<div class="agent">
-											<div class="image">
-												<a href="agent.html">
-													<img src="img/agent-1.jpg" alt="agent photo" />
-												</a>
-											</div>
-
-											<h3><a href="agent.html">John Doe</a></h3>
-											<p class="position">agent</p>
-
-											<ul class="social-block">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-											</ul>
-
-											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>
-										</div>
-
-										<div class="agent">
-											<div class="image">
-												<a href="agent.html">
-													<img src="img/agent-2.jpg" alt="agent photo" />
-												</a>
-											</div>
-
-											<h3><a href="agent.html">Elias Doe</a></h3>
-											<p class="position">agent</p>
-
-											<ul class="social-block">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-											</ul>
-
-											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>
-										</div>
-									</li>
-
-									<li class="item">
-										<div class="agent">
-											<div class="image">
-												<a href="agent.html">
-													<img src="img/agent-1.jpg" alt="agent photo" />
-												</a>
-											</div>
-
-											<h3><a href="agent.html">John Doe</a></h3>
-											<p class="position">agent</p>
-
-											<ul class="social-block">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-											</ul>
-
-											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>
-										</div>
-
-										<div class="agent">
-											<div class="image">
-												<a href="agent.html">
-													<img src="img/agent-2.jpg" alt="agent photo" />
-												</a>
-											</div>
-
-											<h3><a href="agent.html">Elias Doe</a></h3>
-											<p class="position">agent</p>
-
-											<ul class="social-block">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-											</ul>
-
-											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-
-						<div class="col-md-14">
-							<div class="agent featured-agent">
-								<div class="row">
-									<div class="col-sm-10">
-										<div class="image">
-											<a href="agent.html">
-												<img src="img/featured-agent.jpg" alt="featured agent photo" />
-											</a>
-										</div>
-										<h3><a href="agent.html">Ryan Elias</a></h3>
-										<p class="position">agent</p>
-
-										<ul class="social-block">
-											<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-											<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-											<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-										</ul>
-									</div>
-
-									<div class="col-sm-14">
-										<div class="featured-agent-info">
-											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies, turpis ipsum ultrices massa, vitae pulvinar nibh erat</p>
-
-											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies, turpis ipsum ultrices massa, vitae pulvinar nibh erat</p>
-
-											<ul>
-												<li>
-													<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>
-												</li>
-												<li>
-													<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>
-												</li>
-												<li>
-													<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
+<!--			<section class="agents-section">-->
+<!--				<div class="container">-->
+<!--					<div class="section-header">-->
+<!--						<h1>Our agents</h1>-->
+<!--						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec viverra erat. Aenean elit tellus mattis quis maximus et malesuada congue velit</p>-->
+<!--					</div>-->
+<!---->
+<!--					<div class="row">-->
+<!--						<div class="col-md-10">-->
+<!--							<div class="agents-container">-->
+<!--								<ul class="agents-carousel">-->
+<!--									<li class="item">-->
+<!--										<div class="agent">-->
+<!--											<div class="image">-->
+<!--												<a href="agent.html">-->
+<!--													<img src="img/agent-1.jpg" alt="agent photo" />-->
+<!--												</a>-->
+<!--											</div>-->
+<!---->
+<!--											<h3><a href="agent.html">John Doe</a></h3>-->
+<!--											<p class="position">agent</p>-->
+<!---->
+<!--											<ul class="social-block">-->
+<!--												<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+<!--												<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+<!--												<li><a href="#"><i class="fa fa-github-alt"></i></a></li>-->
+<!--											</ul>-->
+<!---->
+<!--											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>-->
+<!--										</div>-->
+<!---->
+<!--										<div class="agent">-->
+<!--											<div class="image">-->
+<!--												<a href="agent.html">-->
+<!--													<img src="img/agent-2.jpg" alt="agent photo" />-->
+<!--												</a>-->
+<!--											</div>-->
+<!---->
+<!--											<h3><a href="agent.html">Elias Doe</a></h3>-->
+<!--											<p class="position">agent</p>-->
+<!---->
+<!--											<ul class="social-block">-->
+<!--												<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+<!--												<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+<!--												<li><a href="#"><i class="fa fa-github-alt"></i></a></li>-->
+<!--											</ul>-->
+<!---->
+<!--											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>-->
+<!--										</div>-->
+<!--									</li>-->
+<!---->
+<!--									<li class="item">-->
+<!--										<div class="agent">-->
+<!--											<div class="image">-->
+<!--												<a href="agent.html">-->
+<!--													<img src="img/agent-1.jpg" alt="agent photo" />-->
+<!--												</a>-->
+<!--											</div>-->
+<!---->
+<!--											<h3><a href="agent.html">John Doe</a></h3>-->
+<!--											<p class="position">agent</p>-->
+<!---->
+<!--											<ul class="social-block">-->
+<!--												<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+<!--												<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+<!--												<li><a href="#"><i class="fa fa-github-alt"></i></a></li>-->
+<!--											</ul>-->
+<!---->
+<!--											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>-->
+<!--										</div>-->
+<!---->
+<!--										<div class="agent">-->
+<!--											<div class="image">-->
+<!--												<a href="agent.html">-->
+<!--													<img src="img/agent-2.jpg" alt="agent photo" />-->
+<!--												</a>-->
+<!--											</div>-->
+<!---->
+<!--											<h3><a href="agent.html">Elias Doe</a></h3>-->
+<!--											<p class="position">agent</p>-->
+<!---->
+<!--											<ul class="social-block">-->
+<!--												<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+<!--												<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+<!--												<li><a href="#"><i class="fa fa-github-alt"></i></a></li>-->
+<!--											</ul>-->
+<!---->
+<!--											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>-->
+<!--										</div>-->
+<!--									</li>-->
+<!--								</ul>-->
+<!--							</div>-->
+<!--						</div>-->
+<!---->
+<!--						<div class="col-md-14">-->
+<!--							<div class="agent featured-agent">-->
+<!--								<div class="row">-->
+<!--									<div class="col-sm-10">-->
+<!--										<div class="image">-->
+<!--											<a href="agent.html">-->
+<!--												<img src="img/featured-agent.jpg" alt="featured agent photo" />-->
+<!--											</a>-->
+<!--										</div>-->
+<!--										<h3><a href="agent.html">Ryan Elias</a></h3>-->
+<!--										<p class="position">agent</p>-->
+<!---->
+<!--										<ul class="social-block">-->
+<!--											<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+<!--											<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+<!--											<li><a href="#"><i class="fa fa-github-alt"></i></a></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!---->
+<!--									<div class="col-sm-14">-->
+<!--										<div class="featured-agent-info">-->
+<!--											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies, turpis ipsum ultrices massa, vitae pulvinar nibh erat</p>-->
+<!---->
+<!--											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies, turpis ipsum ultrices massa, vitae pulvinar nibh erat</p>-->
+<!---->
+<!--											<ul>-->
+<!--												<li>-->
+<!--													<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>-->
+<!--												</li>-->
+<!--												<li>-->
+<!--													<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>-->
+<!--												</li>-->
+<!--												<li>-->
+<!--													<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies.</p>-->
+<!--												</li>-->
+<!--											</ul>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!--			</section>-->
 
 			<!-- Featured Blogposts -->
 			<section class="featured-bloposts-section">
@@ -1240,7 +1240,7 @@
 			src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCjjk2k7ZXkCwtYFjCejUugD3EoshwmxHI&libraries=places&callback=initialize">
 	</script>
 
-	<script src="js/brewologyMap.js"></script>
+	<script src="js/brewSearch/brewologyMap.js"></script>
 	<script type="text/babel"src="js/reactComponents/breweryPanels/breweryPanels.jsx"></script>
 <!--	<script src="js/infobox.js"></script>-->
 	<script src="js/jquery.js"></script>

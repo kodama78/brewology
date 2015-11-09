@@ -3883,6 +3883,7 @@ footer .copyrigts p a:hover {
 }
 .most-viewed-item .item-body {
   background: #3c3c3c;
+  height: 110px;
 }
 .most-viewed-item .item-body .services {
   list-style-type: none;
@@ -3890,7 +3891,11 @@ footer .copyrigts p a:hover {
   text-align: center;
   display: block;
   margin: 0;
-  padding: 10px 0 0;
+  color: whitesmoke;
+  padding: 10px 0;
+}
+.most-viewed-item .item-body .services a {
+  color: whitesmoke;
 }
 .most-viewed-item .item-body .services li {
   display: inline-block;
@@ -3925,6 +3930,8 @@ footer .copyrigts p a:hover {
 .most-viewed-item .item-body .location {
   position: relative;
   padding: 20px 40px 45px;
+  height:100%;
+  width: 100%;
 }
 .most-viewed-item .item-body .location h3 {
   margin: 0 0 7px;
@@ -3942,17 +3949,16 @@ footer .copyrigts p a:hover {
 .most-viewed-item .item-body .location p {
   margin: 0;
   font-size: 11px;
-  color: #616161;
+  color: ghostwhite;
   font-weight: 500;
   line-height: 1em;
   text-transform: uppercase;
 }
 .most-viewed-item .item-body .location .price {
-  position: absolute;
-  top: 35px;
-  right: 45px;
+
   color: #d1d1d1;
   font-size: 14px;
+  padding-top: 5px;
   line-height: 1em;
   font-weight: 700;
 }

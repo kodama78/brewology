@@ -237,7 +237,7 @@
 <!--								</div>-->
 <!--							</div>-->
 
-							<a href="#" id="sendBrewery" class="button theme-button-1 update-properties" onclick="searchDatabase()">Search For Breweries</a>
+							<a href="#" id="sendBrewery" class="button theme-button-1 update-properties">Search For Breweries</a>
 						</div>
 					</div>
 

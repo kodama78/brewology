@@ -33,7 +33,8 @@
 //google.maps.event.addDomListener(window, 'load', initialize);
 var lat = -33.8688;
 var lng = 151.2195;
-var breweriesArray = [];
+var radius = $('#radius').val();
+var breweriesArray = null;
 
 
 function initialize() {
@@ -146,14 +147,61 @@ function searchDatabase(){
         success: function(response){
             breweriesArray = response;
             makeMarkers(latitude, longitude, radius, breweriesArray);
+            //makePanels(breweriesArray);
+            console.log(breweriesArray);
 
         },
         error: function(response){
             console.log('There is an error', response);
         }
     });
-}
+};
 
+//THIS MAKES PANELS FOR EACH BREWERY RETURNED BY THE AJAX CALL
+function makePanels (breweryArray){
+    for (var i = 0; i < breweryArray.length; i++){
+        var breweryLat = Number(breweryArray[i].latitude);
+        var breweryLong = Number(breweryArray[i].longitude);
+        var breweryName = breweryArray[i].name;
+
+        var panelContainer = $('<div>').addClass('fade in most-viewed-item col-xs-24 col-sm-8 col-md-6 col-lg-6');
+        var breweryInfoPane = $('<div>').addClass('item-cover');
+        var paneCover = $('<div>').addClass('cover');
+        var textContainer = $('<div>').addClass('text');
+        var link = $('<a>').attr('href', 'single.php').text('Info');
+        var textInfo = $('<p>').text('This is the info about the brewery that goes here.');
+        var img = $('<img>').attr('src', 'img/most-viewed-1.jpg').attr('alt', 'item cover');
+
+        textContainer.append(link, textInfo);
+        paneCover.append(textContainer);
+
+        //TOP CONTAINER THAT IS HIDDEN UNDER IMAGE
+        breweryInfoPane.append(paneCover, img);
+
+        var itemBody = $('<div>').addClass('item-body');
+        var breweryHeading = $('<ul>').addClass('services');
+        var breweryNewsLink = $('<li>').addClass('bathrooms').text('News');
+        var breweryLocation = $('<div>').addClass('location');
+        var locationHeading = $('<h3>');
+        var headingLink = $('<a>').attr('href', 'single.php').text(breweryName);
+        var breweryAddress = $('<p>').text('Address here');
+        var brewerySpan = $('<span>').addClass('price').text('Something here');
+
+        breweryHeading.append(breweryNewsLink);
+
+        locationHeading.append(headingLink);
+        breweryLocation.append(locationHeading, breweryAddress, brewerySpan);
+
+        itemBody.append(breweryHeading, breweryLocation);
+
+        panelContainer.append(breweryInfoPane, itemBody);
+
+        $('#searchedBreweries').append(panelContainer);
+
+    }
+};
+
+//THIS MAKES MARKERS FOR EACH BREWERY RETURNED BY THE AJAX CALL
 function makeMarkers(latitude, longitude, radius, breweryArray){
 
     var zoom = 11;
@@ -173,12 +221,71 @@ function makeMarkers(latitude, longitude, radius, breweryArray){
         default:
         zoom = 11;
     }
-    console.log('zoom is ', zoom);
+
     var map = new google.maps.Map(document.getElementById('map-canvas'), {
         center: {lat: latitude, lng: longitude},
         zoom: zoom,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     });
+
+    var input = document.getElementById('locationSearch');
+    var searchBox = new google.maps.places.SearchBox(input);
+
+    // Bias the SearchBox results towards current map's viewport.
+    map.addListener('bounds_changed', function() {
+        searchBox.setBounds(map.getBounds());
+    });
+
+    var markers = [];
+    // Listen for the event fired when the user selects a prediction and retrieve
+    // more details for that place.
+    searchBox.addListener('places_changed', function() {
+        var places = searchBox.getPlaces();
+        var geocoder = new google.maps.Geocoder();
+        geocodeAddress(geocoder, map);
+
+        if (places.length == 0) {
+            return;
+        }
+
+        // Clear out the old markers.
+        markers.forEach(function(marker) {
+            marker.setMap(null);
+        });
+        markers = [];
+
+        // For each place, get the icon, name and location.
+        var bounds = new google.maps.LatLngBounds();
+        places.forEach(function(place) {
+            var icon = {
+                url: place.icon,
+                size: new google.maps.Size(71, 71),
+                origin: new google.maps.Point(0, 0),
+                anchor: new google.maps.Point(17, 34),
+                scaledSize: new google.maps.Size(25, 25)
+            };
+
+            // Create a marker for each place.
+            markers.push(new google.maps.Marker({
+                map: map,
+                icon: icon,
+                title: place.name,
+                position: place.geometry.location
+            }));
+
+            if (place.geometry.viewport) {
+                // Only geocodes have viewport.
+                bounds.union(place.geometry.viewport);
+            } else {
+                bounds.extend(place.geometry.location);
+            }
+        });
+        map.fitBounds(bounds);
+    });
+
+
+
+
     for (var i = 0; i < breweryArray.length; i++){
         var breweryLat = Number(breweryArray[i].latitude);
         var breweryLong = Number(breweryArray[i].longitude);

@@ -108,9 +108,9 @@
 						<img src="img/brand.png" alt="login brand" />
 					</div>
 
-					<form id="login-form">
-						<input class="js-input" type="text" placeholder="Login" />
-						<input class="js-input" type="password" placeholder="Password" />
+					<form id="login-form" method="post" action="js/userLogin/userlogin.php">
+						<input class="js-input" type="text" placeholder="Email" name="email"/>
+						<input class="js-input" type="password" placeholder="Password" name="password" />
 
 						<input type="submit" value="Login" class="submit-button" />
 
@@ -123,12 +123,13 @@
 						</div>
 					</form>
 
-					<form id="register-form">
-						<input class="js-input" type="text" placeholder="First Name" />
-						<input class="js-input" type="text" placeholder="Last Name" />
-						<input class="js-input" type="text" placeholder="Login" />
-						<input class="js-input" type="password" placeholder="Password" />
-						<input class="js-input" type="password" placeholder="Confirm password" />
+					<form id="register-form" method="post" action="js/userRegistration/userRegistration.php">
+						<input class="js-input" type="text" placeholder="First Name" name="firstName" required/>
+						<input class="js-input" type="text" placeholder="Last Name" name="lastName" required/>
+						<input class="js-input" type="text" placeholder="Email" name="email" required/>
+						<input class="js-input" type="text" placeholder="Username" name="username" required/>
+						<input class="js-input" type="password" placeholder="Password" name="password" required/>
+						<input class="js-input" type="password" placeholder="Confirm password" name="passwordConfirm" required/>
 
 						<input type="submit" value="Register" class="submit-button" />
 					</form>

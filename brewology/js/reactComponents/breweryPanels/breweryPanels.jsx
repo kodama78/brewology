@@ -5,6 +5,8 @@
 var BreweryPanels = React.createClass({
     render: function(){
         var breweryPanelMap = this.props.breweries.map(function(brewery, index){
+            var id = brewery.id;
+            var breweryURL = "single.php?=" + id;
             var name = brewery.name;
             var addressOne = brewery['street number'] + ' ' + brewery['street name'];
             var addressTwo = brewery.city + ', ' + brewery.state + ' ' + brewery.zip1;
@@ -26,7 +28,7 @@ var BreweryPanels = React.createClass({
                     </div>
 
                     <div className="item-body">
-                        <h4 className="services truncate"><a href="single.php">{name}</a></h4>
+                        <h4 className="services truncate"><a href={breweryURL}>{name}</a></h4>
 
                         <div className="location">
                             <p>{addressOne}</p>

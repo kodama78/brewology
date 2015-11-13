@@ -37,16 +37,3 @@ if (mysqli_num_rows($result) > 0) {
 else{
     echo 'No breweries in that area code';
 }
-
-
-//SELECT STATEMENT FOR BREWERIES BY DISTANCE QUERY
-//SELECT
-//`id`,
-//`name`,
-//ACOS( SIN( RADIANS( `latitude` ) ) * SIN( RADIANS($lat ) ) + COS( RADIANS( `latitude` ) )
-//    * COS( RADIANS( $lat )) * COS( RADIANS( `longitude` ) - RADIANS( $long )) ) * 3959 AS `distance`
-//FROM `california_breweries`
-//WHERE
-//ACOS( SIN( RADIANS( `latitude` ) ) * SIN( RADIANS( $lat ) ) + COS( RADIANS( `latitude` ) )
-//    * COS( RADIANS( $lat )) * COS( RADIANS( `longitude` ) - RADIANS( $long )) ) * 3959 < 100
-//ORDER BY `distance`;

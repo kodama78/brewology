@@ -47,12 +47,12 @@
 
 			<!-- Social Block & Login -->
 			<div class="right-block">
-				<!--<ul class="social-block">-->
-				<!--<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-				<!--<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
-				<!--<li><a href="#"><i class="fa fa-instagram"></i></a></li>-->
-				<!--<li><a href="#"><i class="fa fa-pinterest"></i></a></li>-->
-				<!--</ul>-->
+				<ul class="social-block">
+					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
+				</ul>
 
 				<p><a class="login" href="#">Login</a> / <a href="#" class="register">Register</a></p>
 			</div>
@@ -116,8 +116,8 @@
 			<section class="single-property-container">
 				<div class="container">
 					<div class="section-header no-icon">
-						<h1>Single Property</h1>
-						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam nec viverra erat. Aenean elit tellus mattis quis maximus et malesuada congue velit</p>
+						<h1><?php echo $name ?></h1>
+						<p><?php echo $breweryDescription ?></p>
 					</div>
 
 					<div class="row main-wrapper">
@@ -277,14 +277,15 @@
 													<i class="fa fa-star"></i>
 												</div>
 
-												<h4>Grand hotel room</h4>
-												<p class="address">LA 325</p>
+												<h6><?php echo $addressOne ?></h6>
+												<h6><?php echo $addressTwo ?></h6>
+												<p class="address"></p>
 
 												<div class="services">
-													<p class="caption">Services</p>
+													<p class="caption">Info</p>
 													<ul>
-														<li class="bathrooms"><p>Bathrooms: <span>1</span></p></li>
-														<li class="bedrooms"><p>Bedrooms: <span>2</span></p></li>
+														<li class="bathrooms"><p>Phone: <span><?php echo $phone ?></span></p></li>
+														<li class="bedrooms"><p>website: <span><?php echo $website ?></span></p></li>
 														<li class="area"><p>Area: <span>100</span></p></li>
 													</ul>
 												</div>

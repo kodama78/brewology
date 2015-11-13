@@ -1,25 +1,27 @@
 /**
  * Created by shawnotomo on 11/5/15.
  */
-
+//INPUT: ARRAY OF BREWERIES PASSED FROM PanelContainer
+//OUTPUT: ONE PANEL FOR EACH BREWERY THA IS APPENDED TO THE PANEL CONTAINER
 var BreweryPanels = React.createClass({
     render: function(){
         var breweryPanelMap = this.props.breweries.map(function(brewery, index){
             var id = brewery.id;
-            var breweryURL = "single.php?=" + id;
+
             var name = brewery.name;
             var addressOne = brewery['street number'] + ' ' + brewery['street name'];
             var addressTwo = brewery.city + ', ' + brewery.state + ' ' + brewery.zip1;
             var website = brewery.website;
             var rating = brewery.rating;
             var phone = brewery.phone;
+            var breweryURL = "breweryLandingPage.php?id=" + id + "&name=" + name + "&addressOne=" + addressOne + "&addressTwo=" + addressTwo + "&website=" + website + "&phone=" + phone;
             var breweryKey = index;
             return(
                 <div  key={breweryKey} className="most-viewed-item col-xs-24 col-sm-8 col-md-6 col-lg-6">
                     <div className="item-cover">
                         <div className="cover">
                             <div className="text">
-                                <a href="single.php">Info</a>
+                                <a href={breweryURL}>Info</a>
                                 <a href={website}>{website}</a>
                                 <h5>{rating}</h5>
                             </div>
@@ -60,6 +62,8 @@ var BreweryHeader = React.createClass({
    }
 });
 
+//INPUT: FROM INCOMING AJAX CALL IS ARRAY OF BREWRIES RETURNED FROM AJAX CALL
+//OUTPUT: CONTAINER WHICH WILL BE APPENDED TO #searchedBreweries
 var PanelContainer = React.createClass({
     getInitialState:function(){
         return({

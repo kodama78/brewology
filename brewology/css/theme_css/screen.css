@@ -2231,11 +2231,11 @@ footer .copyrigts p a:hover {
 .single-property-container .property-description-box .property-description .rating-box i:first-of-type {
   margin: 0;
 }
-.single-property-container .property-description-box .property-description h4 {
+.single-property-container .property-description-box .property-description h6 {
   margin: 0;
   padding: 0 15px;
   color: #292929;
-  font-size: 22px;
+  font-size: 18px;
   line-height: 1em;
   font-weight: 200;
   text-align: center;
@@ -2293,15 +2293,15 @@ footer .copyrigts p a:hover {
   top: -1px;
   margin-right: 25px;
 }
-.single-property-container .property-description-box .property-description .services ul li.bedrooms:before {
-  content: "";
-}
-.single-property-container .property-description-box .property-description .services ul li.area:before {
-  content: "";
-}
-.single-property-container .property-description-box .property-description .services ul li.bathrooms:before {
-  content: "";
-}
+/*.single-property-container .property-description-box .property-description .services ul li.bedrooms:before {*/
+  /*content: "";*/
+/*}*/
+/*.single-property-container .property-description-box .property-description .services ul li.area:before {*/
+  /*content: "";*/
+/*}*/
+/*.single-property-container .property-description-box .property-description .services ul li.bathrooms:before {*/
+  /*content: "";*/
+/*}*/
 .single-property-container .property-description-box .property-description .price {
   text-align: center;
   padding: 14px 0 17px;

@@ -14,7 +14,7 @@ var BreweryPanels = React.createClass({
             var website = brewery.website;
             var rating = brewery.rating;
             var phone = brewery.phone;
-            var breweryURL = "breweryLandingPage.php?id=" + id + "&name=" + name + "&addressOne=" + addressOne + "&addressTwo=" + addressTwo + "&website=" + website + "&phone=" + phone;
+            var breweryURL = "breweryLandingPage.php?id=" + id;
             var breweryKey = index;
             return(
                 <div  key={breweryKey} className="most-viewed-item col-xs-24 col-sm-8 col-md-6 col-lg-6">
@@ -22,7 +22,7 @@ var BreweryPanels = React.createClass({
                         <div className="cover">
                             <div className="text">
                                 <a href={breweryURL}>Info</a>
-                                <a href={website}>{website}</a>
+                                <a href={website} target="_blank">{website}</a>
                                 <h5>{rating}</h5>
                             </div>
                         </div>

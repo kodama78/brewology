@@ -1,3 +1,4 @@
+//include 'session.php'
 <!DOCTYPE html>
 <html>
 <head>
@@ -58,14 +59,14 @@
 				<ul>
 					<li class="home current-menu-item"><a href="my-profile.php">Home</a></li>
 					<li class="listing menu-item-has-children">
-						<a href="#">Favorite Breweries</a>
+						<a href="properties-list.php">Favorite Breweries</a>
 						<ul class="sub-menu">
-							<li><a href="properties-grid.php">Grid</a></li>
-							<li><a href="properties-list.php">List</a></li>
+<!--							<li><a href="properties-grid.php">Grid</a></li>-->
+							<li><a href="properties-list.php">Newsfeed</a></li>
 						</ul>
 					</li>
-					<!--<li class="property"><a href="single-full-width.php">Single Brewery</a></li>-->
-					<!--<li class="agents"><a href="agents.php">Agents</a></li>-->
+					<li class="property"><a href="single-full-width.php">Add Brewery</a></li>
+					<li class="agents"><a href="agents.php">Add Newsfeed Item</a></li>
 					<!--<li class="blog"><a href="blog.php">Blog</a></li>-->
 					<!--<li class="error"><a href="404.php">404 Page</a></li>-->
 				</ul>

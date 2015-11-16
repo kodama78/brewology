@@ -5,7 +5,11 @@
  * Date: 11/9/15
  * Time: 2:46 PM
  */
-$conn = mysqli_connect('localhost', 'root', '', 'brewology_users');
+$conn = mysqli_connect('localhost', 'root', '', 'brewology');
+
+$dc = time();
+$dm = time();
+
 
 $firstName = $_POST['firstName'];
 
@@ -74,14 +78,18 @@ if($password != $passwordConfirm){
                             print json_encode($output);
 
                         } else{
-                            $insert_new_user = "INSERT INTO `users` (`email`, `first_name`, `last_name`, `username`, `password`)
-											VALUES ('$email', '$firstName', '$lastName', '$username', '$password')";
+                            $insert_new_user = "INSERT INTO `users` (`dc`, `dm`,`email`, `fname`, `lname`, `uname`, `password`)
+											VALUES ('$dc', '$dm', '$email', '$firstName', '$lastName', '$username', '$password')";
                             $insert_user_result = mysqli_query($conn, $insert_new_user);
                             if(mysqli_affected_rows($conn) > 0){
-                                $output['success'] = true;
-                                $output['message'] = "User created!";
-                                print json_encode($output);
-                                header("Location: http://localhost/lf_projects/sandbox/breweries/brewology/");
+                                $created_by = "UPDATE `users` SET `cb` = `id`, `mb` = `id` WHERE `email` = '$email'";
+                                $created_by_result = mysqli_query($conn, $created_by);
+                                if(mysqli_affected_rows($conn) > 0){
+                                    $output['success'] = true;
+                                    $output['message'] = "User created!";
+                                    print json_encode($output);
+                                    header("Location: http://localhost/lf_projects/sandbox/breweries/brewology/");
+                                }
                             }
                             else{
                                 $output['message'] = "Database error, user not added";

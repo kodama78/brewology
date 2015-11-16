@@ -2537,7 +2537,7 @@ footer .copyrigts p a:hover {
 @media (min-width: 992px) {
   .single-property-container .main-wrapper {
     direction: rtl;
-    font-size: 0;
+
   }
   .single-property-container .main-wrapper .col {
     vertical-align: top;

@@ -29,10 +29,10 @@ else
         mysqli_error($conn);
         if(mysqli_num_rows($result) > 0) {
             while($inner_result = mysqli_fetch_assoc($result)){
-                print_r($inner_result);
+                session_start();
                 $output['success'] = true;
                 $output['message'] = 'Login successful';
-                $_SESSION['user_id'] = $inner_result['id'];
+                $_SESSION['id'] = $inner_result['id'];
                 header("Location: http://localhost/lf_projects/sandbox/breweries/brewology/");
             }
         }

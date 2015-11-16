@@ -32,14 +32,14 @@
 				<ul>
 					<li class="home current-menu-item"><a href="my-profile.php">Home</a></li>
 					<li class="listing menu-item-has-children">
-						<a href="#">Favorite Breweries</a>
+						<a href="properties-list.php">Favorite Breweries</a>
 						<ul class="sub-menu">
-							<li><a href="properties-grid.php">Grid</a></li>
-							<li><a href="properties-list.php">List</a></li>
+<!--							<li><a href="properties-grid.php">Grid</a></li>-->
+							<li><a href="properties-list.php">Newsfeed</a></li>
 						</ul>
 					</li>
-					<!--<li class="property"><a href="single-full-width.php">Single Brewery</a></li>-->
-					<!--<li class="agents"><a href="agents.php">Agents</a></li>-->
+					<li class="property"><a href="single-full-width.php">Add Brewery</a></li>
+					<li class="agents"><a href="agents.php">Add Newsfeed Item</a></li>
 					<!--<li class="blog"><a href="blog.php">Blog</a></li>-->
 					<!--<li class="error"><a href="404.php">404 Page</a></li>-->
 				</ul>
@@ -127,143 +127,144 @@
 									<div class="col-sm-15">
 										<div class="item-cover">
 											<div class="cover-photos">
-												<ul class="slides">
-													<li>
-														<a href="img/item-cover-1.jpg" data-lightbox="Properties">
-															<i class="icon"></i>
-														</a>
-														<img src="img/item-cover-1.jpg" alt="property cover" />
-													</li>
-													<li>
-														<a href="img/item-cover-2.jpg" data-lightbox="Properties">
-															<i class="icon"></i>
-														</a>
-														<img src="img/item-cover-2.jpg" alt="property cover" />
-													</li>
-													<li>
-														<a href="img/item-cover-3.jpg" data-lightbox="Properties">
-															<i class="icon"></i>
-														</a>
-														<img src="img/item-cover-3.jpg" alt="property cover" />
-													</li>
-													<li>
-														<a href="img/item-cover-4.jpg" data-lightbox="Properties">
-															<i class="icon"></i>
-														</a>
-														<img src="img/item-cover-4.jpg" alt="property cover" />
-													</li>
-													<li>
-														<a href="img/item-cover-5.jpg" data-lightbox="Properties">
-															<i class="icon"></i>
-														</a>
-														<img src="img/item-cover-5.jpg" alt="property cover" />
-													</li>
-													<li>
-														<a href="img/item-cover-6.jpg" data-lightbox="Properties">
-															<i class="icon"></i>
-														</a>
-														<img src="img/item-cover-6.jpg" alt="property cover" />
-													</li>
-													<li>
-														<a href="img/item-cover-7.jpg" data-lightbox="Properties">
-															<i class="icon"></i>
-														</a>
-														<img src="img/item-cover-7.jpg" alt="property cover" />
-													</li>
-												</ul>
+												<p>Newsfeed goes here</p>
+<!--												<ul class="slides">-->
+<!--													<li>-->
+<!--														<a href="img/item-cover-1.jpg" data-lightbox="Properties">-->
+<!--															<i class="icon"></i>-->
+<!--														</a>-->
+<!--														<img src="img/item-cover-1.jpg" alt="property cover" />-->
+<!--													</li>-->
+<!--													<li>-->
+<!--														<a href="img/item-cover-2.jpg" data-lightbox="Properties">-->
+<!--															<i class="icon"></i>-->
+<!--														</a>-->
+<!--														<img src="img/item-cover-2.jpg" alt="property cover" />-->
+<!--													</li>-->
+<!--													<li>-->
+<!--														<a href="img/item-cover-3.jpg" data-lightbox="Properties">-->
+<!--															<i class="icon"></i>-->
+<!--														</a>-->
+<!--														<img src="img/item-cover-3.jpg" alt="property cover" />-->
+<!--													</li>-->
+<!--													<li>-->
+<!--														<a href="img/item-cover-4.jpg" data-lightbox="Properties">-->
+<!--															<i class="icon"></i>-->
+<!--														</a>-->
+<!--														<img src="img/item-cover-4.jpg" alt="property cover" />-->
+<!--													</li>-->
+<!--													<li>-->
+<!--														<a href="img/item-cover-5.jpg" data-lightbox="Properties">-->
+<!--															<i class="icon"></i>-->
+<!--														</a>-->
+<!--														<img src="img/item-cover-5.jpg" alt="property cover" />-->
+<!--													</li>-->
+<!--													<li>-->
+<!--														<a href="img/item-cover-6.jpg" data-lightbox="Properties">-->
+<!--															<i class="icon"></i>-->
+<!--														</a>-->
+<!--														<img src="img/item-cover-6.jpg" alt="property cover" />-->
+<!--													</li>-->
+<!--													<li>-->
+<!--														<a href="img/item-cover-7.jpg" data-lightbox="Properties">-->
+<!--															<i class="icon"></i>-->
+<!--														</a>-->
+<!--														<img src="img/item-cover-7.jpg" alt="property cover" />-->
+<!--													</li>-->
+<!--												</ul>-->
 											</div>
 
-											<div class="thumbnail-carousel">
-												<ul class="slides">
-													<li><a data-slide-index="0" href="#"><img src="img/item-cover-1.jpg" alt="thumbnail cover" /></a></li>
-													<li><a data-slide-index="1" href="#"><img src="img/item-cover-2.jpg" alt="thumbnail cover" /></a></li>
-													<li><a data-slide-index="2" href="#"><img src="img/item-cover-3.jpg" alt="thumbnail cover" /></a></li>
-													<li><a data-slide-index="3" href="#"><img src="img/item-cover-4.jpg" alt="thumbnail cover" /></a></li>
-													<li><a data-slide-index="4" href="#"><img src="img/item-cover-5.jpg" alt="thumbnail cover" /></a></li>
-													<li><a data-slide-index="5" href="#"><img src="img/item-cover-6.jpg" alt="thumbnail cover" /></a></li>
-													<li><a data-slide-index="6" href="#"><img src="img/item-cover-7.jpg" alt="thumbnail cover" /></a></li>
-												</ul>
-											</div>
+<!--											<div class="thumbnail-carousel">-->
+<!--												<ul class="slides">-->
+<!--													<li><a data-slide-index="0" href="#"><img src="img/item-cover-1.jpg" alt="thumbnail cover" /></a></li>-->
+<!--													<li><a data-slide-index="1" href="#"><img src="img/item-cover-2.jpg" alt="thumbnail cover" /></a></li>-->
+<!--													<li><a data-slide-index="2" href="#"><img src="img/item-cover-3.jpg" alt="thumbnail cover" /></a></li>-->
+<!--													<li><a data-slide-index="3" href="#"><img src="img/item-cover-4.jpg" alt="thumbnail cover" /></a></li>-->
+<!--													<li><a data-slide-index="4" href="#"><img src="img/item-cover-5.jpg" alt="thumbnail cover" /></a></li>-->
+<!--													<li><a data-slide-index="5" href="#"><img src="img/item-cover-6.jpg" alt="thumbnail cover" /></a></li>-->
+<!--													<li><a data-slide-index="6" href="#"><img src="img/item-cover-7.jpg" alt="thumbnail cover" /></a></li>-->
+<!--												</ul>-->
+<!--											</div>-->
 										</div>
 
-										<div class="featured-video">
-											<div class="cover visible">
-												<button class="start-media">
-													<i class="fa fa-play"></i>
-												</button>
-											</div>
-											<div class="embed-responsive embed-responsive-4by3">
-												<iframe src="https://player.vimeo.com/video/50457458?title=0&byline=0&portrait=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-											</div>
-										</div>
+<!--										<div class="featured-video">-->
+<!--											<div class="cover visible">-->
+<!--												<button class="start-media">-->
+<!--													<i class="fa fa-play"></i>-->
+<!--												</button>-->
+<!--											</div>-->
+<!--											<div class="embed-responsive embed-responsive-4by3">-->
+<!--												<iframe src="https://player.vimeo.com/video/50457458?title=0&byline=0&portrait=0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>-->
+<!--											</div>-->
+<!--										</div>-->
 
 										<!-- Comments Area -->
-										<div class="comments-area">
-											<div class="section-header small">
-												<h2>Review</h2>
-												<p>our visitors decided to share the impressions of visit of this hotel</p>
-											</div>
-
-											<!-- Comments List -->
-											<div class="commments-wrapper">
-												<ul class="comments-list">
-													<li class="comment">
-														<div class="user">
-															<img src="img/blog-author-2.jpg" alt="user avatar" />
-														</div>
-
-														<div class="comment-body">
-															<div class="message">
-																<p>Duis vel eros mi. Nunc eu sem dolor. Nulla<br />venenatis, augue at rhoncus tincidunt</p>
-															</div>
-
-															<div class="comment-info">
-																<p class="author">Robert Doe</p>
-																<p class="date">2 days ago</p>
-																<a href="#" class="reply-link">Reply</a>
-															</div>
-														</div>
-													</li>
-
-													<li class="comment">
-														<div class="user">
-															<img src="img/blog-author-1.jpg" alt="user avatar" />
-														</div>
-
-														<div class="comment-body">
-															<div class="message">
-																<p>Duis vel eros mi. Nunc eu sem dolor. Nulla<br />venenatis, augue at rhoncus tincidunt</p>
-															</div>
-
-															<div class="comment-info">
-																<p class="author">Robert Doe</p>
-																<p class="date">2 days ago</p>
-																<a href="#" class="reply-link">Reply</a>
-															</div>
-														</div>
-													</li>
-												</ul>
-											</div>
-
-											<!-- Response Form -->
-											<form class="comment-form">
-												<div class="form-body clearfix">
-													<div class="message">
-														<textarea class="js-input form-input" placeholder="Leave a comment"></textarea>
-													</div>
-													<div class="row row-fit">
-														<div class="col-sm-12">
-															<input type="text" class="js-input form-input" placeholder="Enter your name" />
-														</div>
-														<div class="col-sm-12">
-															<input type="text" class="js-input form-input" placeholder="Enter your email address" />
-														</div>
-													</div>
-
-													<input type="submit" value="post" class="submit-button" />
-												</div>
-											</form>
-										</div>
+<!--										<div class="comments-area">-->
+<!--											<div class="section-header small">-->
+<!--												<h2>Review</h2>-->
+<!--												<p>our visitors decided to share the impressions of visit of this hotel</p>-->
+<!--											</div>-->
+<!---->
+<!--											<!-- Comments List -->-->
+<!--											<div class="commments-wrapper">-->
+<!--												<ul class="comments-list">-->
+<!--													<li class="comment">-->
+<!--														<div class="user">-->
+<!--															<img src="img/blog-author-2.jpg" alt="user avatar" />-->
+<!--														</div>-->
+<!---->
+<!--														<div class="comment-body">-->
+<!--															<div class="message">-->
+<!--																<p>Duis vel eros mi. Nunc eu sem dolor. Nulla<br />venenatis, augue at rhoncus tincidunt</p>-->
+<!--															</div>-->
+<!---->
+<!--															<div class="comment-info">-->
+<!--																<p class="author">Robert Doe</p>-->
+<!--																<p class="date">2 days ago</p>-->
+<!--																<a href="#" class="reply-link">Reply</a>-->
+<!--															</div>-->
+<!--														</div>-->
+<!--													</li>-->
+<!---->
+<!--													<li class="comment">-->
+<!--														<div class="user">-->
+<!--															<img src="img/blog-author-1.jpg" alt="user avatar" />-->
+<!--														</div>-->
+<!---->
+<!--														<div class="comment-body">-->
+<!--															<div class="message">-->
+<!--																<p>Duis vel eros mi. Nunc eu sem dolor. Nulla<br />venenatis, augue at rhoncus tincidunt</p>-->
+<!--															</div>-->
+<!---->
+<!--															<div class="comment-info">-->
+<!--																<p class="author">Robert Doe</p>-->
+<!--																<p class="date">2 days ago</p>-->
+<!--																<a href="#" class="reply-link">Reply</a>-->
+<!--															</div>-->
+<!--														</div>-->
+<!--													</li>-->
+<!--												</ul>-->
+<!--											</div>-->
+<!---->
+<!--											<!-- Response Form -->-->
+<!--											<form class="comment-form">-->
+<!--												<div class="form-body clearfix">-->
+<!--													<div class="message">-->
+<!--														<textarea class="js-input form-input" placeholder="Leave a comment"></textarea>-->
+<!--													</div>-->
+<!--													<div class="row row-fit">-->
+<!--														<div class="col-sm-12">-->
+<!--															<input type="text" class="js-input form-input" placeholder="Enter your name" />-->
+<!--														</div>-->
+<!--														<div class="col-sm-12">-->
+<!--															<input type="text" class="js-input form-input" placeholder="Enter your email address" />-->
+<!--														</div>-->
+<!--													</div>-->
+<!---->
+<!--													<input type="submit" value="post" class="submit-button" />-->
+<!--												</div>-->
+<!--											</form>-->
+<!--										</div>-->
 									</div>
 
 									<div class="col-sm-9">
@@ -285,64 +286,64 @@
 													<p class="caption">Info</p>
 													<ul>
 														<li class="bathrooms"><p>Phone: <span><?php echo $phone ?></span></p></li>
-														<li class="bedrooms"><p>website: <span><?php echo $website ?></span></p></li>
-														<li class="area"><p>Area: <span>100</span></p></li>
+														<li class="bedrooms"><p>website: <span><a href=<?php echo $website ?> target="_blank"><?php echo $website ?></a></span></p></li>
+<!--														<li class="area"><p>Area: <span>100</span></p></li>-->
 													</ul>
 												</div>
 
 												<div class="price">
-													<p>$450 000 <span>for sale</span></p>
+<!--													<p>$450 000 <span>for sale</span></p>-->
 												</div>
 											</div>
 										</div>
 
-										<div class="text-description">
-											<div class="section-header small">
-												<h2>Description</h2>
-											</div>
-
-											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies, turpis ipsum ultrices massa, vitae pulvinar nibh erat</p>
-
-											<div class="features">
-												<h4>Features</h4>
-												<p>additional services</p>
-
-												<div class="accordion-group">
-													<div class="accordion">
-														<h4 class="heading">Vivamus ac nulla lacus</h4>
-														<div class="body">
-															<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh</p>
-														</div>
-													</div>
-
-													<div class="accordion">
-														<h4 class="heading">Etiam consequat rutrum soe</h4>
-														<div class="body">
-															<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh</p>
-														</div>
-													</div>
-
-													<div class="accordion">
-														<h4 class="heading open">Proin molestie efficitur convallis</h4>
-														<div class="body">
-															<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh</p>
-														</div>
-													</div>
-
-													<div class="accordion">
-														<h4 class="heading">Cras venenatis nunc sit amet</h4>
-														<div class="body">
-															<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh</p>
-														</div>
-													</div>
-												</div>
-											</div>
-
-											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies, turpis ipsum ultrices massa, vitae pulvinar nibh erat</p>
-										</div>
+<!--										<div class="text-description">-->
+<!--											<div class="section-header small">-->
+<!--												<h2>Description</h2>-->
+<!--											</div>-->
+<!---->
+<!--											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies, turpis ipsum ultrices massa, vitae pulvinar nibh erat</p>-->
+<!---->
+<!--											<div class="features">-->
+<!--												<h4>Features</h4>-->
+<!--												<p>additional services</p>-->
+<!---->
+<!--												<div class="accordion-group">-->
+<!--													<div class="accordion">-->
+<!--														<h4 class="heading">Vivamus ac nulla lacus</h4>-->
+<!--														<div class="body">-->
+<!--															<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh</p>-->
+<!--														</div>-->
+<!--													</div>-->
+<!---->
+<!--													<div class="accordion">-->
+<!--														<h4 class="heading">Etiam consequat rutrum soe</h4>-->
+<!--														<div class="body">-->
+<!--															<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh</p>-->
+<!--														</div>-->
+<!--													</div>-->
+<!---->
+<!--													<div class="accordion">-->
+<!--														<h4 class="heading open">Proin molestie efficitur convallis</h4>-->
+<!--														<div class="body">-->
+<!--															<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh</p>-->
+<!--														</div>-->
+<!--													</div>-->
+<!---->
+<!--													<div class="accordion">-->
+<!--														<h4 class="heading">Cras venenatis nunc sit amet</h4>-->
+<!--														<div class="body">-->
+<!--															<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh</p>-->
+<!--														</div>-->
+<!--													</div>-->
+<!--												</div>-->
+<!--											</div>-->
+<!---->
+<!--											<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies, turpis ipsum ultrices massa, vitae pulvinar nibh erat</p>-->
+<!--										</div>-->
 
 										<div class="widget_latest_listing">
-											<p class="heading">Similar properties</p>
+											<p class="heading">Nearby Breweries</p>
 
 											<ul class="listing-items row row-fit-10">
 												<li class="item col-xs-8">
@@ -440,41 +441,43 @@
 								<div class="col-sm-12 col-md-24">
 									<div class="map-info">
 										<div class="map-canvas">
-											<div id="map-canvas" data-property-id="5"></div>
-										</div>
-									</div>
-								</div>
-
-								<div class="col-sm-12 col-md-24">
-									<div class="property-agent">
-										<div class="agent">
-											<h2 class="caption">Contact the agent</h2>
-											<p class="position">agent</p>
-
-											<div class="image">
-												<a href="agent.html">
-													<img src="img/agent-2.jpg" alt="agent photo" />
-												</a>
+											<div id="map-canvas" data-property-id="5">
+												GOOGLE MAP WILL GO HERE
 											</div>
-
-											<h3><a href="agent.html">Elias Doe</a></h3>
-
-											<ul class="social-block">
-												<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-												<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-												<li><a href="#"><i class="fa fa-github-alt"></i></a></li>
-											</ul>
-
-											<form class="simple-form">
-												<input type="text" class="js-input" placeholder="Full name" />
-												<input type="text" class="js-input" placeholder="Email" />
-												<input type="text" class="js-input" placeholder="Subject" />
-												<textarea class="js-input" placeholder="Message"></textarea>
-												<button class="submit-btn">Write</button>
-											</form>
 										</div>
 									</div>
 								</div>
+
+<!--								<div class="col-sm-12 col-md-24">-->
+<!--									<div class="property-agent">-->
+<!--										<div class="agent">-->
+<!--											<h2 class="caption">Contact the agent</h2>-->
+<!--											<p class="position">agent</p>-->
+<!---->
+<!--											<div class="image">-->
+<!--												<a href="agent.html">-->
+<!--													<img src="img/agent-2.jpg" alt="agent photo" />-->
+<!--												</a>-->
+<!--											</div>-->
+<!---->
+<!--											<h3><a href="agent.html">Elias Doe</a></h3>-->
+<!---->
+<!--											<ul class="social-block">-->
+<!--												<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+<!--												<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+<!--												<li><a href="#"><i class="fa fa-github-alt"></i></a></li>-->
+<!--											</ul>-->
+<!---->
+<!--											<form class="simple-form">-->
+<!--												<input type="text" class="js-input" placeholder="Full name" />-->
+<!--												<input type="text" class="js-input" placeholder="Email" />-->
+<!--												<input type="text" class="js-input" placeholder="Subject" />-->
+<!--												<textarea class="js-input" placeholder="Message"></textarea>-->
+<!--												<button class="submit-btn">Write</button>-->
+<!--											</form>-->
+<!--										</div>-->
+<!--									</div>-->
+<!--								</div>-->
 							</div>
 						</div>
 					</div>
@@ -484,128 +487,128 @@
 
 		<!-- Footer -->
 		<footer>
-			<div class="container">
-				<div class="footer-widgets">
-					<div class="row">
-						<div class="col-md-9">
-							<div class="footer-widget widget_info">
-								<div class="widget-body">
-									<img src="img/logo.png" alt="realtor logo" />
-
-									<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies, turpis ipsum ultrices massa, vitae pulvinar nibh erat</p>
-
-									<ul class="social-block">
-										<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-										<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-										<li><a href="#"><i class="fa fa-youtube"></i></a></li>
-									</ul>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-9">
-							<div class="footer-widget widget_most_viewed">
-								<h4 class="widget-title">Most viewed</h4>
-
-								<div class="widget-body">
-									<div class="most-viewed-property">
-										<div class="image">
-											<a href="single.html">
-												<img src="img/most-viewed-prop-1.jpg" alt="most viewed" />
-											</a>
-										</div>
-										<h2><a href="single.html">Grand hotel</a></h2>
-										<p class="price">$450</p>
-										<ul class="rating">
-											<li><i class="fa fa-star"></i></li>
-											<li><i class="fa fa-star"></i></li>
-											<li><i class="fa fa-star"></i></li>
-											<li><i class="fa fa-star-o"></i></li>
-											<li><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-
-									<div class="most-viewed-property">
-										<div class="image">
-											<a href="single.html">
-												<img src="img/most-viewed-prop-2.jpg" alt="most viewed" />
-											</a>
-										</div>
-										<h2><a href="single.html">Golden vip room</a></h2>
-										<p class="price">$450</p>
-										<ul class="rating">
-											<li><i class="fa fa-star"></i></li>
-											<li><i class="fa fa-star"></i></li>
-											<li><i class="fa fa-star"></i></li>
-											<li><i class="fa fa-star-o"></i></li>
-											<li><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-
-									<div class="most-viewed-property">
-										<div class="image">
-											<a href="single.html">
-												<img src="img/most-viewed-prop-1.jpg" alt="most viewed" />
-											</a>
-										</div>
-										<h2><a href="single.html">Grand hotel</a></h2>
-										<p class="price">$450</p>
-										<ul class="rating">
-											<li><i class="fa fa-star"></i></li>
-											<li><i class="fa fa-star"></i></li>
-											<li><i class="fa fa-star"></i></li>
-											<li><i class="fa fa-star-o"></i></li>
-											<li><i class="fa fa-star-o"></i></li>
-										</ul>
-									</div>
-
-									<div class="most-viewed-property">
-										<div class="image">
-											<a href="single.html">
-												<img src="img/most-viewed-prop-2.jpg" alt="most viewed" />
-											</a>
-										</div>
-										<h2><a href="single.html">Golden vip room</a></h2>
-										<p class="price">$450</p>
-										<ul class="rating">
-											<li><i class="fa fa-star"></i></li>
-											<li><i class="fa fa-star"></i></li>
-											<li><i class="fa fa-star"></i></li>
-											<li><i class="fa fa-star"></i></li>
-											<li><i class="fa fa-star"></i></li>
-										</ul>
-									</div>
-								</div>
-							</div>
-						</div>
-
-						<div class="col-md-6">
-							<div class="footer-widget widget_contact">
-								<h4 class="widget-title">Contact info</h4>
-
-								<div class="widget-body">
-									<ul class="contact-info">
-										<li class="phone">
-											<p>012 125 856 587</p>
-										</li>
-										<li class="mail">
-											<p><a href="#">Info@realtor.com</a></p>
-										</li>
-										<li class="location">
-											<p>Realtor office<br />22 Pink Road<br />Holliday city, La 2211</p>
-										</li>
-									</ul>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-				<div class="copyrigts">
-					<p>Copyrights 2015. Designed by <a href="https://www.teslathemes.com" target="blank">TeslaThemes</a></p>
-				</div>
-			</div>
+<!--			<div class="container">-->
+<!--				<div class="footer-widgets">-->
+<!--					<div class="row">-->
+<!--						<div class="col-md-9">-->
+<!--							<div class="footer-widget widget_info">-->
+<!--								<div class="widget-body">-->
+<!--									<img src="img/logo.png" alt="realtor logo" />-->
+<!---->
+<!--									<p>Duis vel eros mi. Nunc eu sem dolor. Nulla venenatis, augue at rhoncus tincidunt, nisi dolor fringilla nibh, sed tristique quam leo vel arcu. Sed ultricies, odio vel aliquet ultricies, turpis ipsum ultrices massa, vitae pulvinar nibh erat</p>-->
+<!---->
+<!--									<ul class="social-block">-->
+<!--										<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+<!--										<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+<!--										<li><a href="#"><i class="fa fa-google-plus"></i></a></li>-->
+<!--										<li><a href="#"><i class="fa fa-youtube"></i></a></li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!---->
+<!--						<div class="col-md-9">-->
+<!--							<div class="footer-widget widget_most_viewed">-->
+<!--								<h4 class="widget-title">Most viewed</h4>-->
+<!---->
+<!--								<div class="widget-body">-->
+<!--									<div class="most-viewed-property">-->
+<!--										<div class="image">-->
+<!--											<a href="single.html">-->
+<!--												<img src="img/most-viewed-prop-1.jpg" alt="most viewed" />-->
+<!--											</a>-->
+<!--										</div>-->
+<!--										<h2><a href="single.html">Grand hotel</a></h2>-->
+<!--										<p class="price">$450</p>-->
+<!--										<ul class="rating">-->
+<!--											<li><i class="fa fa-star"></i></li>-->
+<!--											<li><i class="fa fa-star"></i></li>-->
+<!--											<li><i class="fa fa-star"></i></li>-->
+<!--											<li><i class="fa fa-star-o"></i></li>-->
+<!--											<li><i class="fa fa-star-o"></i></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!---->
+<!--									<div class="most-viewed-property">-->
+<!--										<div class="image">-->
+<!--											<a href="single.html">-->
+<!--												<img src="img/most-viewed-prop-2.jpg" alt="most viewed" />-->
+<!--											</a>-->
+<!--										</div>-->
+<!--										<h2><a href="single.html">Golden vip room</a></h2>-->
+<!--										<p class="price">$450</p>-->
+<!--										<ul class="rating">-->
+<!--											<li><i class="fa fa-star"></i></li>-->
+<!--											<li><i class="fa fa-star"></i></li>-->
+<!--											<li><i class="fa fa-star"></i></li>-->
+<!--											<li><i class="fa fa-star-o"></i></li>-->
+<!--											<li><i class="fa fa-star-o"></i></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!---->
+<!--									<div class="most-viewed-property">-->
+<!--										<div class="image">-->
+<!--											<a href="single.html">-->
+<!--												<img src="img/most-viewed-prop-1.jpg" alt="most viewed" />-->
+<!--											</a>-->
+<!--										</div>-->
+<!--										<h2><a href="single.html">Grand hotel</a></h2>-->
+<!--										<p class="price">$450</p>-->
+<!--										<ul class="rating">-->
+<!--											<li><i class="fa fa-star"></i></li>-->
+<!--											<li><i class="fa fa-star"></i></li>-->
+<!--											<li><i class="fa fa-star"></i></li>-->
+<!--											<li><i class="fa fa-star-o"></i></li>-->
+<!--											<li><i class="fa fa-star-o"></i></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!---->
+<!--									<div class="most-viewed-property">-->
+<!--										<div class="image">-->
+<!--											<a href="single.html">-->
+<!--												<img src="img/most-viewed-prop-2.jpg" alt="most viewed" />-->
+<!--											</a>-->
+<!--										</div>-->
+<!--										<h2><a href="single.html">Golden vip room</a></h2>-->
+<!--										<p class="price">$450</p>-->
+<!--										<ul class="rating">-->
+<!--											<li><i class="fa fa-star"></i></li>-->
+<!--											<li><i class="fa fa-star"></i></li>-->
+<!--											<li><i class="fa fa-star"></i></li>-->
+<!--											<li><i class="fa fa-star"></i></li>-->
+<!--											<li><i class="fa fa-star"></i></li>-->
+<!--										</ul>-->
+<!--									</div>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!---->
+<!--						<div class="col-md-6">-->
+<!--							<div class="footer-widget widget_contact">-->
+<!--								<h4 class="widget-title">Contact info</h4>-->
+<!---->
+<!--								<div class="widget-body">-->
+<!--									<ul class="contact-info">-->
+<!--										<li class="phone">-->
+<!--											<p>012 125 856 587</p>-->
+<!--										</li>-->
+<!--										<li class="mail">-->
+<!--											<p><a href="#">Info@realtor.com</a></p>-->
+<!--										</li>-->
+<!--										<li class="location">-->
+<!--											<p>Realtor office<br />22 Pink Road<br />Holliday city, La 2211</p>-->
+<!--										</li>-->
+<!--									</ul>-->
+<!--								</div>-->
+<!--							</div>-->
+<!--						</div>-->
+<!--					</div>-->
+<!--				</div>-->
+<!---->
+<!--				<div class="copyrigts">-->
+<!--					<p>Copyrights 2015. Designed by <a href="https://www.teslathemes.com" target="blank">TeslaThemes</a></p>-->
+<!--				</div>-->
+<!--			</div>-->
 		</footer>
 	</div>
 

@@ -25,6 +25,7 @@ gulp.task('php', function(){
 gulp.task('watch', function () {
     livereload.listen();
     gulp.watch('less/*.less', ['less']);
+    gulp.watch('less/custom/*.less', ['less']);
     gulp.watch('*.php', ['php']);
     //gulp.watch('css/theme_css/*.css', ['css']);
 });

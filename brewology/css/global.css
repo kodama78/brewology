@@ -34,3 +34,16 @@
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.item-body .services .fa-star-o {
+  position: absolute;
+  bottom: 82px;
+  right: 13px;
+  font-size: 12px;
+}
+#favorites {
+  position: absolute;
+  height: 10px;
+  width: 60px;
+  font-size: 8px;
+  right: 10px;
+}

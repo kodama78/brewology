@@ -2198,6 +2198,7 @@ footer .copyrigts p a:hover {
 }
 .single-property-container .property-description-box {
   margin-bottom: 45px;
+  border:1px solid #ededed;
 }
 .single-property-container .property-description-box .property-description {
   -webkit-box-shadow: 0 0px 9px rgba(0, 0, 0, 0.08);
@@ -2354,6 +2355,7 @@ footer .copyrigts p a:hover {
 }
 .single-property-container .widget_latest_listing {
   margin-bottom: 45px;
+  border:1px solid #ededed;
 }
 .single-property-container .property-agent {
   margin-bottom: 45px;
@@ -2542,7 +2544,7 @@ footer .copyrigts p a:hover {
   .single-property-container .main-wrapper .col {
     vertical-align: top;
     direction: ltr;
-    float: none;
+
     display: inline-block;
   }
 }
@@ -2557,6 +2559,7 @@ footer .copyrigts p a:hover {
   }
   .single-property-container .main-info .col-sm-15 {
     padding-right: 30px;
+    border:1px solid #ededed;
   }
 }
 

@@ -11,6 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
     <!-- Style CSS -->
+	<link rel="stylesheet" href="css/global.css" />
 	<link rel="stylesheet" href="css/font-awesome-4.4.0/css/font-awesome.min.css" />
 	<link rel="stylesheet" href="css/theme_css/owl-carousel.css" />
 	<link rel="stylesheet" href="css/theme_css/bootstrap.css" />
@@ -26,47 +27,7 @@
 	<!-- Page Wrapper -->
 	<div id="page">
 		<!-- Header -->
-		<header>
-			<!-- Navigation -->
-			<nav>
-				<ul>
-					<li class="home current-menu-item"><a href="my-profile.php">Home</a></li>
-					<li class="listing menu-item-has-children">
-						<a href="properties-list.php">Favorite Breweries</a>
-						<ul class="sub-menu">
-<!--							<li><a href="properties-grid.php">Grid</a></li>-->
-							<li><a href="properties-list.php">Newsfeed</a></li>
-						</ul>
-					</li>
-					<li class="property"><a href="single-full-width.php">Add Brewery</a></li>
-					<li class="agents"><a href="agents.php">Add Newsfeed Item</a></li>
-					<!--<li class="blog"><a href="blog.php">Blog</a></li>-->
-					<!--<li class="error"><a href="404.php">404 Page</a></li>-->
-				</ul>
-			</nav>
-
-			<!-- Social Block & Login -->
-			<div class="right-block">
-				<ul class="social-block">
-					<li><a href="#"><i class="fa fa-facebook"></i></a></li>
-					<li><a href="#"><i class="fa fa-twitter"></i></a></li>
-					<li><a href="#"><i class="fa fa-instagram"></i></a></li>
-					<li><a href="#"><i class="fa fa-pinterest"></i></a></li>
-				</ul>
-
-				<p><a class="login" href="#">Login</a> / <a href="#" class="register">Register</a></p>
-			</div>
-
-			<!-- Menu Toggle -->
-			<span class="menu-toggle cmn-toggle-switch cmn-toggle-switch__htx">
-				<span>toggle menu</span>
-			</span>
-
-			<!-- Identity image -->
-			<a href="index.php" class="brand">
-				<img src="img/logo.png" alt="logo" />
-			</a>
-		</header>
+		<?php include 'header.php' ?>
 
 		<!-- Main Content -->
 		<div class="content-wrapper">
@@ -121,6 +82,50 @@
 					</div>
 
 					<div class="row main-wrapper">
+						<div class="col-md-7 col-xs-24 col">
+							<div class="row">
+								<div class="col-sm-12 col-md-24">
+									<div class="map-info">
+										<div class="map-canvas">
+											<div id="map-canvas" data-property-id="5">
+												GOOGLE MAP WILL GO HERE
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<!--								<div class="col-sm-12 col-md-24">-->
+								<!--									<div class="property-agent">-->
+								<!--										<div class="agent">-->
+								<!--											<h2 class="caption">Contact the agent</h2>-->
+								<!--											<p class="position">agent</p>-->
+								<!---->
+								<!--											<div class="image">-->
+								<!--												<a href="agent.html">-->
+								<!--													<img src="img/agent-2.jpg" alt="agent photo" />-->
+								<!--												</a>-->
+								<!--											</div>-->
+								<!---->
+								<!--											<h3><a href="agent.html">Elias Doe</a></h3>-->
+								<!---->
+								<!--											<ul class="social-block">-->
+								<!--												<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
+								<!--												<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
+								<!--												<li><a href="#"><i class="fa fa-github-alt"></i></a></li>-->
+								<!--											</ul>-->
+								<!---->
+								<!--											<form class="simple-form">-->
+								<!--												<input type="text" class="js-input" placeholder="Full name" />-->
+								<!--												<input type="text" class="js-input" placeholder="Email" />-->
+								<!--												<input type="text" class="js-input" placeholder="Subject" />-->
+								<!--												<textarea class="js-input" placeholder="Message"></textarea>-->
+								<!--												<button class="submit-btn">Write</button>-->
+								<!--											</form>-->
+								<!--										</div>-->
+								<!--									</div>-->
+								<!--								</div>-->
+							</div>
+						</div>
 						<div class="col-md-17 col-xs-24 col">
 							<div class="main-info">
 								<div class="row">
@@ -433,51 +438,6 @@
 										</div>
 									</div>
 								</div>
-							</div>
-						</div>
-
-						<div class="col-md-7 col-xs-24 col">
-							<div class="row">
-								<div class="col-sm-12 col-md-24">
-									<div class="map-info">
-										<div class="map-canvas">
-											<div id="map-canvas" data-property-id="5">
-												GOOGLE MAP WILL GO HERE
-											</div>
-										</div>
-									</div>
-								</div>
-
-<!--								<div class="col-sm-12 col-md-24">-->
-<!--									<div class="property-agent">-->
-<!--										<div class="agent">-->
-<!--											<h2 class="caption">Contact the agent</h2>-->
-<!--											<p class="position">agent</p>-->
-<!---->
-<!--											<div class="image">-->
-<!--												<a href="agent.html">-->
-<!--													<img src="img/agent-2.jpg" alt="agent photo" />-->
-<!--												</a>-->
-<!--											</div>-->
-<!---->
-<!--											<h3><a href="agent.html">Elias Doe</a></h3>-->
-<!---->
-<!--											<ul class="social-block">-->
-<!--												<li><a href="#"><i class="fa fa-facebook"></i></a></li>-->
-<!--												<li><a href="#"><i class="fa fa-twitter"></i></a></li>-->
-<!--												<li><a href="#"><i class="fa fa-github-alt"></i></a></li>-->
-<!--											</ul>-->
-<!---->
-<!--											<form class="simple-form">-->
-<!--												<input type="text" class="js-input" placeholder="Full name" />-->
-<!--												<input type="text" class="js-input" placeholder="Email" />-->
-<!--												<input type="text" class="js-input" placeholder="Subject" />-->
-<!--												<textarea class="js-input" placeholder="Message"></textarea>-->
-<!--												<button class="submit-btn">Write</button>-->
-<!--											</form>-->
-<!--										</div>-->
-<!--									</div>-->
-<!--								</div>-->
 							</div>
 						</div>
 					</div>

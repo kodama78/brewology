@@ -1,13 +1,29 @@
 /**
  * Created by shawnotomo on 11/5/15.
  */
+
+var FavoriteStar = React.createClass({
+    render: function(){
+        return(
+            <i className="fa fa-star-o" key={id} onClick={self.changeFavorite}></i>
+        )
+    }
+});
+
 //INPUT: ARRAY OF BREWERIES PASSED FROM PanelContainer
 //OUTPUT: ONE PANEL FOR EACH BREWERY THA IS APPENDED TO THE PANEL CONTAINER
 var BreweryPanels = React.createClass({
+    //removeFavorite: function(){
+    //
+    //},
+    //addFavorite: function(){
+    //    document.getElementById('favorites').style.display='none';
+    //},
+
     render: function(){
+        var self = this;
         var breweryPanelMap = this.props.breweries.map(function(brewery, index){
             var id = brewery.id;
-
             var name = brewery.name;
             var addressOne = brewery['street number'] + ' ' + brewery['street name'];
             var addressTwo = brewery.city + ', ' + brewery.state + ' ' + brewery.zip1;
@@ -23,14 +39,19 @@ var BreweryPanels = React.createClass({
                             <div className="text">
                                 <a href={breweryURL}>Info</a>
                                 <a href={website} target="_blank">{website}</a>
-                                <h5>{rating}</h5>
+                                <h5>rating: {rating}</h5>
+
                             </div>
                         </div>
                         <img src="img/most-viewed-1.jpg" alt="item cover" />
                     </div>
 
                     <div className="item-body">
-                        <h4 className="services truncate"><a href={breweryURL}>{name}</a></h4>
+                        <h4 className="services truncate">
+                            <a href={breweryURL}>{name}</a>
+                            <i className="fa fa-star-o" key={id} onClick={self.changeFavorite}></i>
+                            <div id="favorites">Add to Favorites</div>
+                        </h4>
 
                         <div className="location">
                             <p>{addressOne}</p>
@@ -67,16 +88,46 @@ var BreweryHeader = React.createClass({
 var PanelContainer = React.createClass({
     getInitialState:function(){
         return({
-            breweries: breweriesArray,
+            breweries: null,
+            favorites: null,
             lat: lat,
             lng: lng
         })
     },
+    getUserFavorites: function(){
+        var email = $('#login').val();
+        var password = $('#password').val();
+        if(email == ''){
+            alert('please enter your email');
+        }else{
+            if(password == ''){
+                alert('please enter your password');
+            } else{
+                $.ajax({
+                    url:'js/userLogin/userLogin.php',
+                    method: 'POST',
+                    dataType:'json',
+                    data: {
+                        email: email,
+                        password: password
+                    },
+                    success:function(response){
+                        favorites = response.favorites;
+                        this.setState({
+                            favorites: response.favorites
+                        });
+                        $('.login-form-popup').toggleClass('visible');
+                    }.bind(this),
+                    error: function(response){
+                        console.log('there was an error', response);
+                    }
+                });
+            }
+        }
+    },
     checkBreweryArray: function(){
         var latitude = lat;
-
         var longitude = lng;
-
         var radius = $('#radius').val();
 
         $.ajax({
@@ -89,7 +140,7 @@ var PanelContainer = React.createClass({
                 radius: radius
             },
             success: function(response){
-                breweriesArray = response;
+                var breweriesArray = response;
                 makeMarkers(latitude, longitude, radius, breweriesArray);
                 //makePanels(breweriesArray);
                 this.setState({
@@ -97,7 +148,7 @@ var PanelContainer = React.createClass({
                     lat: lat,
                     lng: lng
                 })
-                console.log(this.state.breweries, this.state.lat, this.state.lng);
+
             }.bind(this),
             error: function(response){
                 console.log('There is an error', response);
@@ -107,7 +158,8 @@ var PanelContainer = React.createClass({
 
     },
     componentDidMount: function(){
-      document.getElementById('sendBrewery').addEventListener('click', this.checkBreweryArray)
+      document.getElementById('sendBrewery').addEventListener('click', this.checkBreweryArray);
+        $('#loginBtn').click(this.getUserFavorites);
     },
     render: function(){
         var renderPanel;

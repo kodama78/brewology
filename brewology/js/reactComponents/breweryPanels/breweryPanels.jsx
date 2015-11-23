@@ -3,24 +3,29 @@
  */
 
 var FavoriteStar = React.createClass({
+    //CONDITIONAL NEEDED TO CHOOSE WHICH ICON IS PUT ACCORDING TO FAVORITES
     render: function(){
-        return(
-            <i className="fa fa-star-o" key={id} onClick={self.changeFavorite}></i>
-        )
+        if(this.props.favorites.length == 0){
+
+            return (
+                <i className="fa fa-star-o" ></i>
+            )
+        }
+        else if (this.props.favorites.length !== 0){
+            //NEED CONDITIONAL TO CHECK STAR ID = ID IN FAVORITE ARRAY
+            return (
+                <i className="fa fa-star"></i>
+            )
+        }
+
     }
 });
 
 //INPUT: ARRAY OF BREWERIES PASSED FROM PanelContainer
 //OUTPUT: ONE PANEL FOR EACH BREWERY THA IS APPENDED TO THE PANEL CONTAINER
 var BreweryPanels = React.createClass({
-    //removeFavorite: function(){
-    //
-    //},
-    //addFavorite: function(){
-    //    document.getElementById('favorites').style.display='none';
-    //},
-
     render: function(){
+        var favorites = this.props.favorites;
         var self = this;
         var breweryPanelMap = this.props.breweries.map(function(brewery, index){
             var id = brewery.id;
@@ -38,9 +43,8 @@ var BreweryPanels = React.createClass({
                         <div className="cover">
                             <div className="text">
                                 <a href={breweryURL}>Info</a>
-                                <a href={website} target="_blank">{website}</a>
+                                <a href={website} target="_blank" className="truncate">{website}</a>
                                 <h5>rating: {rating}</h5>
-
                             </div>
                         </div>
                         <img src="img/most-viewed-1.jpg" alt="item cover" />
@@ -49,7 +53,7 @@ var BreweryPanels = React.createClass({
                     <div className="item-body">
                         <h4 className="services truncate">
                             <a href={breweryURL}>{name}</a>
-                            <i className="fa fa-star-o" key={id} onClick={self.changeFavorite}></i>
+                            <FavoriteStar breweryId={id} favorites={favorites}/>
                             <div id="favorites">Add to Favorites</div>
                         </h4>
 
@@ -89,7 +93,8 @@ var PanelContainer = React.createClass({
     getInitialState:function(){
         return({
             breweries: null,
-            favorites: null,
+            userId: null,
+            favorites: [],
             lat: lat,
             lng: lng
         })
@@ -112,9 +117,11 @@ var PanelContainer = React.createClass({
                         password: password
                     },
                     success:function(response){
+
                         favorites = response.favorites;
                         this.setState({
-                            favorites: response.favorites
+                            favorites: response.favorites,
+                            userId: response.userId
                         });
                         $('.login-form-popup').toggleClass('visible');
                     }.bind(this),
@@ -173,7 +180,7 @@ var PanelContainer = React.createClass({
             renderPanel = (
                 <div>
                     <BreweryHeader />
-                    <BreweryPanels breweries={this.state.breweries}/>
+                    <BreweryPanels breweries={this.state.breweries} favorites={this.state.favorites}/>
                 </div>
 
             )

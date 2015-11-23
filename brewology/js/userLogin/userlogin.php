@@ -25,6 +25,7 @@ if(mysqli_num_rows($result) > 0) {
         $output['message'] = 'Login successful';
 //                $_SESSION['id'] = $inner_result['id'];
         $user_id = $inner_result['id'];
+        $output['userId'] = $user_id;
         //going to make ajax call here to user favorites
         $userFavorites = "SELECT * FROM `user_favorites` WHERE `cb` = '$user_id'";
         $returnedFaves = mysqli_query($conn, $userFavorites);

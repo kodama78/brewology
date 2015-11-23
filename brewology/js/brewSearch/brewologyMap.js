@@ -34,7 +34,7 @@
 var lat = -33.8688;
 var lng = 151.2195;
 var radius = $('#radius').val();
-var favorites = null;
+var favorites = [];
 
 
 

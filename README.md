@@ -27,4 +27,7 @@ Features considering for implementations:
 -mapping of brewries for users
 -implementation of 3rd party APIs to enhance our project
 
+###Parris
+Converting .csv file to mongodb with mlab.com
+
 

@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="5a28f288-6ec9-4c79-a36c-7769832cd123" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/development_process/database.md" afterPath="$PROJECT_DIR$/development_process/database.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/development_process/front-end.md" afterPath="$PROJECT_DIR$/development_process/front-end.md" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="breweries.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -26,12 +25,12 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="README.md" pinned="false" current-in-tab="false">
+      <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/README.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.64608073">
-                <caret line="32" column="74" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
+              <first_editor vertical-scroll-proportion="0.60570073">
+                <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -42,12 +41,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="database.md" pinned="false" current-in-tab="true">
+      <file leaf-file-name="database.md" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/development_process/database.md">
           <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
             <state split_layout="FIRST">
-              <first_editor vertical-scroll-proportion="0.0">
-                <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="54" />
+              <first_editor vertical-scroll-proportion="0.5249406">
+                <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -678,11 +677,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/development_process/database.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.64608073">
-            <caret line="32" column="74" selection-start-line="32" selection-start-column="74" selection-end-line="32" selection-end-column="74" />
+          <first_editor vertical-scroll-proportion="0.5249406">
+            <caret line="26" column="54" selection-start-line="26" selection-start-column="54" selection-end-line="26" selection-end-column="54" />
             <folding />
           </first_editor>
           <second_editor />
@@ -692,11 +691,11 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/development_process/database.md">
+    <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;MarkdownPreviewEditor]">
         <state split_layout="FIRST">
-          <first_editor vertical-scroll-proportion="0.0">
-            <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="54" />
+          <first_editor vertical-scroll-proportion="0.60570073">
+            <caret line="30" column="45" selection-start-line="30" selection-start-column="45" selection-end-line="30" selection-end-column="45" />
             <folding />
           </first_editor>
           <second_editor />

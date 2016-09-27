@@ -12,7 +12,7 @@ these standard commands did that were provided by mLab. There was only one part 
 
 **Command to convert CSV file**
 
-mongoimport -h <-database location provided by mLab-> -d <-database name-> -c <-collection name-> -u <-user-> -p <-password-> --file <-input .csv file-> --type csv --headerline
+mongoimport -h <\database location provided by mLab-> -d <-database name-> -c <-collection name-> -u <-user-> -p <-password-> --file <-input .csv file-> --type csv --headerline
 
 This command is very self explanatory. The majority of it is the database location and user authentication information. The unique part of this command though is the --headerline.
 The --headerline tells mongoimport to use the very first line of each column of the CSV file as the field name. In order to convert the file, you must have either --headerline, 

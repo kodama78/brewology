@@ -20,14 +20,17 @@ Version 0.5 will have the following features:
 
 ### Version 1.5
 
-Features considering for implementations:
--authorization(token authorization)
--public/private site based off authorization
--inputting of data from logged in user
--mapping of brewries for users
--implementation of 3rd party APIs to enhance our project
+Features considering for implementations:  
+-authorization(token authorization)  
+-public/private site based off authorization  
+-inputting of data from logged in user  
+-mapping of brewries for users  
+-implementation of 3rd party APIs to enhance our project  
 
-###Parris
-Converting .csv file to mongodb with mlab.com
+###Parris & Trevor  
+Converting .csv file to mongodb with mlab.com  
+09/27/2016 - Completed conversion of CSV file to mongoDB on mLab.   
+Read about the conversion process [here](/development_process/database.md).   
+
 
 

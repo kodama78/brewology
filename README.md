@@ -30,6 +30,6 @@ Features considering for implementations:
 ###Parris & Trevor
 Converting .csv file to mongodb with mlab.com
 09/27/2016 - Completed conversion od CSV file to mongoDB on mLab. 
-Read about the conversion process [here]("brewology/development_process/database.md").
+Read about the conversion process [here]("brewology/development_process/database.md"). 
 
 

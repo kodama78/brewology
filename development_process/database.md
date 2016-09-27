@@ -10,9 +10,8 @@ mLab provided some very useful information in their Import/Export Helper. This h
 This of course made figuring out the proper commands very simple. However, there are many different commands you can give that will do different things, but I wanted to know what 
 these standard commands did that were provided by mLab. There was only one part that I really needed to research.
 
-**Command to convert CSV file**
-
-mongoimport -h <\database location provided by mLab-> -d <-database name-> -c <-collection name-> -u <-user-> -p <-password-> --file <-input .csv file-> --type csv --headerline
+**Command to convert CSV file**  
+mongoimport -h <-database location provided by mLab-> -d <-database name-> -c <-collection name-> -u <-user-> -p <-password-> --file <-input .csv file-> --type csv --headerline
 
 This command is very self explanatory. The majority of it is the database location and user authentication information. The unique part of this command though is the --headerline.
 The --headerline tells mongoimport to use the very first line of each column of the CSV file as the field name. In order to convert the file, you must have either --headerline, 
@@ -20,9 +19,9 @@ The --headerline tells mongoimport to use the very first line of each column of 
 the first time without creating actual field header names and it proceeded to use the first line of the CSV file as the field names, which gave some odd and incorrect field names. 
 I then created a new line at the top of the document and provided actual field names for each column. The result then turned out as expected.
 
-**Overall Process:**
-1. Download and Install MongoDB.
-2. Create field header names for each column in the CSV file.
-3. Use standard conversion command provided by mLab and fill in the required values.
-4. Execute command
-5. Review new collection in mLab and check for errors.
+**Overall Process:**  
+1. Download and Install MongoDB.  
+2. Create field header names for each column in the CSV file.  
+3. Use standard conversion command provided by mLab and fill in the required values.  
+4. Execute command  
+5. Review new collection in mLab and check for errors.  

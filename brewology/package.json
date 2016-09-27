@@ -1,0 +1,27 @@
+{
+  "name": "brewology",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.0",
+    "gulp-less": "^3.0.3",
+    "less": "^2.5.3",
+    "gulp-livereload": "^3.8.1",
+    "gulp-plumber": "^1.0.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kodama78/brewology.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kodama78/brewology/issues"
+  },
+  "homepage": "https://github.com/kodama78/brewology#readme"
+}

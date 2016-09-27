@@ -27,7 +27,9 @@ Features considering for implementations:
 -mapping of brewries for users
 -implementation of 3rd party APIs to enhance our project
 
-###Parris
+###Parris & Trevor
 Converting .csv file to mongodb with mlab.com
+09/27/2016 - Completed conversion od CSV file to mongoDB on mLab. 
+Read about the conversion process[here]("development_process/database.md").
 
 

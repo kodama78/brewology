@@ -6,9 +6,10 @@
   "dependencies": {
     "gulp": "^3.9.0",
     "gulp-less": "^3.0.3",
-    "less": "^2.5.3",
     "gulp-livereload": "^3.8.1",
-    "gulp-plumber": "^1.0.1"
+    "gulp-plumber": "^1.0.1",
+    "less": "^2.5.3",
+    "mongodb": "^2.2.9"
   },
   "devDependencies": {},
   "scripts": {
